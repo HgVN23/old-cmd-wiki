@@ -1,14 +1,29 @@
+header {
+  height: 70px;
+  background-color: white;
+  display: block;
+  color: black;
+}
+footer {
+  height: 70px;
+  background-color: white;
+  display: block;
+  color: black;
+}
+
 .c_background {
   background-color: black;
   color: white;
   font-family: sans-serif;
 }
 .c_h {
-  font-size: 40;
+  background-color: #1d1d1d;
+  border: 1px outset white;
+  font-size: 40px;
   text-align: center;
 }
 .c_p {
-  font-size: 25;
+  font-size: 20px;
 }
 .c_link_text {
   color: #2365d2;
