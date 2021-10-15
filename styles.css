@@ -1,3 +1,8 @@
+@font-face {
+  src: url(fonts/Minecrafter.Reg.ttf);
+  font-family: minecraft;
+}
+
 * {
   color: white;
   font-family: sans-serif;
@@ -31,9 +36,8 @@ footer {
 }
 
 .title {
-  color: white;
   text-decoration: none;
-  font-family: 'Minecraft';
+  font-family: minecraft;
 }
 .background {
   background-size: cover;
@@ -67,7 +71,7 @@ footer {
   text-decoration: none;
 }
 .link_text:hover {
-  color: #3b82f6;
+  color: #1d4ed8;
   text-decoration: underline;
 }
 .link_text:active {
