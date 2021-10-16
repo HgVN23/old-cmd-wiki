@@ -51,16 +51,15 @@ footer {
   width: 100%;
 }
 .h {
-  font-size: 40px;
-  text-align: center;
-  border-bottom: 2px solid white;
   background: url(media/background_h.png) repeat center;
   background-size: contain;
+  font-size: 40px;
+  justify-self: center;
+  margin-top: 3px;
 }
 .p {
   font-size: 20px;
-  padding: 3px;
-  padding-top: 5px;
+  padding: 5px;
 }
 .link_text:link {
   color: #3b82f6;
@@ -88,9 +87,21 @@ footer {
   height: 40px;
   width: 40px;
 }
+.commands {
+  background-color: #171717;
+  border: 4px solid #525252;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
 
+/*test.html*/
 .box1 {
   background-color: #171717;
   border: 4px solid #525252;
   border-radius: 10px;
+}
+/*test2.html*/
+.trang_chu {
+  display: grid;
+  margin-right: 8px;
 }
