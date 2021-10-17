@@ -2,7 +2,7 @@
   src: url(fonts/Minecrafter.Reg.ttf);
   font-family: minecraft;
 }
-
+/*Chỉnh tag gốc*/
 * {
   color: white;
   font-family: sans-serif;
@@ -24,7 +24,7 @@ footer {
   font-size: 50px;
   text-align: center;
 }
-
+/*Custom Scrollbar*/
 ::-webkit-scrollbar {
   background-color: #262626;
   width: 10px;
@@ -34,11 +34,17 @@ footer {
   border: 3px solid #525252;
   border-radius: 6px;
 }
-
+/*Thuộc Header*/
 .title {
   text-decoration: none;
   font-family: minecraft;
 }
+/*Thuộc Footer*/
+.social_icon {
+  height: 40px;
+  width: 40px;
+}
+/*Dùng lun*/
 .background {
   background-size: cover;
   background-color: #262626;
@@ -47,15 +53,17 @@ footer {
   background-color: #171717;
   border: 4px solid #525252;
   border-radius: 10px;
-  margin-bottom: 30px;
-  width: 100%;
+  margin-bottom: 10px;
 }
 .h {
   background: url(media/background_h.png) repeat center;
   background-size: contain;
   font-size: 40px;
   justify-self: center;
+  margin-left: 2px;
+  margin-right: 2px;
   margin-top: 3px;
+  padding: 5px;
 }
 .p {
   font-size: 20px;
@@ -83,25 +91,50 @@ footer {
 .note {
   color: #ff1212;
 }
-.social_icon {
-  height: 40px;
-  width: 40px;
+/*Các mục*/
+.trang_chu {
+  display: grid;
 }
 .commands {
-  background-color: #171717;
-  border: 4px solid #525252;
-  border-radius: 10px;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-areas: 
+  "commands_left commands_right";
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 5px;
 }
-
+.commands_left {
+  display: grid;
+  grid-area: commands_left;
+}
+.commands_right {
+  display: grid;
+  grid-area: commands_right;
+  grid-template-areas:
+  "commands_name"
+  "commands_form";
+  grid-auto-rows: auto 1fr;
+}
+.commands_name {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-area: commands_name;
+}
+.commands_form {
+  grid-area: commands_form;
+}
+.commands_h {
+  background: url(media/background_h.png) repeat center;
+  background-size: contain;
+  font-size: 40px;
+  justify-self: left;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 3px;
+  padding: 5px;
+}
 /*test.html*/
 .box1 {
   background-color: #171717;
   border: 4px solid #525252;
   border-radius: 10px;
-}
-/*test2.html*/
-.trang_chu {
-  display: grid;
-  margin-right: 8px;
 }
