@@ -110,7 +110,12 @@ footer {
   grid-column-gap: 5px;
 }
 .commands_left {
+  display: grid;
   grid-area: commands_left;
+  grid-template-areas:
+  "commands_name"
+  "commands_form";
+  grid-auto-rows: auto 1fr;
 }
 .commands_right {
   display: grid;
