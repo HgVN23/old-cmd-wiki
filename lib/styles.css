@@ -98,42 +98,32 @@ footer {
 .note {
   color: #ff1212;
 }
-/*Các mục*/
-.trang_chu {
-  display: grid;
-}
-.commands {
+.page_display {
   display: grid;
   grid-template-areas: 
-  "commands_left commands_right";
+  "left right";
   grid-template-columns: auto 1fr;
-  grid-column-gap: 5px;
+  grid-column-gap: 10px;
 }
-.commands_left {
+.left {
+  grid-area: left;
+}
+.right {
+  grid-area: right;
+}
+.slot {
   display: grid;
-  grid-area: commands_left;
-  grid-template-areas:
-  "commands_name"
-  "commands_form";
-  grid-auto-rows: auto 1fr;
+  grid-template-areas: 
+  "row1"
+  "row2";
 }
-.commands_right {
-  display: grid;
-  grid-area: commands_right;
-  grid-template-areas:
-  "commands_name"
-  "commands_form";
-  grid-auto-rows: auto 1fr;
+.row1 {
+  grid-area: row1;
 }
-.commands_name {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-area: commands_name;
+.row2 {
+  grid-area: row2;
 }
-.commands_form {
-  grid-area: commands_form;
-}
-.commands_h {
+.h_cmd {
   background: url(media/background_h.png) repeat center;
   background-size: contain;
   border-radius: 6px;
@@ -141,9 +131,6 @@ footer {
   justify-self: left;
   padding: 5px;
 }
-/*test.html*/
-.box1 {
-  background-color: #171717;
-  border: 4px solid #525252;
-  border-radius: 10px;
+.page_open {
+  color: yellow;
 }
