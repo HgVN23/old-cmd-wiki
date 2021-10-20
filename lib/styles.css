@@ -43,8 +43,35 @@ footer {
 .social_icon {
   height: 40px;
   width: 40px;
+  margin: 5px;
 }
-/*Dùng lun*/
+/*Bố cục*/
+.page_display {
+  display: grid;
+  grid-template-areas: 
+  "left right";
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 10px;
+}
+.left {
+  grid-area: left;
+}
+.right {
+  grid-area: right;
+}
+.slot {
+  display: grid;
+  grid-template-areas: 
+  "row1"
+  "row2";
+}
+.row1 {
+  grid-area: row1;
+}
+.row2 {
+  grid-area: row2;
+}
+/*Trang trí*/
 .background {
   background-size: cover;
   background-color: #262626;
@@ -107,37 +134,13 @@ footer {
 .note {
   color: #ff1212;
 }
-.page_display {
-  display: grid;
-  grid-template-areas: 
-  "left right";
-  grid-template-columns: auto auto;
-  grid-column-gap: 10px;
-}
-.left {
-  grid-area: left;
-}
-.right {
-  grid-area: right;
-}
-.slot {
-  display: grid;
-  grid-template-areas: 
-  "row1"
-  "row2";
-}
-.row1 {
-  grid-area: row1;
-}
-.row2 {
-  grid-area: row2;
-}
+/*Mobile*/
 @media screen and (max-width: 720px) {
   header {
-    font-size: 30px;
+    font-size: 26px;
   }
   footer {
-    font-size: 16px;
+    font-size: 13px;
   }
   .page_display {
     display: grid;
@@ -152,16 +155,16 @@ footer {
   .center {
     text-align: center;
   }
-.h {
-  font-size: 30px;
-}
-.h_cmd {
-  font-size: 30px;
-}
-.p {
-  font-size: 17px;
-}
-.p_small {
-  font-size: 14px;
-}
+  .h {
+    font-size: 30px;
+  }
+  .h_cmd {
+    font-size: 30px;
+  }
+  .p {
+    font-size: 17px;
+  }
+  .p_small {
+    font-size: 14px;
+  }
 }
