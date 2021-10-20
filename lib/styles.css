@@ -21,7 +21,7 @@ footer {
   border-top: 4px solid #525252;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  font-size: 50px;
+  font-size: 20px;
   text-align: center;
 }
 /*Custom Scrollbar*/
@@ -63,6 +63,14 @@ footer {
   justify-self: center;
   padding: 5px;
   text-align: center;
+}
+.h_cmd {
+  background: url(media/background_h.png) repeat center;
+  background-size: contain;
+  border-radius: 6px;
+  font-size: 40px;
+  justify-self: left;
+  padding: 5px;
 }
 .p {
   font-size: 20px;
@@ -124,17 +132,12 @@ footer {
 .row2 {
   grid-area: row2;
 }
-.h_cmd {
-  background: url(media/background_h.png) repeat center;
-  background-size: contain;
-  border-radius: 6px;
-  font-size: 40px;
-  justify-self: left;
-  padding: 5px;
-}
 @media screen and (max-width: 720px) {
   header {
-    font-size: 40px;
+    font-size: 30px;
+  }
+  footer {
+    font-size: 10px;
   }
   .page_display {
     display: grid;
@@ -149,4 +152,28 @@ footer {
   .center {
     text-align: center;
   }
+.h {
+  background: url(media/background_h.png) repeat center;
+  background-size: contain;
+  border-radius: 6px;
+  font-size: 30px;
+  justify-self: center;
+  padding: 5px;
+  text-align: center;
+}
+.h_cmd {
+  background: url(media/background_h.png) repeat center;
+  background-size: contain;
+  border-radius: 6px;
+  font-size: 30px;
+  justify-self: left;
+  padding: 5px;
+}
+.p {
+  font-size: 17px;
+  padding: 5px;
+}
+.p_small {
+  font-size: 14px;
+}
 }
