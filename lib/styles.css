@@ -137,7 +137,7 @@ footer {
     font-size: 30px;
   }
   footer {
-    font-size: 10px;
+    font-size: 16px;
   }
   .page_display {
     display: grid;
@@ -153,25 +153,13 @@ footer {
     text-align: center;
   }
 .h {
-  background: url(media/background_h.png) repeat center;
-  background-size: contain;
-  border-radius: 6px;
   font-size: 30px;
-  justify-self: center;
-  padding: 5px;
-  text-align: center;
 }
 .h_cmd {
-  background: url(media/background_h.png) repeat center;
-  background-size: contain;
-  border-radius: 6px;
   font-size: 30px;
-  justify-self: left;
-  padding: 5px;
 }
 .p {
   font-size: 17px;
-  padding: 5px;
 }
 .p_small {
   font-size: 14px;
