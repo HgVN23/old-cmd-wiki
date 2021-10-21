@@ -100,7 +100,6 @@ footer {
   justify-self: left;
   margin: 10px;
   padding: 5px;
-  text-align: center;
 }
 .p {
   font-size: 20px;
@@ -130,6 +129,9 @@ footer {
 .link_text:active {
   color: yellow;
   text-decoration: underline;
+}
+.page_open {
+  color: yellow;
 }
 .cmd {
   color: #c67d4e;
