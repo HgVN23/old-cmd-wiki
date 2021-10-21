@@ -88,6 +88,7 @@ footer {
   border-radius: 6px;
   font-size: 40px;
   justify-self: center;
+  margin: 10px;
   padding: 5px;
   text-align: center;
 }
@@ -97,7 +98,9 @@ footer {
   border-radius: 6px;
   font-size: 40px;
   justify-self: left;
+  margin: 10px;
   padding: 5px;
+  text-align: center;
 }
 .p {
   font-size: 20px;
