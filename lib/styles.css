@@ -63,13 +63,17 @@ footer {
   display: grid;
   grid-template-areas: 
   "row1"
-  "row2";
+  "row2"
+  "row3";
 }
 .row1 {
   grid-area: row1;
 }
 .row2 {
   grid-area: row2;
+}
+.row3 {
+  grid-area: row3;
 }
 /*Trang trí*/
 .background {
