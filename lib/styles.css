@@ -12,8 +12,8 @@ header {
   border-bottom: 4px solid #525252;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-bottom: 10px;
   font-size: 50px;
+  margin-bottom: 10px;
   text-align: center;
 }
 footer {
@@ -77,7 +77,6 @@ footer {
 }
 /*Trang trí*/
 .background {
-  background-size: cover;
   background-color: #262626;
 }
 .box {
@@ -133,9 +132,6 @@ footer {
 .link_text:active {
   color: yellow;
   text-decoration: underline;
-}
-.page_open {
-  color: yellow;
 }
 .cmd {
   color: #c67d4e;
