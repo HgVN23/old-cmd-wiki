@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-	<link rel="stylesheet" href="../lib/styles.css">
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="../lib/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Command Block | MCBE Command Wiki VN by Hg</title>
@@ -29,12 +29,12 @@
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
 	<div class="page_display">
-		<div class="left">
+		<div class="left mobile">
 			<div class="slot">
 				<div class="slot row1 box"> <!-- Mục lục -->
 					<div class="row1 h">Mục lục</div>
 					<div class="row2 p center">
-						<a class="link_text" href="index.html" title="Đi đến Trang chủ">Trang chủ</a><br>
+						<a class="link_text" href="../index.html" title="Đi đến Trang chủ">Trang chủ</a><br>
 						<a class="link_text" href="target.html" title="Đi đến Target">Target "Mục tiêu"</a><br>
 						<a class="link_text" href="ki-tu.html" title="Đi đến 1 số kí tự đặc biệt">1 số kí tự đặc biệt</a><br>
 						<a class="link_text" href="commands.html" title="Đi đến Commands">Commands</a><br>
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="right mobile">
+		<div class="right">
 			<div class="slot">
 				<div class="row1 h" style="margin-bottom: 10px;">Command Block</div>
 			</div>
@@ -62,12 +62,111 @@
 			</div>
 			<div class="slot box"> <!-- Các thành phần -->
 				<div class="row1 h_cmd">Các thành phần</div>
-				<div class="row2 p">...
+				<div class="row2 p">
+					<div align="center">
+						<img src="../lib/media/cmdb_ui.png" usemap="#cmdb_ui">
+						<map name="cmdb_ui">
+							<area shape="rect" coords="20,52,291,111" href="#ui1">
+							<area shape="rect" coords="20,124,291,203" href="#ui2">
+							<area shape="rect" coords="20,218,291,297" href="#ui3">
+							<area shape="rect" coords="20,312,291,391" href="#ui4">
+							<area shape="rect" coords="20,406,291,455" href="#ui5">
+							<area shape="rect" coords="20,470,291,547" href="#ui6">
+							<area shape="rect" coords="20,562,291,621" href="#ui7">
+							<area shape="rect" coords="310,54,717,133" href="#ui8">
+							<area shape="rect" coords="310,290,718,443" href="#ui9">
+						</map>
+					</div>
+					<div id="ui1">◟Hover Note là ô ghi chú <span class="note">(1)</span></div>
+					<div id="ui2">◟Block Type là loại Block <span class="note">(2)</span>. Danh sách:</div>
+					<div class="tab p_small">
+						◟Impulse là xung, chạy 1 lần mỗi lần kích hoạt<br>
+						◟Chain là liền chuỗi, chạy 1 lần mỗi lần có Command Block hướng vào nó hoạt động<br>
+						◟Repeat là lặp, chạy lặp mỗi lần kích hoạt
+						<div align="center">
+							<img src="../lib/media/cmdb_type.png" class="image30">
+						</div>
+					</div>
+					<div id="ui3">◟Condition là điều kiện, kiểm tra Command Block phía sau hướng vào nó có thực thi được Command không <span class="note">(3)</span>. Danh sách:</div>
+					<div class="tab p_small">
+						◟Condition là có điều kiện<br>
+						◟Uncondition là không điều kiện
+						<div align="center">
+							<img src="../lib/media/cmdb_condition.png" class="image30">
+						</div>
+					</div>
+					<div id="ui4">◟Redstone là năng lượng <span class="note">(4)</span>. Danh sách:</div>
+					<div class="tab p_small">
+						◟Always Active là luôn hoạt động, không cần năng lượng Redstone để kích hoạt<br>
+						◟Needs Redstone là cần năng lượng Redstone để kích hoạt
+						<div align="center">
+							<img src="../lib/media/cmdb_redstone.png" class="image30">
+						</div>
+					</div>
+					<div id="ui5">◟Execute on First Tick là hoạt động ngay từ Tick đầu tiên <span class="note">(5)</span></div>
+					<div id="ui6">◟Delay in Ticks là độ trễ của Tick <span class="note">(6)</span></div>
+					<div id="ui7">◟Cancel là hủy thay đổi <span class="note">(7)</span></div>
+					<div id="ui8">◟Command Input là nơi nhập Command (Cạnh đó có dấu + để mở rộng bảng ghi) <span class="note">(8)</span></div>
+					<div id="ui9">◟Previous Output là thông báo đầu ra Command trước đó (Nút trên đó để bật tắt hiện thông báo trong Block) <span class="note">(9)</span></div>
+				</div>
+			</div>
+			<div class="slot box"> <!-- Chi tiết về tổ hợp Block Type + Condition + Redstone -->
+				<div class="row1 h_cmd">Chi tiết về tổ hợp Block Type + Condition + Redstone</div>
+				<div class="row2 p">
+					◟Impulse + Unconditional + Needs Redstone
+					<div class="tab p_small">
+						◟Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ
+					</div>
+					◟Impulse + Unconditional + Always Active
+					<div class="tab p_small">
+						◟Chạy 1 lần mỗi lần kích hoạt
+					</div>
+					◟Impulse + Condition + Needs Redstone
+					<div class="tab p_small">
+						◟Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command
+					</div>
+					◟Impulse + Condition + Always Active
+					<div class="tab p_small">
+						◟Chạy 1 lần mỗi lần kích hoạt có Command Block phía sau hướng vào nó phải thực thi được Command
+					</div>
+					◟Chain + Unconditional + Needs Redstone
+					<div class="tab p_small">
+						◟Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block hướng vào nó hoạt động
+					</div>
+					◟Chain + Unconditional + Always	Active
+					<div class="tab p_small">
+						◟Chạy 1 lần mỗi lần có Command Block hướng vào nó hoạt động
+					</div>
+					◟Chain + Condition + Needs Redstone
+					<div class="tab p_small">
+						◟Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command
+					</div>
+					◟Chain + Condition + Always Active
+					<div class="tab p_small">
+						◟Chạy 1 lần mỗi lần có Command Block phía sau hướng vào nó phải thực thi được Command
+					</div>
+					◟Reapeat + Unconditional + Needs Redstone
+					<div class="tab p_small">
+						◟Chạy lặp mỗi lần kích hoạt bằng đá đỏ
+					</div>
+					◟Reapeat + Unconditional + Always Active
+					<div class="tab p_small">
+						◟Chạy lặp mỗi lần kích hoạt
+					</div>
+					◟Reapeat + Condition + Needs Redstone
+					<div class="tab p_small">
+						◟Chạy lặp mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command
+					</div>
+					◟Reapeat + Condition + Always Active
+					<div class="tab p_small">
+						◟Chạy lặp mỗi lần kích hoạt có Command Block phía sau hướng vào nó phải thực thi được Command
+					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
-				<div class="row2 p">...
+				<div class="row2 p">
+					◟<span class="cmd">/gamerule comamndblockoutput false</span> sẽ tắt Previous Output. Bạn vẫn có thể bật nó lên bằng nút trong Block
 				</div>
 			</div>
 		</div>
