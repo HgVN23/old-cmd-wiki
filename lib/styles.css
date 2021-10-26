@@ -140,7 +140,7 @@ footer {
   color: #ff1212;
   font-style: italic;
 }
-.image30 {
+.image {
   width: 30%;
   height: 30%;
 }
@@ -176,5 +176,9 @@ footer {
   }
   .p_small {
     font-size: 10px;
+  }
+  .image_mobile {
+    width: 50%;
+    height: 50%;
   }
 }
