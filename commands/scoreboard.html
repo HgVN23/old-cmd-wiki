@@ -176,84 +176,84 @@
 						</div>
 						◟<span class="cmd">/scoreboard objectives setdisplay sidebar a ascending</span> — hiện bảng id a trên HUD với thứ tự tăng dần<br>
 					</div>
-					◟/scoreboard objectives setdisplay belowname [objective: string]
+					◟<span class="cu_phap">/scoreboard objectives setdisplay belowname [objective: string]</span>
 					<div class="tab enter p_small">
-						◟objectives là điều chỉnh bảng<br>
-						◟setdisplay là hiện bảng<br>
-						◟belowname là hiển bảng bên dưới của tên Player<br>
-						◟[objective: string] là id bảng<br>
+						◟<span class="cu_phap">objectives</span> là điều chỉnh bảng<br>
+						◟<span class="cu_phap">setdisplay</span> là hiện bảng<br>
+						◟<span class="cu_phap">belowname</span> là hiển bảng bên dưới của tên Player<br>
+						◟<span class="cu_phap">[objective: string]</span> là id bảng<br>
 						◟<span class="cmd">/scoreboard objectives setdisplay belowname a</span> — hiển bảng id a dưới tên Player
 					</div>
-					◟/scoreboard players &lt;add|remove|set&gt; &lt;player: targets&gt; &lt;objective: string&gt; &lt;count: int&gt;
+					◟<span class="cu_phap">/scoreboard players &lt;add|remove|set&gt; &lt;player: targets&gt; &lt;objective: string&gt; &lt;count: int&gt;</span>
 					<div class="tab enter p_small">
-						◟players là điều chỉnh mục tiêu<br>
-						◟&lt;add|remove|set&gt; là phương thức điều chỉnh. Danh sách:
+						◟<span class="cu_phap">players</span> là điều chỉnh mục tiêu<br>
+						◟<span class="cu_phap">&lt;add|remove|set&gt;</span> là phương thức điều chỉnh. Danh sách:
 						<div class="tab">
-							◟add là thêm<br>
-							◟remove là giảm<br>
-							◟set là đặt
+							◟<span class="cu_phap">add</span> là thêm<br>
+							◟<span class="cu_phap">remove</span> là giảm<br>
+							◟<span class="cu_phap">set</span> là đặt
 						</div>
-						◟&lt;player: targets&gt; là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
-						◟&lt;objective: string&gt; là id bảng<br>
-						◟&lt;count:int&gt; là điểm<br>
+						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+						◟<span class="cu_phap">&lt;objective: string&gt;</span> là id bảng<br>
+						◟<span class="cu_phap">&lt;count:int&gt;</span> là điểm<br>
 						◟<span class="cmd">/scoreboard players set @s a 1</span> — đặt 1 điểm vào bảng id a cho đối tượng dùng Command này
 					</div>
-					◟/scoreboard players list [playername: target]
+					◟<span class="cu_phap">/scoreboard players list [playername: target]</span>
 					<div class="tab enter p_small">
-						◟players là điều chỉnh mục tiêu<br>
-						◟list là danh sách điểm Player có trong bảng<br>
-						◟[playername: target] là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+						◟<span class="cu_phap">players</span> là điều chỉnh mục tiêu<br>
+						◟<span class="cu_phap">list</span> là danh sách điểm Player có trong bảng<br>
+						◟<span class="cu_phap">[playername: target]</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
 						◟<span class="cmd">/scoreboard players list @s</span> — hiện điểm của đối tượng dùng Command này
 					</div>
-					◟/scoreboard players operation &lt;player: target&gt; &lt;targetObjective: string&gt; &lt;operation: operator&gt; &lt;selector: target&gt; &lt;objective: string&gt;
+					◟<span class="cu_phap">/scoreboard players operation &lt;player: target&gt; &lt;targetObjective: string&gt; &lt;operation: operator&gt; &lt;selector: target&gt; &lt;objective: string&gt;</span>
 					<div class="tab enter p_small">
-						◟players là điều chỉnh mục tiêu<br>
-						◟operation là hành động<br>
-						◟&lt;player: targets&gt; <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> bị đổi (Entity)<br>
-						◟&lt;targetObjective: string&gt; là id bảng bị đổi<br>
-						◟&lt;operation: operator&gt; là việc hành động. Danh sách:
+						◟<span class="cu_phap">players</span> là điều chỉnh mục tiêu<br>
+						◟<span class="cu_phap">operation</span> là hành động<br>
+						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> bị đổi (Entity)<br>
+						◟<span class="cu_phap">&lt;targetObjective: string&gt;</span> là id bảng bị đổi<br>
+						◟<span class="cu_phap">&lt;operation: operator&gt;</span> là việc hành động. Danh sách:
 						<div class="tab">
-							◟+= là điểm đối tượng bị đổi mới = điểm đối tượng bị đổi cũ + điểm đối tượng không đổi<br>
-							◟-= là điểm đối tượng bị đổi mới = điểm đối tượng bị đổi cũ - điểm đối tượng không đổi<br>
-							◟*= là điểm đối tượng bị đổi mới = điểm đối tượng bị đổi cũ × điểm đối tượng không đổi<br>
-							◟/= là điểm đối tượng bị đổi mới lấy phần chia được = điểm đối tượng bị đổi cũ ÷ điểm đối tượng không đổi<br>
-							◟%= là điểm đối tượng bị đổi mới lấy phần dư = điểm đối tượng bị đổi cũ ÷ điểm đối tượng không đổi<br>
-							◟= là điểm đối tượng bị đổi = điểm đối tượng không đổi<br>
-							◟&lt; là điểm đối tượng bị đổi = điểm đối tượng không đổi khi điểm đối tượng bị đổi &lt; điểm đối tượng không đổi<br>
-							◟&gt; là điểm đối tượng bị đổi = điểm đối tượng không đổi khi điểm đối tượng bị đổi &gt; điểm đối tượng không đổi<br>
-							◟&gt;&lt; là hoán đổi điểm giữa đối tượng bị đổi với đối tượng không đổi (trường hợp này đối tượng không đổi sẽ bị thay đổi điểm)
+							◟<span class="cu_phap">+=</span> là điểm đối tượng bị đổi mới = điểm đối tượng bị đổi cũ + điểm đối tượng không đổi<br>
+							◟<span class="cu_phap">-=</span> là điểm đối tượng bị đổi mới = điểm đối tượng bị đổi cũ - điểm đối tượng không đổi<br>
+							◟<span class="cu_phap">*=</span> là điểm đối tượng bị đổi mới = điểm đối tượng bị đổi cũ × điểm đối tượng không đổi<br>
+							◟<span class="cu_phap">/=</span> là điểm đối tượng bị đổi mới lấy phần chia được = điểm đối tượng bị đổi cũ ÷ điểm đối tượng không đổi<br>
+							◟<span class="cu_phap">%=</span> là điểm đối tượng bị đổi mới lấy phần dư = điểm đối tượng bị đổi cũ ÷ điểm đối tượng không đổi<br>
+							◟<span class="cu_phap">=</span> là điểm đối tượng bị đổi = điểm đối tượng không đổi<br>
+							◟<span class="cu_phap">&lt;</span> là điểm đối tượng bị đổi = điểm đối tượng không đổi khi điểm đối tượng bị đổi &lt; điểm đối tượng không đổi<br>
+							◟<span class="cu_phap">&gt;</span> là điểm đối tượng bị đổi = điểm đối tượng không đổi khi điểm đối tượng bị đổi &gt; điểm đối tượng không đổi<br>
+							◟<span class="cu_phap">&gt;&lt;</span> là hoán đổi điểm giữa đối tượng bị đổi với đối tượng không đổi (trường hợp này đối tượng không đổi sẽ bị thay đổi điểm)
 						</div>
-						◟&lt;selector: target&gt; <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> không đổi (Entity)<br>
-						◟&lt;objective: string&gt; là id bảng không đổi<br>
+						◟<span class="cu_phap">&lt;selector: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> không đổi (Entity)<br>
+						◟<span class="cu_phap">&lt;objective: string&gt;</span> là id bảng không đổi<br>
 						◟<span class="cmd">/scoreboard players operation Hg a += The3T b</span> — Hg đang trong bảng id a có 2 điểm, The3T đang trong bảng id b có 3 điểm, sau khi dùng Command thì điểm của Hg là 5 còn điểm của The3T vẫn giữ nguyên là 3<br>
 						◟<span class="cmd">/scoreboard players operation Hg a = The3T b</span> — Hg đang trong bảng id a có 2 điểm, The3T đang trong bảng id b có 3 điểm, sau khi dùng Command thì điểm của Hg bị đổi thành 3 còn điểm của The3T vẫn giữ nguyên là 3
 					</div>
-					◟/scoreboard players random &lt;player: target&gt; &lt;objective: string&gt; &lt;min: int&gt; &lt;max: int&gt;
+					◟<span class="cu_phap">/scoreboard players random &lt;player: target&gt; &lt;objective: string&gt; &lt;min: int&gt; &lt;max: int&gt;</span>
 					<div class="tab enter p_small">
-						◟players là điều chỉnh mục tiêu<br>
-						◟random cho điểm ngẫu nhiên<br>
-						◟&lt;player: targets&gt; <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
-						◟&lt;objective: string&gt; là id bảng<br>
-						◟&lt;min: int&gt; là số nhỏ nhất<br>
-						◟&lt;max: int&gt; là số lớn nhất<br>
+						◟<span class="cu_phap">players</span> là điều chỉnh mục tiêu<br>
+						◟<span class="cu_phap">random</span> cho điểm ngẫu nhiên<br>
+						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+						◟<span class="cu_phap">&lt;objective: string&gt;</span> là id bảng<br>
+						◟<span class="cu_phap">&lt;min: int&gt;</span> là số nhỏ nhất<br>
+						◟<span class="cu_phap">&lt;max: int&gt;</span> là số lớn nhất<br>
 						◟<span class="cmd">/scoreboard players random @s a 1 10</span> — đặt ngẫu nhiên điểm trong khoảng 1 đến 10 vào bảng id a cho đối tượng dùng Command này
 					</div>
-					◟/scoreboard players reset &lt;player: target&gt; [objective: string]
+					◟<span class="cu_phap">/scoreboard players reset &lt;player: target&gt; [objective: string]</span>
 					<div class="tab enter p_small">
-						◟players là điều chỉnh mục tiêu<br>
-						◟reset loại<br>
-						◟&lt;player: targets&gt; <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
-						◟[objective: string] là id bảng<br>
+						◟<span class="cu_phap">players</span> là điều chỉnh mục tiêu<br>
+						◟<span class="cu_phap">reset</span> là loại<br>
+						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+						◟<span class="cu_phap">[objective: string] là id bảng<br>
 						◟<span class="cmd">/scoreboard players reset @s a</span> — loại đối tượng dùng Command này ra khỏi bảng a
 					</div>
-					◟/scoreboard players test &lt;player: target&gt; &lt;objective: string&gt; &lt;min: wildcard int&gt; &lt;max: wildcard int&gt;
+					◟<span class="cu_phap">/scoreboard players test &lt;player: target&gt; &lt;objective: string&gt; &lt;min: wildcard int&gt; &lt;max: wildcard int&gt;</span>
 					<div class="tab p_small">
-						◟players là điều chỉnh mục tiêu<br>
-						◟test là kiểm tra<br>
-						◟&lt;player: targets&gt; <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
-						◟&lt;objective: string&gt; là id bảng<br>
-						◟&lt;min: wildcard int&gt; là số bé nhất<br>
-						◟&lt;max: wildcard int&gt; là số lớn nhất<br>
+						◟<span class="cu_phap">players</span> là điều chỉnh mục tiêu<br>
+						◟<span class="cu_phap">test</span> là kiểm tra<br>
+						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+						◟<span class="cu_phap">&lt;objective: string&gt;</span> là id bảng<br>
+						◟<span class="cu_phap">&lt;min: wildcard int&gt;</span> là số bé nhất<br>
+						◟<span class="cu_phap">&lt;max: wildcard int&gt;</span> là số lớn nhất<br>
 						◟<span class="cmd">/scoreboard playres test @s a 1 10</span> — kiểm tra đối tượng dùng Command này đang có điểm trong khoảng bằng 1 đến 10 hay không
 					</div>
 				</div>
@@ -261,9 +261,9 @@
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Nếu chỉ ghi /scoreboard objectives setdisplay &lt;list|sidebar&gt; thì sẽ ẩn bảng đã hiện trước đó<br>
-					◟Nếu chỉ ghi /scoreboard objectives setdisplay &lt;list|sidebar&gt; [objective: string] thì mặc định sẽ là ascending<br>
-					◟&lt;min: wildcard int&gt; và &lt;max: wildcard int&gt; có thể điền * biểu thị cho bé vô cùng (-∞) hoặc lớn vô cùng (+∞)
+					◟Nếu chỉ ghi <span class="cu_phap">/scoreboard objectives setdisplay &lt;list|sidebar&gt;</span> thì sẽ ẩn bảng đã hiện trước đó<br>
+					◟Nếu chỉ ghi <span class="cu_phap">/scoreboard objectives setdisplay &lt;list|sidebar&gt; [objective: string]</span> thì mặc định sẽ là ascending<br>
+					◟<span class="cu_phap">&lt;min: wildcard int&gt;</span> và <span class="cu_phap">&lt;max: wildcard int&gt;</span> có thể điền * biểu thị cho bé vô cùng (-∞) hoặc lớn vô cùng (+∞)
 					<div class="tab p_small">
 						◟<span class="cmd">/scoreboard playres test @s a 1 *</span> — kiểm tra đối tượng dùng Command này có đang có điểm trong khoảng bằng 1 đến +∞
 					</div>

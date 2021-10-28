@@ -112,7 +112,7 @@ footer {
   font-size: 16px;
 }
 .tab {
-  padding-left: 20px;
+  padding-left: 22px;
 }
 .enter {
   padding-bottom: 20px;
@@ -183,6 +183,12 @@ footer {
   }
   .p_small {
     font-size: 10px;
+  }
+  .note {
+    color: #ff1212;
+    font-size: 6px;
+    font-style: italic;
+    vertical-align: super;
   }
   .image_mobile {
     width: 50%;
