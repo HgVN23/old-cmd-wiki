@@ -136,9 +136,14 @@ footer {
 .cmd {
   color: #c67d4e;
 }
+.cu_phap {
+  color: #00e9ed;
+}
 .note {
   color: #ff1212;
+  font-size: 12px;
   font-style: italic;
+  vertical-align: super;
 }
 .image {
   width: 30%;

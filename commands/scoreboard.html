@@ -137,41 +137,43 @@
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟/scoreboard objectives add &lt;objective: string&gt; dummy [displayName: string]
+					◟<span class="cu_phap">/scoreboard objectives add &lt;objective: string&gt; dummy [displayName: string]</span>
 					<div class="tab enter p_small">
-						◟objectives là điều chỉnh bảng<br>
-						◟add là tạo<br>
-						◟&lt;objective: string&gt; là id bảng<br>
-						◟dummy là ?<br>
-						◟[displayName: string] là tên bảng<br>
+						◟<span class="cu_phap">objectives</span> là điều chỉnh bảng<br>
+						◟<span class="cu_phap">add</span> là tạo<br>
+						◟<span class="cu_phap">&lt;objective: string&gt;</span> là id bảng<br>
+						◟<span class="cu_phap">dummy</span> <span class="note">(Mình chả biết nó là gì)</span><br>
+						◟<span class="cu_phap">[displayName: string]</span> là tên bảng<br>
 						◟<span class="cmd">/scoreboard objectives add a dummy time</span> — tạo 1 bảng có id là a với tên là time
 					</div>
-					◟/scoreboard objectives list
+					◟<span class="cu_phap">/scoreboard objectives list</span>
 					<div class="tab enter p_small">
-						◟objectives là điều chỉnh bảng<br>
-						◟list là danh sách bảng<br>
+						◟<span class="cu_phap">objectives</span> là điều chỉnh bảng<br>
+						◟<span class="cu_phap">list</span> là danh sách bảng<br>
 						◟<span class="cmd">/scoreboard objectives list</span> — hiện danh sách bảng
 					</div>
-					◟/scoreboard objectives remove &lt;objective: string&gt;
+					◟<span class="cu_phap">/scoreboard objectives remove &lt;objective: string&gt;</span>
 					<div class="tab enter p_small">
-						◟objectives là điều chỉnh bảng<br>
-						◟remove là xóa<br>
-						◟&lt;objective: string&gt; là id bảng<br>
+						◟<span class="cu_phap">objectives</span> là điều chỉnh bảng<br>
+						◟<span class="cu_phap">remove</span> là xóa<br>
+						◟<span class="cu_phap">&lt;objective: string&gt;</span> là id bảng<br>
 						◟<span class="cmd">/scoreboard objectives remove a</span> — xóa bảng id là a
 					</div>
-					◟/scoreboard objectives setdisplay &lt;list|sidebar&gt; [objective: string] [ascending|descending]
+					◟<span class="cu_phap">/scoreboard objectives setdisplay &lt;list|sidebar&gt; [objective: string] [ascending|descending]</span>
 					<div class="tab enter p_small">
-						◟objectives là điều chỉnh bảng<br>
-						◟setdisplay là hiện bảng<br>
-						◟&lt;list|sidebar&gt; là vị trí bảng. Danh sách:
+						◟<span class="cu_phap">objectives</span> là điều chỉnh bảng<br>
+						◟<span class="cu_phap">setdisplay</span> là hiện bảng<br>
+						◟<span class="cu_phap">&lt;list|sidebar&gt;</span> là vị trí bảng. Danh sách:
 						<div class="tab">
-							◟list là hiện bảng trong danh sách Player<br>
-							◟sidebar là hiện bảng bên phải trên HUD
+							◟<span class="cu_phap">list</span> là hiện bảng trong danh sách Player<br>
+							◟<span class="cu_phap">sidebar</span> là hiện bảng bên phải trên HUD
 						</div>
-						◟[objective: string] là id bảng<br>
-						◟[ascending|descending]<br>
-						◟ascending là thứ tự tăng dần<br>
-						◟descending là thứ tự giảm dần<br>
+						◟<span class="cu_phap">[objective: string]</span> là id bảng<br>
+						◟<span class="cu_phap">[ascending|descending]</span>
+						<div class="tab">
+							◟<span class="cu_phap">ascending</span> là thứ tự tăng dần<br>
+							◟<span class="cu_phap">descending</span> là thứ tự giảm dần
+						</div>
 						◟<span class="cmd">/scoreboard objectives setdisplay sidebar a ascending</span> — hiện bảng id a trên HUD với thứ tự tăng dần<br>
 					</div>
 					◟/scoreboard objectives setdisplay belowname [objective: string]
