@@ -146,8 +146,8 @@ footer {
   vertical-align: super;
 }
 .image {
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
 }
 /*Mobile*/
 @media screen and (max-width: 720px) {
@@ -185,10 +185,7 @@ footer {
     font-size: 10px;
   }
   .note {
-    color: #ff1212;
-    font-size: 6px;
-    font-style: italic;
-    vertical-align: super;
+    font-size: 7px;
   }
   .image_mobile {
     width: 50%;
