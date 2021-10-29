@@ -145,10 +145,10 @@ footer {
   font-style: italic;
   vertical-align: super;
 }
-/*.image {
-  width: 40%;
-  height: 40%;
-}*/
+.image {
+  width: 50%;
+  height: 50%;
+}
 /*Mobile*/
 @media screen and (max-width: 720px) {
   header {
@@ -187,8 +187,8 @@ footer {
   .note {
     font-size: 7px;
   }
-/*  .image_mobile {
-    width: 50%;
-    height: 50%;
-  }*/
+  .image_mobile {
+    width: 60%;
+    height: 60%;
+  }
 }
