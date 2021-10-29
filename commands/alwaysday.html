@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="../lib/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>/ability | MCBE Command Wiki VN by Hg</title>
-	<meta property="og:title" content="/ability | MCBE Command Wiki VN by Hg">
-	<meta name="twitter:title" content="/ability | MCBE Command Wiki VN by Hg">
+	<title>/alwaysday | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/alwaysday | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/alwaysday | MCBE Command Wiki VN by Hg">
 
-	<meta name="description" content="Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat">
-	<meta property="og:description" content="Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat">
-	<meta name="twitter:description" content="Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat">
+	<meta name="description" content="Trời sẽ luôn là sáng (tức là thời gian sẽ bị khóa lại tại thời điểm buổi sáng)">
+	<meta property="og:description" content="Trời sẽ luôn là sáng (tức là thời gian sẽ bị khóa lại tại thời điểm buổi sáng)">
+	<meta name="twitter:description" content="Trời sẽ luôn là sáng (tức là thời gian sẽ bị khóa lại tại thời điểm buổi sáng)">
 
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
@@ -45,8 +45,8 @@
 					<div class="row1 h">Commands</div>
 					<div class="row2 p center">
 						<a class="link_text" href="../commands/1help.html" title="Đi đến /?">/?</a><br>
-						<a class="link_text" style="color: yellow;" href="../commands/ability.html" title="Đang ở /ability">/ability</a><br>
-						<a class="link_text" href="../commands/alwaysday.html" title="Đi đến /alwaysday">/alwaysday</a><br>
+						<a class="link_text" href="../commands/ability.html" title="Đi đến /ability">/ability</a><br>
+						<a class="link_text" style="color: yellow;" href="../commands/alwaysday.html" title="Đang ở /alwaysday">/alwaysday</a><br>
 						<a class="link_text" href="../commands/camerashake.html" title="Đi đến /camerashake">/camerashake</a><br>
 						<a class="link_text" href="../commands/clear.html" title="Đi đến /clear">/clear</a><br>
 						<a class="link_text" href="../commands/clearspawnpoint.html" title="Đi đến /clearspawnpoint">/clearspawnpoint</a><br>
@@ -120,60 +120,37 @@
 		</div>
 		<div class="right">
 			<div class="slot">
-				<div class="row1 h" style="margin-bottom: 10px;">/ability</div>
+				<div class="row1 h" style="margin-bottom: 10px;">/alwaysday</div>
 			</div>
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat
+					◟Trời sẽ luôn là sáng (tức là thời gian sẽ bị khóa lại tại thời điểm buổi sáng)
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Bật chế độ EDU<br>
 					◟Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/ability &lt;player: target&gt; &lt;ability: Ability&gt; &lt;value: Boolean&gt;</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
-						◟<span class="cu_phap">&lt;ability: Ability&gt;</span> là khả năng. Danh sách:
-						<div class="tab p_small">
-							◟<span class="cu_phap">worldbuilder</span> là khả năng đặt/phá Block<br>
-							◟<span class="cu_phap">mayfly</span> là khả năng bay<br>
-							◟<span class="cu_phap">mute</span> là khả năng mất Chat
-						</div>
-						◟<span class="cu_phap">&lt;value: Boolean&gt;</span> là phần trạng trái. Danh sách:
+					◟<span class="cu_phap">/alwaysday [lock: Boolean]</span>
+					<div class="tab p_small">
+						◟<span class="cu_phap">[lock: Boolean]</span> là phần trạng trái. Danh sách:
 						<div class="tab">
 							◟<span class="cu_phap">true</span> là bật<br>
 							◟<span class="cu_phap">false</span> là tắt
 						</div>
-						◟<span class="cmd">/ability @a mayfly true</span> — All Player sẽ có khả năng bay
-					</div>
-					◟<span class="cu_phap">/ability &lt;player: target&gt; [ability: Ability]</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
-						◟<span class="cu_phap">[ability: Ability]</span> là khả năng. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">worldbuilder</span> là khả năng đặt/phá Block<br>
-							◟<span class="cu_phap">mayfly</span> là khả năng bay<br>
-							◟<span class="cu_phap">mute</span> là khả năng mất Chat
-						</div>
-						◟<span class="cmd">/ability @a mayfly</span> — All Player sẽ có khả năng bay. Cấu trúc này sẽ bớt phần true nhưng để tắt khả năng đó đi thì cần thêm false cuối Command
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">worldbuilder</span> đang bị lỗi nên không thực hiện được bật/tắt<br>
-					◟Thoát Map và vào lại thì phải dùng lại lệnh đế lấy bật/tắt khả năng lại<br>
-					◟Khi chuyển gamemode sẽ reset lại khả năng<br>
-					◟Thông báo Command hoạt động thành công sẽ không bị <span class="cmd">/gamerule sendcommandfeedback false</span> ẩn
+					◟Để <span class="cu_phap">false</span> thì Do Daylight Cycle sẽ bị bật cho dù trước đó bạn đã tắt
 				</div>
 			</div>
 		</div>

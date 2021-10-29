@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="../lib/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>/ability | MCBE Command Wiki VN by Hg</title>
-	<meta property="og:title" content="/ability | MCBE Command Wiki VN by Hg">
-	<meta name="twitter:title" content="/ability | MCBE Command Wiki VN by Hg">
+	<title>/camerashake | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/camerashake | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/camerashake | MCBE Command Wiki VN by Hg">
 
-	<meta name="description" content="Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat">
-	<meta property="og:description" content="Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat">
-	<meta name="twitter:description" content="Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat">
+	<meta name="description" content="Làm rung lắc màn hình">
+	<meta property="og:description" content="Làm rung lắc màn hình">
+	<meta name="twitter:description" content="Làm rung lắc màn hình">
 
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
@@ -45,9 +45,9 @@
 					<div class="row1 h">Commands</div>
 					<div class="row2 p center">
 						<a class="link_text" href="../commands/1help.html" title="Đi đến /?">/?</a><br>
-						<a class="link_text" style="color: yellow;" href="../commands/ability.html" title="Đang ở /ability">/ability</a><br>
+						<a class="link_text" href="../commands/ability.html" title="Đi đến /ability">/ability</a><br>
 						<a class="link_text" href="../commands/alwaysday.html" title="Đi đến /alwaysday">/alwaysday</a><br>
-						<a class="link_text" href="../commands/camerashake.html" title="Đi đến /camerashake">/camerashake</a><br>
+						<a class="link_text" style="color: yellow;" href="../commands/camerashake.html" title="Đang ở /camerashake">/camerashake</a><br>
 						<a class="link_text" href="../commands/clear.html" title="Đi đến /clear">/clear</a><br>
 						<a class="link_text" href="../commands/clearspawnpoint.html" title="Đi đến /clearspawnpoint">/clearspawnpoint</a><br>
 						<a class="link_text" href="../commands/clone.html" title="Đi đến /clone">/clone</a><br>
@@ -120,60 +120,48 @@
 		</div>
 		<div class="right">
 			<div class="slot">
-				<div class="row1 h" style="margin-bottom: 10px;">/ability</div>
+				<div class="row1 h" style="margin-bottom: 10px;">/camerashake</div>
 			</div>
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat
+					◟Làm rung lắc màn hình
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Bật chế độ EDU<br>
 					◟Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/ability &lt;player: target&gt; &lt;ability: Ability&gt; &lt;value: Boolean&gt;</span>
+					◟<span class="cu_phap">/camerashake add &lt;player: target&gt; [intensity: float] [second: float] [shakeType: CameraShakeType]</span>
 					<div class="tab enter p_small">
 						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
-						◟<span class="cu_phap">&lt;ability: Ability&gt;</span> là khả năng. Danh sách:
-						<div class="tab p_small">
-							◟<span class="cu_phap">worldbuilder</span> là khả năng đặt/phá Block<br>
-							◟<span class="cu_phap">mayfly</span> là khả năng bay<br>
-							◟<span class="cu_phap">mute</span> là khả năng mất Chat
-						</div>
-						◟<span class="cu_phap">&lt;value: Boolean&gt;</span> là phần trạng trái. Danh sách:
+						◟<span class="cu_phap">[intensity: float]</span> là cấp độ rung lắc<br>
+						◟<span class="cu_phap">[second: float]</span> là thời gian rung lắc<br>
+						◟<span class="cu_phap">[shakeType: CameraShakeType]</span> là loại rung lắc. Danh sách:
 						<div class="tab">
-							◟<span class="cu_phap">true</span> là bật<br>
-							◟<span class="cu_phap">false</span> là tắt
+							◟<span class="cu_phap">positional</span> là chuyển động giữ nguyên. Màn hình sẽ chỉ di chuyển sang trái phải trên dưới<br>
+							◟<span class="cu_phap">rotational</span> là chyển động xoay. Màn hình sẽ bị xoay các hướng
 						</div>
-						◟<span class="cmd">/ability @a mayfly true</span> — All Player sẽ có khả năng bay
+						◟<span class="cmd">/camerashake add @a 3 10 positional</span> — All Player sẽ bị rung lắc màn hình trong 10 giây với cấp độ 3 trong trạng thái chuyển động giữ nguyên
 					</div>
-					◟<span class="cu_phap">/ability &lt;player: target&gt; [ability: Ability]</span>
+					◟<span class="cu_phap">/camerashake stop [player: target]</span>
 					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
-						◟<span class="cu_phap">[ability: Ability]</span> là khả năng. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">worldbuilder</span> là khả năng đặt/phá Block<br>
-							◟<span class="cu_phap">mayfly</span> là khả năng bay<br>
-							◟<span class="cu_phap">mute</span> là khả năng mất Chat
-						</div>
-						◟<span class="cmd">/ability @a mayfly</span> — All Player sẽ có khả năng bay. Cấu trúc này sẽ bớt phần true nhưng để tắt khả năng đó đi thì cần thêm false cuối Command
+						◟<span class="cu_phap">stop</span> là dừng<br>
+						◟<span class="cu_phap">[player: target]</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới"><a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a></a> (Player)<br>
+						◟<span class="cmd">/camerashake stop @a</span> — All Player sẽ dừng rung lắc màn hình
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">worldbuilder</span> đang bị lỗi nên không thực hiện được bật/tắt<br>
-					◟Thoát Map và vào lại thì phải dùng lại lệnh đế lấy bật/tắt khả năng lại<br>
-					◟Khi chuyển gamemode sẽ reset lại khả năng<br>
-					◟Thông báo Command hoạt động thành công sẽ không bị <span class="cmd">/gamerule sendcommandfeedback false</span> ẩn
+					◟<span class="cu_phap">[intensity: float]</span> trong giới hạn 0 ≤ x ≤ 4<br>
+					◟Cấp độ rung lắc = 0 thì sẽ không có rung lắc
 				</div>
 			</div>
 		</div>
