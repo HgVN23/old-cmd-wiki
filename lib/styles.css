@@ -153,6 +153,16 @@ footer {
   width: 50%;
   height: 50%;
 }
+.feedback_send {
+  width: 600px;
+  height: 800px;
+  border: none;
+  border-radius: 5px;
+}
+.feedback_view {
+  width: 90%;
+  height: 500px;
+}
 /*Mobile*/
 @media screen and (max-width: 720px) {
   header {
