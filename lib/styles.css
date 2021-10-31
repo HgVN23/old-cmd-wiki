@@ -21,6 +21,7 @@ footer {
   border-top: 4px solid #525252;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  cursor: default ;
   font-size: 20px;
   text-align: center;
 }
@@ -36,6 +37,7 @@ footer {
 }
 /*Thuộc Header*/
 .title {
+  cursor: pointer;
   text-decoration: none;
   font-family: minecraft;
 }
@@ -89,6 +91,7 @@ footer {
   background: url(media/background_h.png) repeat center;
   background-size: contain;
   border-radius: 6px;
+  cursor: default;
   font-size: 40px;
   justify-self: center;
   margin: 10px;
@@ -99,14 +102,16 @@ footer {
   background: url(media/background_h.png) repeat center;
   background-size: contain;
   border-radius: 6px;
+  cursor: default;
   font-size: 40px;
   justify-self: left;
   margin: 10px;
   padding: 5px;
 }
 .p {
+  cursor: default;
   font-size: 20px;
-  padding: 5px;
+  margin: 5px;
 }
 .p_small {
   font-size: 16px;
@@ -139,25 +144,65 @@ footer {
 }
 .cmd {
   color: #c67d4e;
+  cursor: text;
 }
 .cu_phap {
   color: #00e9ed;
+  cursor: crosshair;
 }
 .note {
   color: #ff1212;
   font-size: 12px;
   font-style: italic;
   vertical-align: super;
+  cursor: help;
 }
 .image {
   width: 50%;
   height: 50%;
 }
-.feedback_send {
-  width: 600px;
+/*.feedback_send {
+  width: 60%;
   height: 800px;
   border: 2px solid #525252;
   border-radius: 5px;
+}*/
+.feedback_write {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #525252;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 95%;
+}
+.feedback_select {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #525252;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 95%;
+}
+.feedback_option {
+  background-color: #171717;
+  cursor: pointer;
+}
+.feedback_button {
+  background-color: transparent;
+  border: 2px solid #525252;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 10px;
+}
+.feedback_button:hover {
+  background-color: #1d4ed8;
+}
+.feedback_button:active {
+  background-color: yellow;
 }
 .feedback_view {
   width: 90%;

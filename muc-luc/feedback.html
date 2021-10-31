@@ -50,34 +50,109 @@
 			</div>
 			<div class="slot box"> <!-- Feedback ở đây -->
 				<div class="row1 h_cmd">Feedback ở đây</div>
-				<div class="row2" align="center">
-					<div align="center">
-						<iframe src="https://forms.gle/4TpYnDMgFiP4s5Ty5" class="feedback_send"></iframe>
-					</div>
-					<!-- <form action="https://forms.gle/4TpYnDMgFiP4s5Ty5">
-						<div>
-							<label>Email</label><br>
-							<input type="email" name="emailAddress" required placeholder="Email của bạn" style="color: black;">
+				<div class="row2">
+					<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdfcm0YMHNmi-p19Y8HMLCRToOSZyvL9L_kTzxYA_BO1IEcjg/formResponse">
+						<div class="enter">
+							<label class="p">Email</label><br>
+							<input type="email" required name="emailAddress" placeholder="Email của bạn" class="feedback_write">
 						</div>
-						<div>
-							<label>Bạn muốn Feedback mục lớn nào?</label><br>
-							<select name="entry.341854389" id="option" required style="color: black;">
-								<option style="color: black;" value="select" selected disabled>Chọn 1 cái</option>
-								<option style="color: black;" value="Wiki">Wiki</option>
-								<option style="color: black;" value="Trang chủ">Trang chủ</option>
-								<option style="color: black;" value="Feedback">Feedback</option>
-								<option style="color: black;" value='Target "Mục tiêu"'>Target "Mục tiêu"</option>
-								<option style="color: black;" value="1 số kí hiệu đặc biệt">1 số kí hiệu đặc biệt</option>
-								<option style="color: black;" value="All Command">All Command</option>
-								<option style="color: black;" value="Command Block">Command Block</option>
+						<div class="enter">
+							<label class="p">Chủ đề Feedback</label><br>
+							<select required name="entry.1187536133" class="feedback_select">
+								<option value="" class="feedback_option">Chọn 1 cái trong đây</option>
+								<option class="feedback_option" value="Wiki">Wiki</option>
+								<option class="feedback_option" value="Trang chủ">Trang chủ</option>
+								<option class="feedback_option" value="Feedback">Feedback</option>
+								<option class="feedback_option" value='Target "Mục tiêu"'>Target "Mục tiêu"</option>
+								<option class="feedback_option" value="Kí hiệu">Kí hiệu</option>
+								<option class="feedback_option" value="Commands">Commands</option>
+								<option class="feedback_option" value="Command Block">Command Block</option>
 							</select>
 						</div>
-						<div>
-							<label>Viết Feedback của bạn tại đây</label><br>
-							<textarea name="entry.1563804008" placeholder="Câu trả lời của bạn" style="color: black;"></textarea>
+						<div class="enter">
+							<label class="p">Loại Command <span class="note">(Thay đổi nếu chủ đề là Commands)</span></label><br>
+							<select required name="entry.772878801" class="feedback_select">
+								<option class="feedback_option" value='Không chọn "Commands"'>Không chọn "Commands"</option>
+								<option class="feedback_option" value="/?">/?</option>
+								<option class="feedback_option" value="/ability">/ability</option>
+								<option class="feedback_option" value="/alwaysday">/alwaysday</option>
+								<option class="feedback_option" value="/camerashake">/camerashake</option>
+								<option class="feedback_option" value="/clear">/clear</option>
+								<option class="feedback_option" value="/clearspawnpoint">/clearspawnpoint</option>
+								<option class="feedback_option" value="/clone">/clone</option>
+								<option class="feedback_option" value="/connect">/connect</option>
+								<option class="feedback_option" value="/daylock">/daylock</option>
+								<option class="feedback_option" value="/deop">/deop</option>
+								<option class="feedback_option" value="/dialogue">/dialogue</option>
+								<option class="feedback_option" value="/difficulty">/difficulty</option>
+								<option class="feedback_option" value="/effect">/effect</option>
+								<option class="feedback_option" value="/enchant">/enchant</option>
+								<option class="feedback_option" value="/event">/event</option>
+								<option class="feedback_option" value="/execute">/execute</option>
+								<option class="feedback_option" value="/fill">/fill</option>
+								<option class="feedback_option" value="/fog">/fog</option>
+								<option class="feedback_option" value="/function">/function</option>
+								<option class="feedback_option" value="/gamemode">/gamemode</option>
+								<option class="feedback_option" value="/gamerule">/gamerule</option>
+								<option class="feedback_option" value="/give">/give</option>
+								<option class="feedback_option" value="/help">/help</option>
+								<option class="feedback_option" value="/immutableworld">/immutableworld</option>
+								<option class="feedback_option" value="/kick">/kick</option>
+								<option class="feedback_option" value="/kill">/kill</option>
+								<option class="feedback_option" value="/list">/list</option>
+								<option class="feedback_option" value="/locate">/locate</option>
+								<option class="feedback_option" value="/loot">/loot</option>
+								<option class="feedback_option" value="/me">/me</option>
+								<option class="feedback_option" value="/mobevent">/mobevent</option>
+								<option class="feedback_option" value="/msg">/msg</option>
+								<option class="feedback_option" value="/music">/music</option>
+								<option class="feedback_option" value="/op">/op</option>
+								<option class="feedback_option" value="/particle">/particle</option>
+								<option class="feedback_option" value="/playanimation">/playanimation</option>
+								<option class="feedback_option" value="/playsound">/playsound</option>
+								<option class="feedback_option" value="/reload">/reload</option>
+								<option class="feedback_option" value="/replaceitem">/replaceitem</option>
+								<option class="feedback_option" value="/ride">/ride</option>
+								<option class="feedback_option" value="/say">/say</option>
+								<option class="feedback_option" value="/schedule">/schedule</option>
+								<option class="feedback_option" value="/scoreboard">/scoreboard</option>
+								<option class="feedback_option" value="/setblock">/setblock</option>
+								<option class="feedback_option" value="/setmaxplayers">/setmaxplayers</option>
+								<option class="feedback_option" value="/setworldspawn">/setworldspawn</option>
+								<option class="feedback_option" value="/spawnpoint">/spawnpoint</option>
+								<option class="feedback_option" value="/spreadplayers">/spreadplayers</option>
+								<option class="feedback_option" value="/stopsound">/stopsound</option>
+								<option class="feedback_option" value="/structure">/structure</option>
+								<option class="feedback_option" value="/summon">/summon</option>
+								<option class="feedback_option" value="/tag">/tag</option>
+								<option class="feedback_option" value="/teleport">/teleport</option>
+								<option class="feedback_option" value="/tell">/tell</option>
+								<option class="feedback_option" value="/tellraw">/tellraw</option>
+								<option class="feedback_option" value="/testfor">/testfor</option>
+								<option class="feedback_option" value="/testforblock">/testforblock</option>
+								<option class="feedback_option" value="/testforblocks">/testforblocks</option>
+								<option class="feedback_option" value="/tickingarea">/tickingarea</option>
+								<option class="feedback_option" value="/time">/time</option>
+								<option class="feedback_option" value="/title">/title</option>
+								<option class="feedback_option" value="/titleraw">/titleraw</option>
+								<option class="feedback_option" value="/toggledownfall">/toggledownfall</option>
+								<option class="feedback_option" value="/tp">/tp</option>
+								<option class="feedback_option" value="/w">/w</option>
+								<option class="feedback_option" value="/wb">/wb</option>
+								<option class="feedback_option" value="/weather">/weather</option>
+								<option class="feedback_option" value="/worldbuilder">/worldbuilder</option>
+								<option class="feedback_option" value="/wsserver">/wsserver</option>
+								<option class="feedback_option" value="/xp">/xp</option>
+							</select>
 						</div>
-						<button type="submit" style="color: black;">Submit Form</button>
-					</form> -->
+						<div class="enter">
+							<label class="p">Viết Feedback của bạn tại đây</label><br>
+							<textarea required name="entry.8141042" placeholder="Feedback càng chi tiết càng tốt" class="feedback_write"></textarea>
+						</div>
+						<div>
+							<button type="submit" class="feedback_button enter">Gửi Feedback</button>
+						</div>
+					</form>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Xem các Feedback -->
