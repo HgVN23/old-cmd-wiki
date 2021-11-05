@@ -118,7 +118,7 @@ footer {
 }
 .tab {
   margin-left: 20px;
-/*  border-left: 3px solid #525252;
+  /*border-left: 2px solid #525252;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
   padding: 3px;*/
@@ -222,6 +222,9 @@ footer {
   width: 800px;
   height: 450px;
 }
+.pc {
+  display: none;
+}
 /*Mobile*/
 @media screen and (max-width: 768px) {
   header {
@@ -239,6 +242,9 @@ footer {
   }
   .mobile {
     display: none;
+  }
+  .pc {
+    display: block;
   }
   .center {
     text-align: center;
