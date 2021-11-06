@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="../lib/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>/connect | MCBE Command Wiki VN by Hg</title>
-	<meta property="og:title" content="/connect | MCBE Command Wiki VN by Hg">
-	<meta name="twitter:title" content="/connect | MCBE Command Wiki VN by Hg">
+	<title>/difficulty | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/difficulty | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/difficulty | MCBE Command Wiki VN by Hg">
 
-	<meta name="description" content="...">
-	<meta property="og:description" content="...">
-	<meta name="twitter:description" content="...">
+	<meta name="description" content="Thay đổi cấp độ dễ/khó">
+	<meta property="og:description" content="Thay đổi cấp độ dễ/khó">
+	<meta name="twitter:description" content="Thay đổi cấp độ dễ/khó">
 
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
@@ -52,11 +52,11 @@
 						<a class="link_text" href="../commands/clear.html" title="Đi đến /clear">/clear</a><br>
 						<a class="link_text" href="../commands/clearspawnpoint.html" title="Đi đến /clearspawnpoint">/clearspawnpoint</a><br>
 						<a class="link_text" href="../commands/clone.html" title="Đi đến /clone">/clone</a><br>
-						<a class="link_text" style="color: yellow;" href="../commands/connect.html" title="Đang ở /connect">/connect</a><br>
+						<a class="link_text" href="../commands/connect.html" title="Đi đến /connect">/connect</a><br>
 						<a class="link_text" href="../commands/daylock.html" title="Đi đến /daylock">/daylock</a><br>
 						<a class="link_text" href="../commands/deop.html" title="Đi đến /deop">/deop</a><br>
 						<a class="link_text" href="../commands/dialogue.html" title="Đi đến /dialogue">/dialogue</a><br>
-						<a class="link_text" href="../commands/difficulty.html" title="Đi đến /difficulty">/difficulty</a><br>
+						<a class="link_text" style="color: yellow;" href="../commands/difficulty.html" title="Đang ở /difficulty">/difficulty</a><br>
 						<a class="link_text" href="../commands/effect.html" title="Đi đến /effect">/effect</a><br>
 						<a class="link_text" href="../commands/enchant.html" title="Đi đến /enchant">/enchant</a><br>
 						<a class="link_text" href="../commands/event.html" title="Đi đến /event">/event</a><br>
@@ -121,12 +121,12 @@
 		</div>
 		<div class="right">
 			<div class="slot">
-				<div class="row1 h" style="margin-bottom: 10px;">/connect (WIP)</div>
+				<div class="row1 h" style="margin-bottom: 10px;">/difficulty</div>
 			</div>
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					...
+					◟Thay đổi cấp độ dễ/khó
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
@@ -138,14 +138,42 @@
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					...
+					◟<span class="cu_phap">/difficulty &lt;difficulty: Difficulty&gt;</span>
+					<div class="tab enter p_small">
+						◟<span class="cu_phap">&lt;difficulty: Difficulty&gt;</span> là cấp độ dễ/khó. Danh sách:
+						<div class="tab">
+							◟<span class="cu_phap">peaceful</span> là bình yên<br>
+							◟<span class="cu_phap">easy</span> là dễ<br>
+							◟<span class="cu_phap">normal</span> là bình thường<br>
+							◟<span class="cu_phap">hard</span> là khó
+						</div>
+						◟<span class="cmd">/difficulty easy</span> — sang chế độ dễ
+					</div>
+					◟/<span class="cu_phap">difficulty &lt;difficulty: int&gt;</span>
+					<div class="tab p_small">
+						◟<span class="cu_phap">&lt;difficulty: int&gt;</span> là cấp độ biểu thị bằng số. Danh sách:
+						<div class="tab">
+							◟<span class="cu_phap">0</span> là peaceful<br>
+							◟<span class="cu_phap">1</span> là easy<br>
+							◟<span class="cu_phap">2</span> là normal<br>
+							◟<span class="cu_phap">3</span> là hard
+						</div>
+						◟<span class="cmd">/difficulty 1</span> — sang chế độ dễ
+					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					...
-				</div>
+					◟Các cấp độ có thể được viết tắt:
+					<div class="tab p_small">
+						◟<span class="cu_phap">p</span> là peaceful<br>
+						◟<span class="cu_phap">e</span> là easy<br>
+						◟<span class="cu_phap">n</span> là normal<br>
+						◟<span class="cu_phap">h</span> là hard<br>
+						◟<span class="cmd">/difficulty e</span> — sang chế độ dễ
+					</div>
+				</div>	
 			</div>
 		</div>
 	</div>

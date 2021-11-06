@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="../lib/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>/connect | MCBE Command Wiki VN by Hg</title>
-	<meta property="og:title" content="/connect | MCBE Command Wiki VN by Hg">
-	<meta name="twitter:title" content="/connect | MCBE Command Wiki VN by Hg">
+	<title>/fog | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/fog | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/fog | MCBE Command Wiki VN by Hg">
 
-	<meta name="description" content="...">
-	<meta property="og:description" content="...">
-	<meta name="twitter:description" content="...">
+	<meta name="description" content="Tạo hoặc xóa sương mù cho Player">
+	<meta property="og:description" content="Tạo hoặc xóa sương mù cho Player">
+	<meta name="twitter:description" content="Tạo hoặc xóa sương mù cho Player">
 
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
@@ -52,7 +52,7 @@
 						<a class="link_text" href="../commands/clear.html" title="Đi đến /clear">/clear</a><br>
 						<a class="link_text" href="../commands/clearspawnpoint.html" title="Đi đến /clearspawnpoint">/clearspawnpoint</a><br>
 						<a class="link_text" href="../commands/clone.html" title="Đi đến /clone">/clone</a><br>
-						<a class="link_text" style="color: yellow;" href="../commands/connect.html" title="Đang ở /connect">/connect</a><br>
+						<a class="link_text" href="../commands/connect.html" title="Đi đến /connect">/connect</a><br>
 						<a class="link_text" href="../commands/daylock.html" title="Đi đến /daylock">/daylock</a><br>
 						<a class="link_text" href="../commands/deop.html" title="Đi đến /deop">/deop</a><br>
 						<a class="link_text" href="../commands/dialogue.html" title="Đi đến /dialogue">/dialogue</a><br>
@@ -62,7 +62,7 @@
 						<a class="link_text" href="../commands/event.html" title="Đi đến /event">/event</a><br>
 						<a class="link_text" href="../commands/execute.html" title="Đi đến /execute">/execute</a><br>
 						<a class="link_text" href="../commands/fill.html" title="Đi đến /fill">/fill</a><br>
-						<a class="link_text" href="../commands/fog.html" title="Đi đến /fog">/fog</a><br>
+						<a class="link_text" style="color: yellow;" href="../commands/fog.html" title="Đang ở /fog">/fog</a><br>
 						<a class="link_text" href="../commands/function.html" title="Đi đến /function">/function</a><br>
 						<a class="link_text" href="../commands/gamemode.html" title="Đi đến /gamemode">/gamemode</a><br>
 						<a class="link_text" href="../commands/gamerule.html" title="Đi đến /gamerule">/gamerule</a><br>
@@ -121,12 +121,12 @@
 		</div>
 		<div class="right">
 			<div class="slot">
-				<div class="row1 h" style="margin-bottom: 10px;">/connect (WIP)</div>
+				<div class="row1 h" style="margin-bottom: 10px;">/fog</div>
 			</div>
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					...
+					◟Tạo hoặc xóa sương mù cho Player
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
@@ -138,14 +138,33 @@
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					...
+					◟<span class="cu_phap">/fog &lt;victim: target&gt; push &lt;fogId: string&gt; &lt;userProvideId: string&gt;</span>
+					<div class="tab enter p_small">
+						◟<span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
+						◟<span class="cu_phap">push</span> là đẩy, xuất hiện<br>
+						◟<span class="cu_phap">&lt;fogId: string&gt;</span> là id của Fog. Danh sách &lt;xem tại đây&gt;<br>
+						◟<span class="cu_phap">&lt;userProvideId: string&gt;</span> là set id Fog cho Player<br>
+						◟<span class="cmd">/fog @a push minecraft:fog_soulsand_valley a</span> — All Player sẽ có Fog của Soulsand Valley id là a
+					</div>
+					◟<span class="cu_phap">/fog &lt;victim: target&gt; &lt;mode: delete&gt; &lt;userProvideId: string&gt;</span>
+					<div class="tab p_small">
+						◟<span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
+						◟<span class="cu_phap">&lt;mode: delete&gt;</span> là chế độ xóa. Danh sách:
+						<div class="tab">
+							◟<span class="cu_phap">pop</span> là từ từ tan biến<br>
+							◟<span class="cu_phap">delete</span> là biến mất luôn
+						</div>
+						◟<span class="cu_phap">&lt;userProvideId: string&gt;</span> là set id Fog cho Player<br>
+						◟<span class="cmd">/fog @a pop a</span> — All Player có Fog id là a sẽ từ từ tan biến
+					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					...
-				</div>
+					◟1 Player có thể có nhiều Fog nhưng nó sẽ không hiện cùng lúc. Player này được Set Fog a trước sau đó là b thì cái b sẽ được hiện còn a sẽ bị ẩn<br>
+					◟Fog có thể Set chung id nhưng khi xóa thì sẽ phải xóa nhiều lần. Player có Fog1 là a, Fog2 là a thì khi xóa a sẽ xóa cái Fog2 trước sau đó mới xóa được Fog1
+				</div>	
 			</div>
 		</div>
 	</div>

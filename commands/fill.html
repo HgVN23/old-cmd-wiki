@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="../lib/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>/connect | MCBE Command Wiki VN by Hg</title>
-	<meta property="og:title" content="/connect | MCBE Command Wiki VN by Hg">
-	<meta name="twitter:title" content="/connect | MCBE Command Wiki VN by Hg">
+	<title>/fill | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/fill | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/fill | MCBE Command Wiki VN by Hg">
 
-	<meta name="description" content="...">
-	<meta property="og:description" content="...">
-	<meta name="twitter:description" content="...">
+	<meta name="description" content="Lấp đầy khu vực trong khoảng giới hạn đã xác định">
+	<meta property="og:description" content="Lấp đầy khu vực trong khoảng giới hạn đã xác định">
+	<meta name="twitter:description" content="Lấp đầy khu vực trong khoảng giới hạn đã xác định">
 
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
@@ -52,7 +52,7 @@
 						<a class="link_text" href="../commands/clear.html" title="Đi đến /clear">/clear</a><br>
 						<a class="link_text" href="../commands/clearspawnpoint.html" title="Đi đến /clearspawnpoint">/clearspawnpoint</a><br>
 						<a class="link_text" href="../commands/clone.html" title="Đi đến /clone">/clone</a><br>
-						<a class="link_text" style="color: yellow;" href="../commands/connect.html" title="Đang ở /connect">/connect</a><br>
+						<a class="link_text" href="../commands/connect.html" title="Đi đến /connect">/connect</a><br>
 						<a class="link_text" href="../commands/daylock.html" title="Đi đến /daylock">/daylock</a><br>
 						<a class="link_text" href="../commands/deop.html" title="Đi đến /deop">/deop</a><br>
 						<a class="link_text" href="../commands/dialogue.html" title="Đi đến /dialogue">/dialogue</a><br>
@@ -61,7 +61,7 @@
 						<a class="link_text" href="../commands/enchant.html" title="Đi đến /enchant">/enchant</a><br>
 						<a class="link_text" href="../commands/event.html" title="Đi đến /event">/event</a><br>
 						<a class="link_text" href="../commands/execute.html" title="Đi đến /execute">/execute</a><br>
-						<a class="link_text" href="../commands/fill.html" title="Đi đến /fill">/fill</a><br>
+						<a class="link_text" style="color: yellow;" href="../commands/fill.html" title="Đang ở /fill">/fill</a><br>
 						<a class="link_text" href="../commands/fog.html" title="Đi đến /fog">/fog</a><br>
 						<a class="link_text" href="../commands/function.html" title="Đi đến /function">/function</a><br>
 						<a class="link_text" href="../commands/gamemode.html" title="Đi đến /gamemode">/gamemode</a><br>
@@ -121,12 +121,12 @@
 		</div>
 		<div class="right">
 			<div class="slot">
-				<div class="row1 h" style="margin-bottom: 10px;">/connect (WIP)</div>
+				<div class="row1 h" style="margin-bottom: 10px;">/fill</div>
 			</div>
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					...
+					◟Lấp đầy khu vực trong khoảng giới hạn đã xác định
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
@@ -138,14 +138,72 @@
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					...
+					◟<span class="cu_phap">/fill &lt;from: x y z&gt; &lt;to: x y z&gt; &lt;tileName: Block&gt; &lt;blockStates: block states&gt; replace [replaceTileName: Block] [replaceDataValue: int]</span>
+					<div class="tab enter p_small">
+						◟<span class="cu_phap">&lt;from: x y z&gt;</span> là tọa độ bắt đầu<br>
+						◟<span class="cu_phap">&lt;to: x y z&gt;</span> là tọa độ kết thúc<br>
+						◟<span class="cu_phap">&lt;tileName: Block&gt;</span> là id Block<br>
+						◟<span class="cu_phap">&lt;blockStates: block states&gt;</span> là trạng thái Block. Danh sách &lt;Xem tại đây&gt;<br>
+						◟<span class="cu_phap">replace</span> là thay thế<br>
+						◟<span class="cu_phap">[replaceTileName: Block]</span> là id Block được thay thế<br>
+						◟<span class="cu_phap">[replaceDataValue: int]</span> là dữ liệu Block được thay thế<br>
+						◟<span class="cmd">/fill 1 1 1 2 2 2 wool ["color":14] replace stone 0</span> — từ tọa độ 1 1 1 đến 2 2 2 nếu có Stone dữ liệu 0 thì sẽ bị thay thế thành Wool dữ liệu 14
+					</div>
+					◟<span class="cu_phap">/fill &lt;from: x y z&gt; &lt;to: x y z&gt; &lt;tileName: Block&gt; &lt;tileData: int&gt; replace [replaceTileName: Block] [replaceDataValue: int]</span>
+					<div class="tab enter p_small">
+						◟<span class="cu_phap">&lt;from: x y z&gt;</span> là tọa độ bắt đầu<br>
+						◟<span class="cu_phap">&lt;to: x y z&gt;</span> là tọa độ kết thúc<br>
+						◟<span class="cu_phap">&lt;tileName: Block&gt;</span> là id Block<br>
+						◟<span class="cu_phap">&lt;tileData: int&gt;</span> là dữ liệu Block<br>
+						◟<span class="cu_phap">replace</span> là thay thế<br>
+						◟<span class="cu_phap">[replaceTileName: Block]</span> là id Block được thay thế<br>
+						◟<span class="cu_phap">[replaceDataValue: int]</span> là dữ liệu Block được thay thế<br>
+						◟<span class="cmd">/fill 1 1 1 2 2 2 wool 14 replace stone 0</span> — từ tọa độ 1 1 1 đến 2 2 2 nếu có Stone dữ liệu 0 thì sẽ bị thay thế thành Wool dữ liệu 14
+					</div>
+					◟<span class="cu_phap">/fill &lt;from: x y z&gt; &lt;to: x y z&gt; &lt;tileName: Block&gt; [blockStates: block states] [oldBlockHandling: FillMode]</span>
+					<div class="tab enter p_small">
+						◟<span class="cu_phap">&lt;from: x y z&gt;</span> là tọa độ bắt đầu<br>
+						◟<span class="cu_phap">&lt;to: x y z&gt;</span> là tọa độ kết thúc<br>
+						◟<span class="cu_phap">&lt;tileName: Block&gt;</span> là id Block<br>
+						◟<span class="cu_phap">&lt;blockStates: block states&gt;</span> là trạng thái Block. Danh sách &lt;Xem tại đây&gt;<br>
+						◟<span class="cu_phap">[oldBlockHandling: FillMode]</span> là chế độ lấp đầy. Danh sách:
+						<div class="tab">
+							◟Bỏ qua phần này thì All Block trong khoảng sẽ bị ghi đè<br>
+							◟<span class="cu_phap">destroy</span> là phá hủy Block. Giống với Player đập Block<br>
+							◟<span class="cu_phap">hollow</span> là tạo khung có Air bên trong. Mọi Block bên trong khung sẽ bị ghi đè bằng Air<br>
+							◟<span class="cu_phap">keep</span> là giữ lại Block. Air sẽ bị ghi đè còn các Block khác giữ nguyên<br>
+							◟<span class="cu_phap">outline</span> là tạo khung không có Air bên trong. Mọi Block bên trong khung sẽ được giữ nguyên
+						</div>
+						◟<span class="cmd">/fill 1 1 1 2 2 2 wool ["color":14] outline</span> — All Block ở khung sẽ bị ghi đè bằng Wool, còn các Block khác trong khung sẽ được giữ nguyên
+					</div>
+					◟<span class="cu_phap">/fill &lt;from: x y z&gt; &lt;to: x y z&gt; &lt;tileName: Block&gt; [tileData: int] [oldBlockHandling: FillMode]</span>
+					<div class="tab p_small">
+						◟<span class="cu_phap">&lt;from: x y z&gt;</span> là tọa độ bắt đầu<br>
+						◟<span class="cu_phap">&lt;to: x y z&gt;</span> là tọa độ kết thúc<br>
+						◟<span class="cu_phap">&lt;tileName: Block&gt;</span> là id Block<br>
+						◟<span class="cu_phap">[tileData: int]</span> là dữ liệu Block<br>
+						◟<span class="cu_phap">[oldBlockHandling: FillMode]</span> là chế độ lấp đầy. Danh sách:
+						<div class="tab">
+							◟Bỏ qua phần này thì All Block trong khoảng sẽ bị ghi đè<br>
+							◟<span class="cu_phap">destroy</span> là phá hủy Block. Giống với Player đập Block<br>
+							◟<span class="cu_phap">hollow</span> là tạo khung có Air bên trong. Mọi Block bên trong khung sẽ bị ghi đè bằng Air<br>
+							◟<span class="cu_phap">keep</span> là giữ lại Block. Air sẽ bị ghi đè còn các Block khác giữ nguyên<br>
+							◟<span class="cu_phap">outline</span> là tạo khung không có Air bên trong. Mọi Block bên trong khung sẽ được giữ nguyên
+						</div>
+						◟<span class="cmd">/fill 1 1 1 2 2 2 dirt 0 outline</span> — All Block ở khung sẽ bị ghi đè bằng Dirt, còn các Block khác trong khung sẽ được giữ nguyên
+					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					...
-				</div>
+					◟Giới hạn Block có thể Fill trong 1 lần phải nhỏ hơn 32768 Block<br>
+					◟Không thể Fill nếu tọa độ bắt đầu và tọa độ kết thúc không nằm trong Chunk của Player<br>
+					◟<span class="cu_phap">[replaceDataValue: int]</span> = <span class="cu_phap">-1</span> là mọi loại dữ liệu của Block
+					<div class="tab p_small">
+						◟<span class="cmd">/fill 1 1 1 2 2 2 dirt 0 replace wool -1</span> — từ tọa độ 1 1 1 đến 2 2 2 nếu có Wool bất kì loại nào sẽ bị thay thế thành Dirt dữ liệu 0
+					</div>
+				</div>	
 			</div>
 		</div>
 	</div>

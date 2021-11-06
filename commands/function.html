@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="../lib/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>/connect | MCBE Command Wiki VN by Hg</title>
-	<meta property="og:title" content="/connect | MCBE Command Wiki VN by Hg">
-	<meta name="twitter:title" content="/connect | MCBE Command Wiki VN by Hg">
+	<title>/function | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/function | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/function | MCBE Command Wiki VN by Hg">
 
-	<meta name="description" content="...">
-	<meta property="og:description" content="...">
-	<meta name="twitter:description" content="...">
+	<meta name="description" content="Thực hiện tập hợp Command được ghi trong tệp tin có đuôi .mcfunction">
+	<meta property="og:description" content="Thực hiện tập hợp Command được ghi trong tệp tin có đuôi .mcfunction">
+	<meta name="twitter:description" content="Thực hiện tập hợp Command được ghi trong tệp tin có đuôi .mcfunction">
 
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
@@ -52,7 +52,7 @@
 						<a class="link_text" href="../commands/clear.html" title="Đi đến /clear">/clear</a><br>
 						<a class="link_text" href="../commands/clearspawnpoint.html" title="Đi đến /clearspawnpoint">/clearspawnpoint</a><br>
 						<a class="link_text" href="../commands/clone.html" title="Đi đến /clone">/clone</a><br>
-						<a class="link_text" style="color: yellow;" href="../commands/connect.html" title="Đang ở /connect">/connect</a><br>
+						<a class="link_text" href="../commands/connect.html" title="Đi đến /connect">/connect</a><br>
 						<a class="link_text" href="../commands/daylock.html" title="Đi đến /daylock">/daylock</a><br>
 						<a class="link_text" href="../commands/deop.html" title="Đi đến /deop">/deop</a><br>
 						<a class="link_text" href="../commands/dialogue.html" title="Đi đến /dialogue">/dialogue</a><br>
@@ -63,7 +63,7 @@
 						<a class="link_text" href="../commands/execute.html" title="Đi đến /execute">/execute</a><br>
 						<a class="link_text" href="../commands/fill.html" title="Đi đến /fill">/fill</a><br>
 						<a class="link_text" href="../commands/fog.html" title="Đi đến /fog">/fog</a><br>
-						<a class="link_text" href="../commands/function.html" title="Đi đến /function">/function</a><br>
+						<a class="link_text" style="color: yellow;" href="../commands/function.html" title="Đang ở /function">/function</a><br>
 						<a class="link_text" href="../commands/gamemode.html" title="Đi đến /gamemode">/gamemode</a><br>
 						<a class="link_text" href="../commands/gamerule.html" title="Đi đến /gamerule">/gamerule</a><br>
 						<a class="link_text" href="../commands/give.html" title="Đi đến /give">/give</a><br>
@@ -121,12 +121,12 @@
 		</div>
 		<div class="right">
 			<div class="slot">
-				<div class="row1 h" style="margin-bottom: 10px;">/connect (WIP)</div>
+				<div class="row1 h" style="margin-bottom: 10px;">/function</div>
 			</div>
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					...
+					◟Thực hiện tập hợp Command được ghi trong tệp tin có đuôi .mcfunction
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
@@ -138,14 +138,40 @@
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					...
+					◟<span class="cu_phap">/function &lt;name: filepath&gt;</span>
+					<div class="tab p_small">
+						◟<span class="cu_phap">&lt;name: filepath&gt;</span> là tên tệp tin có đuôi .mcfunction
+					</div>
 				</div>
+			</div>
+			<div class="slot box"> <!-- Hướng dẫn tạo File Function -->
+				<div class="row1 h_cmd">Hướng dẫn tạo File Function</div>
+				<div class="row2 p">
+					◟Trước tiên ấn <a class="link_text" download href="../lib/function.zip">Download</a> để tải Pack mẫu về, sau đó giải nén và chuyển thư mục đó vào behavior_packs<br>
+					◟B1: Mở thư mục function<br>
+					◟B2: Tạo 1 tệp tin với tên bất kì và thêm đuôi .mcfunction
+					<div class="tab p_small">
+						◟Lưu ý: nên ghi bình thường, không viết hoa, không cách (có thể dùng _ thay cho cách)<br>
+						◟Ví dụ: give_stuff.mcfunction
+					</div>
+					◟B3: Mở tệp tin vừa tạo, ghi các Command. Ghi xong 1 Command thì xuống dòng để ghi Command tiếp theo. Sau khi xong nhớ ấn lưu
+				</div>	
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					...
-				</div>
+					◟Nếu có quá nhiều tệp tin Function mà muốn phân biệt dễ dàng thì có thể tạo thư mục mới trong thư mục function để chứa các tệp tin đó
+					<div class="tab p_small">
+						◟Ví dụ: tạo 1 thư mục mới tên abc trong thư mục functions và chuyển give_stuff.mcfunction vào abc thì khi <span class="cu_phap">/function</span> bạn phải ghi:
+						<div class="tab">
+							◟<span class="cmd">/function abc/give_stuff</span>
+						</div>
+					</div>
+					◟Có thể tạo thêm các thư mục khác trong các thư mục và khi <span class="cu_phap">/function</span> chỉ cần ghi:
+					<div class="tab p_small">
+						◟<span class="cmd">/function thu_muc_2/thu_muc_1/ten_tep_tin</span>
+					</div>
+				</div>	
 			</div>
 		</div>
 	</div>

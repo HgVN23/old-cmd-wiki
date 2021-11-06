@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="../lib/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>/connect | MCBE Command Wiki VN by Hg</title>
-	<meta property="og:title" content="/connect | MCBE Command Wiki VN by Hg">
-	<meta name="twitter:title" content="/connect | MCBE Command Wiki VN by Hg">
+	<title>/effect | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/effect | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/effect | MCBE Command Wiki VN by Hg">
 
-	<meta name="description" content="...">
-	<meta property="og:description" content="...">
-	<meta name="twitter:description" content="...">
+	<meta name="description" content="Gây hiệu ứng lên Entity">
+	<meta property="og:description" content="Gây hiệu ứng lên Entity">
+	<meta name="twitter:description" content="Gây hiệu ứng lên Entity">
 
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
@@ -52,12 +52,12 @@
 						<a class="link_text" href="../commands/clear.html" title="Đi đến /clear">/clear</a><br>
 						<a class="link_text" href="../commands/clearspawnpoint.html" title="Đi đến /clearspawnpoint">/clearspawnpoint</a><br>
 						<a class="link_text" href="../commands/clone.html" title="Đi đến /clone">/clone</a><br>
-						<a class="link_text" style="color: yellow;" href="../commands/connect.html" title="Đang ở /connect">/connect</a><br>
+						<a class="link_text" href="../commands/connect.html" title="Đi đến /connect">/connect</a><br>
 						<a class="link_text" href="../commands/daylock.html" title="Đi đến /daylock">/daylock</a><br>
 						<a class="link_text" href="../commands/deop.html" title="Đi đến /deop">/deop</a><br>
 						<a class="link_text" href="../commands/dialogue.html" title="Đi đến /dialogue">/dialogue</a><br>
 						<a class="link_text" href="../commands/difficulty.html" title="Đi đến /difficulty">/difficulty</a><br>
-						<a class="link_text" href="../commands/effect.html" title="Đi đến /effect">/effect</a><br>
+						<a class="link_text" style="color: yellow;" href="../commands/effect.html" title="Đang ở /effect">/effect</a><br>
 						<a class="link_text" href="../commands/enchant.html" title="Đi đến /enchant">/enchant</a><br>
 						<a class="link_text" href="../commands/event.html" title="Đi đến /event">/event</a><br>
 						<a class="link_text" href="../commands/execute.html" title="Đi đến /execute">/execute</a><br>
@@ -121,12 +121,12 @@
 		</div>
 		<div class="right">
 			<div class="slot">
-				<div class="row1 h" style="margin-bottom: 10px;">/connect (WIP)</div>
+				<div class="row1 h" style="margin-bottom: 10px;">/effect</div>
 			</div>
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					...
+					◟Gây hiệu ứng lên Entity
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
@@ -138,14 +138,39 @@
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					...
+					◟<span class="cu_phap">/effect &lt;player: target&gt; &lt;effect: Effect&gt; [seconds: int] [amplifier: int] [hideParticles: Boolean]</span>
+					<div class="tab enter p_small">
+						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Mob)<br>
+						◟<span class="cu_phap">&lt;effect: Effect&gt;</span> là id của hiệu ứng. Danh sách hiện thị khi ghi Command hoặc &lt;Xem tại đây&gt;<br>
+						◟<span class="cu_phap">[seconds: int]</span> là thời gian tồn tại của Effect<br>
+						◟<span class="cu_phap">[amplifier: int]</span> là cấp độ của Effect<br>
+						◟<span class="cu_phap">[hideParticles: Boolean]</span> là ẩn hạt hiệu ứng xung quanh Entity. Danh sách:
+						<div class="tab">
+							◟<span class="cu_phap">true</span> là có<br>
+							◟<span class="cu_phap">false</span> là không
+						</div>
+						◟<span class="cmd">/effect @a haste 10 0 true</span> — All Player có đào nhanh cấp 1 với thời gian 10 giây không có hạt hiệu ứng xung quanh
+					</div>
+					◟<span class="cu_phap">/effect &lt;player: target&gt; clear</span>
+					<div class="tab p_small">
+						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Mob)<br>
+						◟<span class="cu_phap">clear</span> là loại bỏ tất cả Effect<br>
+						◟<span class="cmd">/effect @a clear</span> — All Player mất hết All Effect
+					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					...
-				</div>
+					◟Các cấp độ có thể được viết tắt:
+					<div class="tab p_small">
+						◟<span class="cu_phap">p</span> là peaceful<br>
+						◟<span class="cu_phap">e</span> là easy<br>
+						◟<span class="cu_phap">n</span> là normal<br>
+						◟<span class="cu_phap">h</span> là hard<br>
+						◟<span class="cmd">/difficulty e</span> — sang chế độ dễ
+					</div>
+				</div>	
 			</div>
 		</div>
 	</div>

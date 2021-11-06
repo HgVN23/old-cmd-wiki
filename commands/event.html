@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="../lib/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>/connect | MCBE Command Wiki VN by Hg</title>
-	<meta property="og:title" content="/connect | MCBE Command Wiki VN by Hg">
-	<meta name="twitter:title" content="/connect | MCBE Command Wiki VN by Hg">
+	<title>/event | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/event | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/event | MCBE Command Wiki VN by Hg">
 
-	<meta name="description" content="...">
-	<meta property="og:description" content="...">
-	<meta name="twitter:description" content="...">
+	<meta name="description" content="Kích hoạt Event của Entity">
+	<meta property="og:description" content="Kích hoạt Event của Entity">
+	<meta name="twitter:description" content="Kích hoạt Event của Entity">
 
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
@@ -52,14 +52,14 @@
 						<a class="link_text" href="../commands/clear.html" title="Đi đến /clear">/clear</a><br>
 						<a class="link_text" href="../commands/clearspawnpoint.html" title="Đi đến /clearspawnpoint">/clearspawnpoint</a><br>
 						<a class="link_text" href="../commands/clone.html" title="Đi đến /clone">/clone</a><br>
-						<a class="link_text" style="color: yellow;" href="../commands/connect.html" title="Đang ở /connect">/connect</a><br>
+						<a class="link_text" href="../commands/connect.html" title="Đi đến /connect">/connect</a><br>
 						<a class="link_text" href="../commands/daylock.html" title="Đi đến /daylock">/daylock</a><br>
 						<a class="link_text" href="../commands/deop.html" title="Đi đến /deop">/deop</a><br>
 						<a class="link_text" href="../commands/dialogue.html" title="Đi đến /dialogue">/dialogue</a><br>
 						<a class="link_text" href="../commands/difficulty.html" title="Đi đến /difficulty">/difficulty</a><br>
 						<a class="link_text" href="../commands/effect.html" title="Đi đến /effect">/effect</a><br>
 						<a class="link_text" href="../commands/enchant.html" title="Đi đến /enchant">/enchant</a><br>
-						<a class="link_text" href="../commands/event.html" title="Đi đến /event">/event</a><br>
+						<a class="link_text" style="color: yellow;" href="../commands/event.html" title="Đang ở /event">/event</a><br>
 						<a class="link_text" href="../commands/execute.html" title="Đi đến /execute">/execute</a><br>
 						<a class="link_text" href="../commands/fill.html" title="Đi đến /fill">/fill</a><br>
 						<a class="link_text" href="../commands/fog.html" title="Đi đến /fog">/fog</a><br>
@@ -121,12 +121,12 @@
 		</div>
 		<div class="right">
 			<div class="slot">
-				<div class="row1 h" style="margin-bottom: 10px;">/connect (WIP)</div>
+				<div class="row1 h" style="margin-bottom: 10px;">/event</div>
 			</div>
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					...
+					◟Kích hoạt Event của Entity
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
@@ -138,14 +138,24 @@
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					...
+					◟/event entity &lt;target: target&gt; &lt;eventName: string&gt;
+					<div class="tab p_small">
+						◟<span class="cu_phap">entity</span> là vật thể<br>
+						◟<span class="cu_phap">&lt;target: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+						◟<span class="cu_phap">&lt;eventName: string&gt;</span> là tên sự kiện. Danh sách hiện thị khi ghi Command hoặc &lt;Xem tại đây&gt;<br>
+						◟<span class=" cmd">/event entity @e[type=creeper] minecraft:start_exploding</span> — All Creeper sẽ phát nổ
+					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					...
-				</div>
+					◟Mỗi Entity đều có Event riêng vậy nên không thể dùng với Entity không có Event đó
+					<div class="tab p_small">
+						◟<span class="cmd">/event entity @e[type=pig] minecraft:start_exploding</span> — Command sẽ không hoạt động vì Pig không thể phát nổ
+					</div>
+					◟Event có thể được tạo ra thông qua Behavior của Entity. Nếu bạn thêm Event nổ cho Pig thì Command trên sẽ hoạt động
+				</div>	
 			</div>
 		</div>
 	</div>
