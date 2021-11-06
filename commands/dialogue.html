@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="../lib/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>/clone | MCBE Command Wiki VN by Hg</title>
-	<meta property="og:title" content="/clone | MCBE Command Wiki VN by Hg">
-	<meta name="twitter:title" content="/clone | MCBE Command Wiki VN by Hg">
+	<title>/dialogue | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/dialogue | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/dialogue | MCBE Command Wiki VN by Hg">
 
-	<meta name="description" content="Nhân bản 1 hay nhiều Block tới 1 vị trí">
-	<meta property="og:description" content="Nhân bản 1 hay nhiều Block tới 1 vị trí">
-	<meta name="twitter:description" content="Nhân bản 1 hay nhiều Block tới 1 vị trí">
+	<meta name="description" content="Hiện hoặc thay đổi bảng tương tác của NPC cho Player">
+	<meta property="og:description" content="Hiện hoặc thay đổi bảng tương tác của NPC cho Player">
+	<meta name="twitter:description" content="Hiện hoặc thay đổi bảng tương tác của NPC cho Player">
 
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
@@ -51,11 +51,11 @@
 						<a class="link_text" href="../commands/camerashake.html" title="Đi đến /camerashake">/camerashake</a><br>
 						<a class="link_text" href="../commands/clear.html" title="Đi đến /clear">/clear</a><br>
 						<a class="link_text" href="../commands/clearspawnpoint.html" title="Đi đến /clearspawnpoint">/clearspawnpoint</a><br>
-						<a class="link_text" style="color: yellow;" href="../commands/clone.html" title="Đang ở /clone">/clone</a><br>
+						<a class="link_text" href="../commands/clone.html" title="Đi đến /clone">/clone</a><br>
 						<a class="link_text" href="../commands/connect.html" title="Đi đến /connect">/connect</a><br>
 						<a class="link_text" href="../commands/daylock.html" title="Đi đến /daylock">/daylock</a><br>
 						<a class="link_text" href="../commands/deop.html" title="Đi đến /deop">/deop</a><br>
-						<a class="link_text" href="../commands/dialogue.html" title="Đi đến /dialogue">/dialogue</a><br>
+						<a class="link_text" style="color: yellow;" href="../commands/dialogue.html" title="Đang ở /dialogue">/dialogue</a><br>
 						<a class="link_text" href="../commands/difficulty.html" title="Đi đến /difficulty">/difficulty</a><br>
 						<a class="link_text" href="../commands/effect.html" title="Đi đến /effect">/effect</a><br>
 						<a class="link_text" href="../commands/enchant.html" title="Đi đến /enchant">/enchant</a><br>
@@ -121,12 +121,12 @@
 		</div>
 		<div class="right">
 			<div class="slot">
-				<div class="row1 h" style="margin-bottom: 10px;">/clone</div>
+				<div class="row1 h" style="margin-bottom: 10px;">/dialogue</div>
 			</div>
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Nhân bản 1 hay nhiều Block tới 1 vị trí
+					◟Hiện hoặc thay đổi bảng tương tác của NPC cho Player
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
@@ -138,74 +138,34 @@
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; [maskMode: MaskMode] [cloneMode: CloneMode]</span>
+					◟<span class="cu_phap">/dialogue change &lt;npc: target&gt; &lt;sceneName: string&gt; [players: target]</span>
 					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu nhân bản<br>
-						◟<span class="cu_phap">&lt;end: x y z&gt;</span> là tọa độ kết thúc nhân bản<br>
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ xuất nhân bản ra<br>
-						◟<span class="cu_phap">[maskMode: MaskMode]</span> là lọc Block. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">masked</span> là chọn All Block trừ Air, nhân bản đè vào tọa độ xuất nhân bản
-							<div class="tab">
-								◟Ví dụ hình vuông ABCD có ABC là Block còn D là Air, hình vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng masked thì ở 123 sẽ thay thành ABC còn 4 là Block sẽ vẫn được giữ nguyên
-							</div>
-							◟<span class="cu_phap">replace</span> là chọn All Block, nhân bản đè vào tọa độ xuất nhân
-							<div class="tab">
-								◟Ví dụ hình vuông ABCD có ABC là Block còn D là Air, hình vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng replace thì ở 1234 sẽ thay thành ABCD
-							</div>
-						</div>
-						◟<span class="cu_phap">[cloneMode: CloneMode]</span> là cách xử lí. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">force</span> là trùng nhau vẫn nhân bản (hiện tại mình vẫn chưa hiểu cơ chế của nó, bạn nào hiểu thì Feedback cho mình nha)<br>
-							◟<span class="cu_phap">move</span> là di chuyển All Block được nhân bản tới tọa độ xuất nhân bản<br>
-							◟<span class="cu_phap">normal</span> là bình thường
-						</div>
-						◟<span class="cmd">/clone 0 1 0 1 1 1 2 1 2 masked move</span> — di chuyển khối vuông ABCD
+						◟<span class="cu_phap">change</span> là thay đổi<br>
+						◟<span class="cu_phap">&lt;npc: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (NPC)<br>
+						◟<span class="cu_phap">&lt;sceneName: string&gt;</span> là id bảng NPC tạo trong Addon<br>
+						◟<span class="cu_phap">[player: target]</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
+						◟<span class="cmd">/dialogue change @e[type=npc,tag=a] test1 @a</span> — All Player tương tác với NPC có tag=a sẽ là bảng test1, Player không bị Command đổi thì vẫn là bảng có từ trước của NPC có tag=a
 					</div>
-					◟<span class="cu_phap">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; filtered &lt;cloneMode: CloneMode&gt; &lt;tileName: Block&gt; &lt;blockStates: block states&gt;</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu nhân bản<br>
-						◟<span class="cu_phap">&lt;end: x y z&gt;</span> là tọa độ kết thúc nhân bản<br>
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ xuất nhân bản ra<br>
-						◟<span class="cu_phap">filtered</span> là chọn Block<br>
-						◟<span class="cu_phap">&lt;cloneMode: CloneMode&gt;</span> là cách xử lí. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">force</span> là trùng nhau vẫn nhân bản <span class="note">(hiện tại mình vẫn chưa hiểu cơ chế của nó, bạn nào hiểu thì Feedback cho mình nha)</span><br>
-							◟<span class="cu_phap">move</span> là di chuyển All Block được nhân bản tới tọa độ xuất nhân bản<br>
-							◟<span class="cu_phap">normal</span> là bình thường, không force hay move
-						</div>
-						◟<span class="cu_phap">&lt;tileName: Block&gt;</span> là id Block<br>
-						◟<span class="cu_phap">&lt;blockStates: block states&gt;</span> là trạng thái Block. Danh sách &lt;Xem tại đây&gt;<br>
-						◟<span class="cmd">/clone 0 1 0 1 1 1 2 1 2 filtered normal wool ["color":14]</span> — khối vuông ABCD có AB là Block còn CD là len đỏ, khối vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng filtered thì ở 34 sẽ thay thành CD là len đỏ, 12 vẫn giữ nguyên
-					</div>
-					◟<span class="cu_phap">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; filtered &lt;cloneMode: CloneMode&gt; &lt;tileName: Block&gt; &lt;tileData: int&gt;</span>
-					<div class="tab p_small"> 
-						◟<span class="cu_phap">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu nhân bản<br>
-						◟<span class="cu_phap">&lt;end: x y z&gt;</span> là tọa độ kết thúc nhân bản<br>
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ xuất nhân bản ra<br>
-						◟<span class="cu_phap">filtered</span> là chọn Block<br>
-						◟<span class="cu_phap">&lt;cloneMode: CloneMode&gt;</span> là cách xử lí. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">force</span> là trùng nhau vẫn nhân bản <span class="note">(hiện tại mình vẫn chưa hiểu cơ chế của nó, bạn nào hiểu thì Feedback cho mình nha)</span><br>
-							◟<span class="cu_phap">move</span> là di chuyển All Block được nhân bản tới tọa độ xuất nhân bản<br>
-							◟<span class="cu_phap">normal</span> là bình thường
-						</div>
-						◟<span class="cu_phap">&lt;tileName: Block&gt;</span> là id Block<br>
-						◟<span class="cu_phap">&lt;tileData: int&gt;</span> là data Block<br>
-						◟<span class="cmd">/clone 0 1 0 1 1 1 2 1 2 filtered normal wool 14</span> — khối vuông ABCD có AB là Block còn CD là len đỏ, khối vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng filtered thì ở 34 sẽ thay thành CD là len đỏ, 12 vẫn giữ nguyên
+					◟<span class="cu_phap">/dialogue open &lt;npc: target&gt; &lt;player: target&gt; [sceneName: string]</span>
+					<div class="tab p_small">
+						◟<span class="cu_phap">open</span> là mở<br>
+						◟<span class="cu_phap">&lt;npc: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (NPC)<br>
+						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
+						◟<span class="cu_phap">[sceneName: string]</span> là id bảng NPC tạo trong Addon<br>
+						◟<span class="cmd">/dialogue open @e[type=npc,tag=a] @a test1</span> — All Player sẽ có bảng NPC test1 hiện lên trước mặt
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Nếu bạn muốn nhân bản bình thường thì dùng <span class="cu_phap">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt;</span>, nó sẽ tương ứng với <span class="cu_phap">replace normal</span><br>
-					◟Không thể Clone tới hay Clone đi chỗ khác nếu tọa độ bắt đầu và tọa độ kết thúc hay tọa độ xuất nhân bản không nằm trong Chunk của Player<br>
-					◟Sử dụng lệnh này các bạn cần chú ý tới tọa độ xuất nhân bản <span class="note">(xem video dưới đây để hiểu cách xác định)</span>
+					◟Cần 1 NPC tồn tại trong bán kính 64 Block của Player<br>
+					◟Nếu bỏ qua <span class="cu_phap">[sceneName: string]</span> thì sẽ mở bảng đã có của NPC<br>
+					◟Xem Video này để hiểu rõ hơn về Command cũng như cách tạo bảng NPC bằng Addon
 					<div align="center">
-						<iframe class="video" src="https://www.youtube.com/embed/4Npz-rY1LE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="video" src="https://www.youtube.com/embed/YUxGWfr8z_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-				</div>
+				</div>	
 			</div>
 		</div>
 	</div>
