@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="../lib/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>/playanimation | MCBE Command Wiki VN by Hg</title>
-	<meta property="og:title" content="/playanimation | MCBE Command Wiki VN by Hg">
-	<meta name="twitter:title" content="/playanimation | MCBE Command Wiki VN by Hg">
+	<title>/playsound | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/playsound | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/playsound | MCBE Command Wiki VN by Hg">
 
-	<meta name="description" content="Làm cho Player thực hiện hoạt động">
-	<meta property="og:description" content="Làm cho Player thực hiện hoạt động">
-	<meta name="twitter:description" content="Làm cho Player thực hiện hoạt động">
+	<meta name="description" content="Phát âm thanh cho Player trong 1 giới hạn">
+	<meta property="og:description" content="Phát âm thanh cho Player trong 1 giới hạn">
+	<meta name="twitter:description" content="Phát âm thanh cho Player trong 1 giới hạn">
 
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
@@ -81,8 +81,8 @@
 						<a class="link_text" href="../commands/music.html" title="Đi đến /music">/music</a><br>
 						<a class="link_text" href="../commands/op.html" title="Đi đến /op">/op</a><br>
 						<a class="link_text" href="../commands/particle.html" title="Đi đến /particle">/particle</a><br>
-						<a class="link_text" style="color: yellow;" href="../commands/playanimation.html" title="Đang ở /playanimation">/playanimation</a><br>
-						<a class="link_text" href="../commands/playsound.html" title="Đi đến /playsound">/playsound</a><br>
+						<a class="link_text" href="../commands/playanimation.html" title="Đi đến /playanimation">/playanimation</a><br>
+						<a class="link_text" style="color: yellow;" href="../commands/playsound.html" title="Đang ở /playsound">/playsound</a><br>
 						<a class="link_text" href="../commands/reload.html" title="Đi đến /reload">/reload</a><br>
 						<a class="link_text" href="../commands/replaceitem.html" title="Đi đến /replaceitem">/replaceitem</a><br>
 						<a class="link_text" href="../commands/ride.html" title="Đi đến /ride">/ride</a><br>
@@ -123,12 +123,12 @@
 		</div>
 		<div class="right">
 			<div class="slot">
-				<div class="row1 h" style="margin-bottom: 10px;">/playanimation</div>
+				<div class="row1 h" style="margin-bottom: 10px;">/playsound</div>
 			</div>
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Làm cho Player thực hiện hoạt động
+					◟Phát âm thanh cho Player trong 1 giới hạn
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
@@ -140,23 +140,22 @@
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/playanimation &lt;entity: target&gt; &lt;animation: string&gt; [next_state: string] [blend_out_time: float] [stop_expression: string] [controller: string]</span>
+					<span class="cu_phap">◟/playsound &lt;sound: string&gt; [player: target] [position: x y z] [volume: float] [pitch: float] [minimumVolume: float]</span>
 					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;entity: target&gt;</span> là mục tiêu (Entity)<br>
-						◟<span class="cu_phap">&lt;animation: string&gt;</span> là id Animation. Danh sách &lt;Xem tại đây&gt;<br>
-						◟<span class="cmd">/playanimation @a animation.react_arm_1</span> — All Player sẽ có hoạt động React arm 1<br>
-						◟<span class="cu_phap">[next_state: string]</span> là chạy id Animation tiếp theo khi id Animation đầu hết. Danh sách &lt;Xem tại đây&gt;<br>
-						◟<span class="cu_phap">[blend_out_time: float]</span> là thời gian kết thúc dần hoạt động<br>
-						◟<span class="cu_phap">[stop_expression: string]</span> là điều kiện để dừng hoạt động<br>
-						◟<span class="cu_phap">[controller: string]</span> là điều khiển hoạt động<br>
-						◟<span class="cmd">/playanimation @e[type=fox] sit sleep 0 "!query.is_on_ground"</span> — bắt Fox ngồi xuống cho đến khi chúng rời khỏi mặt đất. Sau khi rời khỏi mặt đất, những con Fox rơi vào trạng thái ngủ
+						◟<span class="cu_phap">&lt;sound: string&gt;</span> là id Sound. Danh sách &lt;Xem tại đây&gt;<br>
+						◟<span class="cu_phap">[player: target]</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
+						◟<span class="cu_phap">[position: x y z]</span> là tọa độ<br>
+						◟<span class="cu_phap">[volume: float]</span> là khoảng cách âm thanh có thể nghe<br>
+						◟<span class="cu_phap">[pitch: float]</span> là cao độ của âm thanh<br>
+						◟<span class="cu_phap">[minimumVolume: float]</span> là âm thanh ngoài khoảng cách<br>
+						◟<span class="cmd">/playsound mob.villager.idle @a</span> — All Player sẽ nghe được âm thanh của Villager
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					...
+					◟Nếu id sound có nhiều âm thanh thì sẽ chơi ngẫu nhiên
 				</div>
 			</div>
 		</div>

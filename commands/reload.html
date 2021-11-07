@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="../lib/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>/playanimation | MCBE Command Wiki VN by Hg</title>
-	<meta property="og:title" content="/playanimation | MCBE Command Wiki VN by Hg">
-	<meta name="twitter:title" content="/playanimation | MCBE Command Wiki VN by Hg">
+	<title>/reload | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/reload | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/reload | MCBE Command Wiki VN by Hg">
 
-	<meta name="description" content="Làm cho Player thực hiện hoạt động">
-	<meta property="og:description" content="Làm cho Player thực hiện hoạt động">
-	<meta name="twitter:description" content="Làm cho Player thực hiện hoạt động">
+	<meta name="description" content="Khởi động lại File Function bị lỗi hoặc mới được chỉnh sửa">
+	<meta property="og:description" content="Khởi động lại File Function bị lỗi hoặc mới được chỉnh sửa">
+	<meta name="twitter:description" content="Khởi động lại File Function bị lỗi hoặc mới được chỉnh sửa">
 
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
@@ -81,9 +81,9 @@
 						<a class="link_text" href="../commands/music.html" title="Đi đến /music">/music</a><br>
 						<a class="link_text" href="../commands/op.html" title="Đi đến /op">/op</a><br>
 						<a class="link_text" href="../commands/particle.html" title="Đi đến /particle">/particle</a><br>
-						<a class="link_text" style="color: yellow;" href="../commands/playanimation.html" title="Đang ở /playanimation">/playanimation</a><br>
+						<a class="link_text" href="../commands/playanimation.html" title="Đi đến /playanimation">/playanimation</a><br>
 						<a class="link_text" href="../commands/playsound.html" title="Đi đến /playsound">/playsound</a><br>
-						<a class="link_text" href="../commands/reload.html" title="Đi đến /reload">/reload</a><br>
+						<a class="link_text" style="color: yellow;" href="../commands/reload.html" title="Đang ở /reload">/reload</a><br>
 						<a class="link_text" href="../commands/replaceitem.html" title="Đi đến /replaceitem">/replaceitem</a><br>
 						<a class="link_text" href="../commands/ride.html" title="Đi đến /ride">/ride</a><br>
 						<a class="link_text" href="../commands/say.html" title="Đi đến /say">/say</a><br>
@@ -123,12 +123,12 @@
 		</div>
 		<div class="right">
 			<div class="slot">
-				<div class="row1 h" style="margin-bottom: 10px;">/playanimation</div>
+				<div class="row1 h" style="margin-bottom: 10px;">/reload</div>
 			</div>
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Làm cho Player thực hiện hoạt động
+					◟Khởi động lại File Function bị lỗi hoặc mới được chỉnh sửa
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
@@ -140,17 +140,7 @@
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/playanimation &lt;entity: target&gt; &lt;animation: string&gt; [next_state: string] [blend_out_time: float] [stop_expression: string] [controller: string]</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;entity: target&gt;</span> là mục tiêu (Entity)<br>
-						◟<span class="cu_phap">&lt;animation: string&gt;</span> là id Animation. Danh sách &lt;Xem tại đây&gt;<br>
-						◟<span class="cmd">/playanimation @a animation.react_arm_1</span> — All Player sẽ có hoạt động React arm 1<br>
-						◟<span class="cu_phap">[next_state: string]</span> là chạy id Animation tiếp theo khi id Animation đầu hết. Danh sách &lt;Xem tại đây&gt;<br>
-						◟<span class="cu_phap">[blend_out_time: float]</span> là thời gian kết thúc dần hoạt động<br>
-						◟<span class="cu_phap">[stop_expression: string]</span> là điều kiện để dừng hoạt động<br>
-						◟<span class="cu_phap">[controller: string]</span> là điều khiển hoạt động<br>
-						◟<span class="cmd">/playanimation @e[type=fox] sit sleep 0 "!query.is_on_ground"</span> — bắt Fox ngồi xuống cho đến khi chúng rời khỏi mặt đất. Sau khi rời khỏi mặt đất, những con Fox rơi vào trạng thái ngủ
-					</div>
+					◟<span class="cu_phap">/reload</span>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
