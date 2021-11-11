@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../lib/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Danh sách [components: json] | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="Danh sách [components: json] | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="Danh sách [components: json] | MCBE Command Wiki VN by Hg">
+
+	<meta name="description" content="Danh sách [components: json]">
+	<meta property="og:description" content="Danh sách [components: json]">
+	<meta name="twitter:description" content="Danh sách [components: json]">
+
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/lib/media/thumbnail.png">
+
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
+</head>
+<body class="background">
+	<header>
+		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
+	</header>
+	<div class="page_display">
+		<div class="left">
+			<div class="slot">
+				<div class="slot row1 box"> <!-- Mục lục -->
+					<div class="row1 h">Mục lục</div>
+					<div class="row2 p center">
+						<a class="link_text" href="../index.html" title="Đi đến Trang chủ">Trang chủ</a><br>
+						<a class="link_text" href="../muc-luc/feedback.html" title="Đi đến Feedback">Feedback</a><br>
+						<a class="link_text" href="../muc-luc/commands.html" title="Đi đến Commands">Commands</a><br>
+						<a class="link_text" style="color: yellow;" href="../muc-luc/danh-sach.html" title="Thuộc mục các danh sách">Các danh sách</a><br>
+						<a class="link_text" href="../muc-luc/command-block.html" title="Đi đến Command Block">Command Block</a>
+					</div>
+				</div>
+				<div class="slot row2 box">
+					<div class="row1 h">Các danh sách</div>
+					<div class="row2 p center">
+						<a class="link_text" href="ki-hieu.html" title="Đi đến kí hiệu">Kí hiệu</a><br>
+						<a class="link_text" href="target.html" title="Đi đến Target">Target</a><br>
+						<a class="link_text" href="blockStates-block-states.html" title="Đi đến <blockStates: block states>">&lt;blockStates: block states&gt;</a><br>
+						<a class="link_text" style="color: yellow;" href="components-json.html" title="Đang ở [components: json]">[components: json]</a><br>
+						<a class="link_text" href="effect-Effect.html" title="Đi đến <effect: Effect>">&lt;effect: Effect&gt;</a><br>
+						<a class="link_text" href="effect-string.html" title="Đi đến <effect: string>">&lt;effect: string&gt;</a><br>
+						<a class="link_text" href="enchantmentId-int.html" title="Đi đến <enchantmentId: int>">&lt;enchantmentId: int&gt;</a><br>
+						<a class="link_text" href="enchantmentName-Enchant.html" title="Đi đến <enchantmentName: Enchant>">&lt;enchantmentName: Enchant&gt;</a><br>
+						<a class="link_text" href="eventName-string.html" title="Đi đến <eventName: string>">&lt;eventName: string&gt;</a><br>
+						<a class="link_text" href="raw-json-message-json.html" title="Đi đến <raw json message: json>">&lt;raw json message: json&gt;</a><br>
+						<a class="link_text" href="rule-BoolGameRule.html" title="Đi đến <rule: BoolGameRule>">&lt;rule: BoolGameRule&gt;</a><br>
+						<a class="link_text" href="trackName-string.html" title="Đi đến <trackName: string>">&lt;trackName: string&gt;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="slot">
+				<div class="row1 h" style="margin-bottom: 10px;">Danh sách [components: json]</div>
+			</div>
+			<div class="slot box">
+				<div class="row1 p">
+					◟<span class="cu_phap">can_place_on</span> là chỉ có thể đặt lên Block
+					<div class="tab enter p_small">
+						◟<span class="cmd">/give @a dirt 1 0 {"minecraft:can_place_on":{"blocks":["grass"]}}</span>
+					</div>
+					◟<span class="cu_phap">can_destroy</span> là chỉ có thể đập Block
+					<div class="tab enter p_small">
+						◟<span class="cmd">/give @a dirt 1 0 {"minecraft:can_destroy":{"blocks":["grass"]}}</span>
+					</div>
+					◟<span class="cu_phap">keep_on_death</span> là khi chết Item vẫn còn trong Inventory
+					<div class="tab enter p_small">
+						◟<span class="cmd">/give @a dirt 1 0 {"keep_on_death": {}}</span>
+					</div>
+					◟<span class="cu_phap">item_lock</span> là khóa Item. Danh sách:
+					<div class="tab p_small">
+						◟<span class="cu_phap">lock_in_inventory</span> là chỉ có thể di chuyển trong Inventoy, không thể Drop hoặc Craft
+						<div class="tab">
+							◟<span class="cmd">/give @a dirt 1 0 {"item_lock": {"mode": "lock_in_inventory"}}</span>
+						</div>
+						◟<span class="cu_phap">lock_in_slot</span> là không thể di chuyển ra khỏi Slot đó, không thể Drop hoặc Craft
+						<div class="tab">
+							◟<span class="cmd">/give @a dirt 1 0 {"item_lock": {"mode": "lock_in_slot"}}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div>
+			<a href="https://www.youtube.com/c/HgVN23" target="_blank" title="Youtube HgVN"><img src="../lib/media/logo_youtube.png" class="social_icon" title="Youtube HgVN"></a>
+			<a href="https://discord.gg/4N3zuWn" target="_blank" title="Discord Server Hg Share"><img src="../lib/media/logo_discord.png" class="social_icon" title="Discord Server Hg Share"></a>
+			<a href="https://twitter.com/HgVN23?s=0" target="_blank" title="Twitter @HgVN23"><img src="../lib/media/logo_twitter.png" class="social_icon" title="Twitter @HgVN23"></a>
+			<a href="https://www.facebook.com/HgVN23" target="_blank" title="Facebook Minh Hoàng"><img src="../lib/media/logo_facebook.png" class="social_icon" title="Facebook Minh Hoàng"></a>
+			<a href="https://omlet.gg/profile/hgvn23" target="_blank" title="Omlet Arcade hgvn23"><img src="../lib/media/logo_oa.png" class="social_icon" title="Omlet Arcade hgvn23"></a>
+		</div>
+		Copyright © 2021 | Wiki by HgVN | Hosted by <a class="link_text" href="https://github.com/" target="_blank" title="Mở trang Github trong Tab mới">Github</a>
+	</footer>
+</body>
+</html>
