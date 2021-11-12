@@ -36,9 +36,8 @@
 					<div class="row2 p center">
 						<a class="link_text" href="../index.html" title="Đi đến Trang chủ">Trang chủ</a><br>
 						<a class="link_text" href="../muc-luc/feedback.html" title="Đi đến Feedback">Feedback</a><br>
-						<a class="link_text" href="../muc-luc/target.html" title="Đi đến Target">Target "Mục tiêu"</a><br>
-						<a class="link_text" href="../muc-luc/ki-hieu.html" title="Đi đến kí hiệu">Kí hiệu</a><br>
-						<a class="link_text" style="color: yellow;" href="../muc-luc/commands.html" title="Thuộc mục Command">Commands</a><br>
+						<a class="link_text" style="color: yellow;" href="../muc-luc/commands.html" title="Thuộc mục Commands">Commands</a><br>
+						<a class="link_text" href="../muc-luc/danh-sach.html" title="Đi đến các danh sách">Các danh sách</a><br>
 						<a class="link_text" href="../muc-luc/command-block.html" title="Đi đến Command Block">Command Block</a>
 					</div>
 				</div>
@@ -196,7 +195,7 @@
 							◟<span class="cu_phap">remove</span> là giảm<br>
 							◟<span class="cu_phap">set</span> là đặt
 						</div>
-						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
 						◟<span class="cu_phap">&lt;objective: string&gt;</span> là id bảng<br>
 						◟<span class="cu_phap">&lt;count:int&gt;</span> là điểm<br>
 						◟<span class="cmd">/scoreboard players set @s a 1</span> — đặt 1 điểm vào bảng id a cho đối tượng dùng Command này
@@ -205,14 +204,14 @@
 					<div class="tab enter p_small">
 						◟<span class="cu_phap">players</span> là điều chỉnh mục tiêu<br>
 						◟<span class="cu_phap">list</span> là danh sách điểm Player có trong bảng<br>
-						◟<span class="cu_phap">[playername: target]</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+						◟<span class="cu_phap">[playername: target]</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
 						◟<span class="cmd">/scoreboard players list @s</span> — hiện điểm của đối tượng dùng Command này
 					</div>
 					◟<span class="cu_phap">/scoreboard players operation &lt;player: target&gt; &lt;targetObjective: string&gt; &lt;operation: operator&gt; &lt;selector: target&gt; &lt;objective: string&gt;</span>
 					<div class="tab enter p_small">
 						◟<span class="cu_phap">players</span> là điều chỉnh mục tiêu<br>
 						◟<span class="cu_phap">operation</span> là hành động<br>
-						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> bị đổi (Entity)<br>
+						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị đổi (Entity)<br>
 						◟<span class="cu_phap">&lt;targetObjective: string&gt;</span> là id bảng bị đổi<br>
 						◟<span class="cu_phap">&lt;operation: operator&gt;</span> là việc hành động. Danh sách:
 						<div class="tab">
@@ -226,7 +225,7 @@
 							◟<span class="cu_phap">&gt;</span> là điểm đối tượng bị đổi = điểm đối tượng không đổi khi điểm đối tượng bị đổi &gt; điểm đối tượng không đổi<br>
 							◟<span class="cu_phap">&gt;&lt;</span> là hoán đổi điểm giữa đối tượng bị đổi với đối tượng không đổi (trường hợp này đối tượng không đổi sẽ bị thay đổi điểm)
 						</div>
-						◟<span class="cu_phap">&lt;selector: target&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> không đổi (Entity)<br>
+						◟<span class="cu_phap">&lt;selector: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> không đổi (Entity)<br>
 						◟<span class="cu_phap">&lt;objective: string&gt;</span> là id bảng không đổi<br>
 						◟<span class="cmd">/scoreboard players operation Hg a += The3T b</span> — Hg đang trong bảng id a có 2 điểm, The3T đang trong bảng id b có 3 điểm, sau khi dùng Command thì điểm của Hg là 5 còn điểm của The3T vẫn giữ nguyên là 3<br>
 						◟<span class="cmd">/scoreboard players operation Hg a = The3T b</span> — Hg đang trong bảng id a có 2 điểm, The3T đang trong bảng id b có 3 điểm, sau khi dùng Command thì điểm của Hg bị đổi thành 3 còn điểm của The3T vẫn giữ nguyên là 3
@@ -235,7 +234,7 @@
 					<div class="tab enter p_small">
 						◟<span class="cu_phap">players</span> là điều chỉnh mục tiêu<br>
 						◟<span class="cu_phap">random</span> cho điểm ngẫu nhiên<br>
-						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
 						◟<span class="cu_phap">&lt;objective: string&gt;</span> là id bảng<br>
 						◟<span class="cu_phap">&lt;min: int&gt;</span> là số nhỏ nhất<br>
 						◟<span class="cu_phap">&lt;max: int&gt;</span> là số lớn nhất<br>
@@ -245,7 +244,7 @@
 					<div class="tab enter p_small">
 						◟<span class="cu_phap">players</span> là điều chỉnh mục tiêu<br>
 						◟<span class="cu_phap">reset</span> là loại<br>
-						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
 						◟<span class="cu_phap">[objective: string]</span> là id bảng<br>
 						◟<span class="cmd">/scoreboard players reset @s a</span> — loại đối tượng dùng Command này ra khỏi bảng a
 					</div>
@@ -253,7 +252,7 @@
 					<div class="tab p_small">
 						◟<span class="cu_phap">players</span> là điều chỉnh mục tiêu<br>
 						◟<span class="cu_phap">test</span> là kiểm tra<br>
-						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../muc-luc/target.html" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+						◟<span class="cu_phap">&lt;player: targets&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
 						◟<span class="cu_phap">&lt;objective: string&gt;</span> là id bảng<br>
 						◟<span class="cu_phap">&lt;min: wildcard int&gt;</span> là số bé nhất<br>
 						◟<span class="cu_phap">&lt;max: wildcard int&gt;</span> là số lớn nhất<br>
