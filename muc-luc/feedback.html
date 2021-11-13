@@ -51,6 +51,9 @@
 				<div class="row1 h_cmd">Feedback ở đây</div>
 				<div class="row2">
 					<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdfcm0YMHNmi-p19Y8HMLCRToOSZyvL9L_kTzxYA_BO1IEcjg/formResponse">
+						<div class="tab enter p_small">
+							Bạn sẽ phản hồi lại những chỗ sai hoặc bổ sung thêm cho trang Wiki của Hg bởi trong quá trình làm Hg sẽ có những sai sót. Mọi phản hồi của bạn đều có thể sẽ rất hữu ích nên đừng ngại nói ra
+						</div>
 						<div class="enter">
 							<label class="p">Email</label><br>
 							<input type="email" required name="emailAddress" placeholder="Email của bạn" class="feedback_write">
@@ -62,9 +65,8 @@
 								<option class="feedback_option" value="Wiki">Wiki</option>
 								<option class="feedback_option" value="Trang chủ">Trang chủ</option>
 								<option class="feedback_option" value="Feedback">Feedback</option>
-								<option class="feedback_option" value='Target "Mục tiêu"'>Target "Mục tiêu"</option>
-								<option class="feedback_option" value="Kí hiệu">Kí hiệu</option>
 								<option class="feedback_option" value="Commands">Commands</option>
+								<option class="feedback_option" value="Các danh sách">Các danh sách</option>
 								<option class="feedback_option" value="Command Block">Command Block</option>
 							</select>
 						</div>
@@ -93,6 +95,7 @@
 								<option class="feedback_option" value="/function">/function</option>
 								<option class="feedback_option" value="/gamemode">/gamemode</option>
 								<option class="feedback_option" value="/gamerule">/gamerule</option>
+								<option class="feedback_option" value="/gametest">/gametest</option>
 								<option class="feedback_option" value="/give">/give</option>
 								<option class="feedback_option" value="/help">/help</option>
 								<option class="feedback_option" value="/immutableworld">/immutableworld</option>
@@ -115,6 +118,7 @@
 								<option class="feedback_option" value="/say">/say</option>
 								<option class="feedback_option" value="/schedule">/schedule</option>
 								<option class="feedback_option" value="/scoreboard">/scoreboard</option>
+								<option class="feedback_option" value="/script">/script</option>
 								<option class="feedback_option" value="/setblock">/setblock</option>
 								<option class="feedback_option" value="/setmaxplayers">/setmaxplayers</option>
 								<option class="feedback_option" value="/setworldspawn">/setworldspawn</option>
@@ -142,6 +146,24 @@
 								<option class="feedback_option" value="/worldbuilder">/worldbuilder</option>
 								<option class="feedback_option" value="/wsserver">/wsserver</option>
 								<option class="feedback_option" value="/xp">/xp</option>
+							</select>
+						</div>
+						<div class="enter">
+							<label class="p">Loại danh sách <span class="note">(Thay đổi nếu chủ đề là Các danh sách)</span></label><br>
+							<select required name="entry.164682058" class="feedback_select">
+								<option class="feedback_option" value='Không chọn "Các danh mục"'>Không chọn "Các danh mục"</option>
+								<option class="feedback_option" value="Kí hiệu">Kí hiệu</option>
+								<option class="feedback_option" value="Target">Target</option>
+								<option class="feedback_option" value="<blockStates: block states>">&lt;blockStates: block states&gt;</option>
+								<option class="feedback_option" value="[components: json]">[components: json]</option>
+								<option class="feedback_option" value="<effect: Effect>">&lt;effect: Effect&gt;</option>
+								<option class="feedback_option" value="<effect: string>">&lt;effect: string&gt;</option>
+								<option class="feedback_option" value="<enchantmentId: int>">&lt;enchantmentId: int&gt;</option>
+								<option class="feedback_option" value="<enchantmentName: Enchant>">&lt;enchantmentName: Enchant&gt;</option>
+								<option class="feedback_option" value="<eventName: string>">&lt;eventName: string&gt;</option>
+								<option class="feedback_option" value="<raw json message: json>">&lt;raw json message: json&gt;</option>
+								<option class="feedback_option" value="<rule: BoolGameRule>">&lt;rule: BoolGameRule&gt;</option>
+								<option class="feedback_option" value="<trackName: string>">&lt;trackName: string&gt;</option>
 							</select>
 						</div>
 						<div class="enter">
