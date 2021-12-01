@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,111 +128,127 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Thay thế Item trong Slot của Enity hoặc Block
+					<span class="first"></span>Thay thế Item trong Slot của Enity hoặc Block
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/replaceitem block &lt;position: x y z&gt; slot.container &lt;slotId: int&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">block</span> là Block có thể chứa Item như Chest hoặc Barrel, ...<br>
-						◟<span class="cu_phap">&lt;position: x y z&gt;</span> là tọa độ<br>
-						◟<span class="cu_phap">slot.container</span> là ô chứa Item trong Block<br>
-						◟<span class="cu_phap">&lt;slotId: int&gt;</span> là Id ô<br>
-						◟<span class="cu_phap">&lt;itemName: Item&gt;</span> là Id Item<br>
-						◟<span class="cmd">/replaceitem block 1 1 1 slot.container 0 diamond</span> — Block ở tọa độ 1 1 1 có Diamond ở ô đầu tiên<br>
-						◟<span class="cu_phap">[amount: int]</span> là số lượng Item<br>
-						◟<span class="cu_phap">[data: int]</span> là Data Item<br>
-						◟<span class="cu_phap">[components: json]</span> là cụm chỉ định. <a class="link_text" href="../danh-sach/components-json.html" target="_blank">Danh sách</a>
+					<div>
+						<span class="drop_icon cu_phap">/replaceitem block &lt;position: x y z&gt; slot.container &lt;slotId: int&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">block</span> là Block có thể chứa Item như Chest hoặc Barrel, ...<br>
+							<span class="first"></span><span class="cu_phap">&lt;position: x y z&gt;</span> là tọa độ<br>
+							<span class="first"></span><span class="cu_phap">slot.container</span> là ô chứa Item trong Block<br>
+							<span class="first"></span><span class="cu_phap">&lt;slotId: int&gt;</span> là Id ô<br>
+							<span class="first"></span><span class="cu_phap">&lt;itemName: Item&gt;</span> là Id Item<br>
+							<span class="first"></span><span class="cmd">/replaceitem block 1 1 1 slot.container 0 diamond</span> — Block ở tọa độ 1 1 1 có Diamond ở ô đầu tiên<br>
+							<span class="first"></span><span class="cu_phap">[amount: int]</span> là số lượng Item<br>
+							<span class="first"></span><span class="cu_phap">[data: int]</span> là Data Item<br>
+							<span class="first"></span><span class="cu_phap">[components: json]</span> là cụm chỉ định. <a class="link_text" href="../danh-sach/components-json.html" target="_blank">Danh sách</a>
+						</div>
 					</div>
-					◟<span class="cu_phap">/replaceitem block &lt;position: x y z&gt; slot.container &lt;slotId: int&gt; &lt;oldItemHandling: ReplaceMode&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">block</span> là Block có thể chứa Item như Chest hoặc Barrel, ...<br>
-						◟<span class="cu_phap">&lt;position: x y z&gt;</span> là tọa độ<br>
-						◟<span class="cu_phap">slot.container</span> là ô chứa Item trong Block<br>
-						◟<span class="cu_phap">&lt;slotId: int&gt;</span> là Id ô<br>
-						◟<span class="cu_phap">&lt;oldItemHandling: ReplaceMode&gt;</span> là chế độ thay thế. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">destroy</span> là thay thế Item đã có trong ô đó<br>
-							◟<span class="cu_phap">keep</span> là giữ nguyên Item trong ô đó
+					<div>
+						<span class="drop_icon cu_phap">/replaceitem block &lt;position: x y z&gt; slot.container &lt;slotId: int&gt; &lt;oldItemHandling: ReplaceMode&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">block</span> là Block có thể chứa Item như Chest hoặc Barrel, ...<br>
+							<span class="first"></span><span class="cu_phap">&lt;position: x y z&gt;</span> là tọa độ<br>
+							<span class="first"></span><span class="cu_phap">slot.container</span> là ô chứa Item trong Block<br>
+							<span class="first"></span><span class="cu_phap">&lt;slotId: int&gt;</span> là Id ô<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">&lt;oldItemHandling: ReplaceMode&gt;</span> là chế độ thay thế. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">destroy</span> là thay thế Item đã có trong ô đó<br>
+									<span class="first"></span><span class="cu_phap">keep</span> là giữ nguyên Item trong ô đó
+								</div>
+							</div>
+							<span class="first"></span><span class="cu_phap">&lt;itemName: Item&gt;</span> là Id Item<br>
+							<span class="first"></span><span class="cmd">/replaceitem block 1 1 1 slot.container 0 destroy diamond</span> — Block ở tọa độ 1 1 1 có Diamond ở ô đầu tiên<br>
+							<span class="first"></span><span class="cu_phap">[amount: int]</span> là số lượng Item<br>
+							<span class="first"></span><span class="cu_phap">[data: int]</span> là Data Item<br>
+							<span class="first"></span><span class="cu_phap">[components: json]</span> là cụm chỉ định. <a class="link_text" href="../danh-sach/components-json.html" target="_blank">Danh sách</a>
 						</div>
-						◟<span class="cu_phap">&lt;itemName: Item&gt;</span> là Id Item<br>
-						◟<span class="cmd">/replaceitem block 1 1 1 slot.container 0 destroy diamond</span> — Block ở tọa độ 1 1 1 có Diamond ở ô đầu tiên<br>
-						◟<span class="cu_phap">[amount: int]</span> là số lượng Item<br>
-						◟<span class="cu_phap">[data: int]</span> là Data Item<br>
-						◟<span class="cu_phap">[components: json]</span> là cụm chỉ định. <a class="link_text" href="../danh-sach/components-json.html" target="_blank">Danh sách</a>
 					</div>
-					◟<span class="cu_phap">/replaceitem entity &lt;target: target&gt; &lt;slotType: EntityEquipmentSlot&gt; &lt;slotId: int&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">entity</span> là vật thể<br>
-						◟<span class="cu_phap">&lt;target: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
-						◟<span class="cu_phap">&lt;slotType: EntityEquipmentSlot&gt;</span> là loại ô của Entity. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">slot.armor</span> — ô giáp cho ngựa và thảm cho lạc đà<br>
-							◟<span class="cu_phap">slot.armor.chest</span> — ô để giáp ngực<br>
-							◟<span class="cu_phap">slot.armor.feet</span> — ô để giáp chân<br>
-							◟<span class="cu_phap">slot.armor.head</span> — ô để giáp đầu<br>
-							◟<span class="cu_phap">slot.armor.legs</span> — ô để giáp chân<br>
-							◟<span class="cu_phap">slot.chest</span> — ô để Chest cho ngựa và lạc đà<br>
-							◟<span class="cu_phap">slot.enderchest</span> — ô kho đồ Ender Chest<br>
-							◟<span class="cu_phap">slot.hotbar</span> — ô công cụ hiện trên màn hình<br>
-							◟<span class="cu_phap">slot.inventory</span> — ô kho đồ<br>
-							◟<span class="cu_phap">slot.saddle</span> — ô để yên cưỡi<br>
-							◟<span class="cu_phap">slot.weapon.mainhand</span> — ô tay phải<br>
-							◟<span class="cu_phap">slot.weapon.offhand</span> — ô tay trái
+					<div>
+						<span class="drop_icon cu_phap">/replaceitem entity &lt;target: target&gt; &lt;slotType: EntityEquipmentSlot&gt; &lt;slotId: int&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">entity</span> là vật thể<br>
+							<span class="first"></span><span class="cu_phap">&lt;target: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">&lt;slotType: EntityEquipmentSlot&gt;</span> là loại ô của Entity. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">slot.armor</span> — ô giáp cho ngựa và thảm cho lạc đà<br>
+									<span class="first"></span><span class="cu_phap">slot.armor.chest</span> — ô để giáp ngực<br>
+									<span class="first"></span><span class="cu_phap">slot.armor.feet</span> — ô để giáp chân<br>
+									<span class="first"></span><span class="cu_phap">slot.armor.head</span> — ô để giáp đầu<br>
+									<span class="first"></span><span class="cu_phap">slot.armor.legs</span> — ô để giáp chân<br>
+									<span class="first"></span><span class="cu_phap">slot.chest</span> — ô để Chest cho ngựa và lạc đà<br>
+									<span class="first"></span><span class="cu_phap">slot.enderchest</span> — ô kho đồ Ender Chest<br>
+									<span class="first"></span><span class="cu_phap">slot.hotbar</span> — ô công cụ hiện trên màn hình<br>
+									<span class="first"></span><span class="cu_phap">slot.inventory</span> — ô kho đồ<br>
+									<span class="first"></span><span class="cu_phap">slot.saddle</span> — ô để yên cưỡi<br>
+									<span class="first"></span><span class="cu_phap">slot.weapon.mainhand</span> — ô tay phải<br>
+									<span class="first"></span><span class="cu_phap">slot.weapon.offhand</span> — ô tay trái
+								</div>
+							</div>
+							<span class="first"></span><span class="cu_phap">&lt;slotId: int&gt;</span> là Id ô<br>
+							<span class="first"></span><span class="cu_phap">&lt;itemName: Item&gt;</span> là Id Item<br>
+							<span class="first"></span><span class="cmd">/replaceitem entity @a slot.armor.chest 0 <br>diamond_chestplate</span> — All Player sẽ có giáp Diamond trong ô chứa giáp ngực<br>
+							<span class="first"></span><span class="cu_phap">[amount: int]</span> là số lượng Item<br>
+							<span class="first"></span><span class="cu_phap">[data: int]</span> là Data Item<br>
+							<span class="first"></span><span class="cu_phap">[components: json]</span> là cụm chỉ định. <a class="link_text" href="../danh-sach/components-json.html" target="_blank">Danh sách</a>
 						</div>
-						◟<span class="cu_phap">&lt;slotId: int&gt;</span> là Id ô<br>
-						◟<span class="cu_phap">&lt;itemName: Item&gt;</span> là Id Item<br>
-						◟<span class="cmd">/replaceitem entity @a slot.armor.chest 0 <br>diamond_chestplate</span> — All Player sẽ có giáp Diamond trong ô chứa giáp ngực<br>
-						◟<span class="cu_phap">[amount: int]</span> là số lượng Item<br>
-						◟<span class="cu_phap">[data: int]</span> là Data Item<br>
-						◟<span class="cu_phap">[components: json]</span> là cụm chỉ định. <a class="link_text" href="../danh-sach/components-json.html" target="_blank">Danh sách</a>
 					</div>
-					◟<span class="cu_phap">/replaceitem entity &lt;target: target&gt; &lt;slotType: EntityEquipmentSlot&gt; &lt;slotId: int&gt; &lt;oldItemHandling: ReplaceMode&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">entity</span> là vật thể<br>
-						◟<span class="cu_phap">&lt;target: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
-						◟<span class="cu_phap">&lt;slotType: EntityEquipmentSlot&gt;</span> là loại ô của Entity. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">slot.armor</span> — ô giáp cho ngựa và thảm cho lạc đà<br>
-							◟<span class="cu_phap">slot.armor.chest</span> — ô để giáp ngực<br>
-							◟<span class="cu_phap">slot.armor.feet</span> — ô để giáp chân<br>
-							◟<span class="cu_phap">slot.armor.head</span> — ô để giáp đầu<br>
-							◟<span class="cu_phap">slot.armor.legs</span> — ô để giáp chân<br>
-							◟<span class="cu_phap">slot.chest</span> — ô để Chest cho ngựa và lạc đà<br>
-							◟<span class="cu_phap">slot.enderchest</span> — ô kho đồ Ender Chest<br>
-							◟<span class="cu_phap">slot.hotbar</span> — ô công cụ hiện trên màn hình<br>
-							◟<span class="cu_phap">slot.inventory</span> — ô kho đồ<br>
-							◟<span class="cu_phap">slot.saddle</span> — ô để yên cưỡi<br>
-							◟<span class="cu_phap">slot.weapon.mainhand</span> — ô tay phải<br>
-							◟<span class="cu_phap">slot.weapon.offhand</span> — ô tay trái
+					<div>
+						<span class="drop_icon cu_phap">/replaceitem entity &lt;target: target&gt; &lt;slotType: EntityEquipmentSlot&gt; &lt;slotId: int&gt; &lt;oldItemHandling: ReplaceMode&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cu_phap">entity</span> là vật thể<br>
+							<span class="first"></span><span class="cu_phap">&lt;target: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">&lt;slotType: EntityEquipmentSlot&gt;</span> là loại ô của Entity. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">slot.armor</span> — ô giáp cho ngựa và thảm cho lạc đà<br>
+									<span class="first"></span><span class="cu_phap">slot.armor.chest</span> — ô để giáp ngực<br>
+									<span class="first"></span><span class="cu_phap">slot.armor.feet</span> — ô để giáp chân<br>
+									<span class="first"></span><span class="cu_phap">slot.armor.head</span> — ô để giáp đầu<br>
+									<span class="first"></span><span class="cu_phap">slot.armor.legs</span> — ô để giáp chân<br>
+									<span class="first"></span><span class="cu_phap">slot.chest</span> — ô để Chest cho ngựa và lạc đà<br>
+									<span class="first"></span><span class="cu_phap">slot.enderchest</span> — ô kho đồ Ender Chest<br>
+									<span class="first"></span><span class="cu_phap">slot.hotbar</span> — ô công cụ hiện trên màn hình<br>
+									<span class="first"></span><span class="cu_phap">slot.inventory</span> — ô kho đồ<br>
+									<span class="first"></span><span class="cu_phap">slot.saddle</span> — ô để yên cưỡi<br>
+									<span class="first"></span><span class="cu_phap">slot.weapon.mainhand</span> — ô tay phải<br>
+									<span class="first"></span><span class="cu_phap">slot.weapon.offhand</span> — ô tay trái
+								</div>
+							</div>
+							<span class="first"></span><span class="cu_phap">&lt;slotId: int&gt;</span> là Id ô<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">&lt;oldItemHandling: ReplaceMode&gt;</span> là chế độ thay thế. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">destroy</span> là thay thế Item đã có trong ô đó<br>
+									<span class="first"></span><span class="cu_phap">keep</span> là giữ nguyên Item trong ô đó
+								</div>
+							</div>
+							<span class="first"></span><span class="cu_phap">&lt;itemName: Item&gt;</span> là Id Item<br>
+							<span class="first"></span><span class="cmd">/replaceitem entity @a slot.weapon.mainhand 0 destroy diamond</span> — All Player đang cầm Item trên tay phải sẽ bị thay thế thành Diamond<br>
+							<span class="first"></span><span class="cu_phap">[amount: int]</span> là số lượng Item<br>
+							<span class="first"></span><span class="cu_phap">[data: int]</span> là Data Item<br>
+							<span class="first"></span><span class="cu_phap">[components: json]</span> là cụm chỉ định. <a class="link_text" href="../danh-sach/components-json.html" target="_blank">Danh sách</a>
 						</div>
-						◟<span class="cu_phap">&lt;slotId: int&gt;</span> là Id ô<br>
-						◟<span class="cu_phap">&lt;oldItemHandling: ReplaceMode&gt;</span> là chế độ thay thế. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">destroy</span> là thay thế Item đã có trong ô đó<br>
-							◟<span class="cu_phap">keep</span> là giữ nguyên Item trong ô đó
-						</div>
-						◟<span class="cu_phap">&lt;itemName: Item&gt;</span> là Id Item<br>
-						◟<span class="cmd">/replaceitem entity @a slot.weapon.mainhand 0 destroy diamond</span> — All Player đang cầm Item trên tay phải sẽ bị thay thế thành Diamond<br>
-						◟<span class="cu_phap">[amount: int]</span> là số lượng Item<br>
-						◟<span class="cu_phap">[data: int]</span> là Data Item<br>
-						◟<span class="cu_phap">[components: json]</span> là cụm chỉ định. <a class="link_text" href="../danh-sach/components-json.html" target="_blank">Danh sách</a>
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟&lt;slotId: int&gt; có tối đa 27 ô (Còn tùy vào Block và Entity có bao nhiêu ô)<br>
-					◟ID ô từ 0 -> 26
+					<span class="first"></span>&lt;slotId: int&gt; có tối đa 27 ô (Còn tùy vào Block và Entity có bao nhiêu ô)<br>
+					<span class="first"></span>ID ô từ 0 -> 26
 				</div>
 			</div>
 		</div>

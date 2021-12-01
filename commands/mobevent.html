@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,40 +128,44 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Điều khiển Event lớn
+					<span class="first"></span>Điều khiển Event lớn
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/mobevent &lt;event: MobEvent&gt; [value: Boolean]</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;event: MobEvent&gt;</span> là id Event lớn. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">events_enabled</span> — Event lớn hoạt động<br>
-							◟<span class="cu_phap">minecraft:ender_dragon_event</span> — Event hồi sinh Ender Dragon<br>
-							◟<span class="cu_phap">minecraft:pillager_patrols_event</span> — Event Raid khi Player có Bad Omen gần Village<br>
-							◟<span class="cu_phap">minecraft:wandering_trader_event</span> — Event Spawn Wandering Trader theo đợt
+					<span class="drop_icon cu_phap">/mobevent &lt;event: MobEvent&gt; [value: Boolean]</span>
+					<div class="drop_hide tab p_small">
+						<div>
+							<span class="drop_icon"><span class="cu_phap">&lt;event: MobEvent&gt;</span> là id Event lớn. Danh sách:</span>
+							<div class="drop_hide tab">
+								<span class="first"></span><span class="cu_phap">events_enabled</span> — Event lớn hoạt động<br>
+								<span class="first"></span><span class="cu_phap">minecraft:ender_dragon_event</span> — Event hồi sinh Ender Dragon<br>
+								<span class="first"></span><span class="cu_phap">minecraft:pillager_patrols_event</span> — Event Raid khi Player có Bad Omen gần Village<br>
+								<span class="first"></span><span class="cu_phap">minecraft:wandering_trader_event</span> — Event Spawn Wandering Trader theo đợt
+							</div>
 						</div>
-						◟<span class="cu_phap">[value: Boolean]</span> là phần trạng trái. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là bật<br>
-							◟<span class="cu_phap">false</span> là tắt
+						<div>
+							<span class="drop_icon"><span class="cu_phap">[value: Boolean]</span> là phần trạng trái. Danh sách:</span>
+							<div class="drop_hide tab">
+								<span class="first"></span><span class="cu_phap">true</span> là bật<br>
+								<span class="first"></span><span class="cu_phap">false</span> là tắt
+							</div>
 						</div>
-						◟<span class="cmd">/mobevent events_enabled false</span> — mọi Event lớn sẽ bị tắt
+						<span class="first"></span><span class="cmd">/mobevent events_enabled false</span> — mọi Event lớn sẽ bị tắt
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Hiện tại <span class="cu_phap">/mobevent</span> bị lỗi vậy nên Comamnd này coi như không hoạt động
+					<span class="first"></span>Hiện tại <span class="cu_phap">/mobevent</span> bị lỗi vậy nên Comamnd này coi như không hoạt động
 				</div>
 			</div>
 		</div>

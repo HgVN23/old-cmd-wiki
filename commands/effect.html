@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,49 +128,56 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Gây hiệu ứng lên Entity
+					<span class="first"></span>Gây hiệu ứng lên Entity
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/effect &lt;player: target&gt; &lt;effect: Effect&gt; [seconds: int] [amplifier: int] [hideParticles: Boolean]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Mob)<br>
-						◟<span class="cu_phap">&lt;effect: Effect&gt;</span> là id của hiệu ứng. Danh sách hiện thị khi ghi Command hoặc &lt;Xem tại đây&gt;<br>
-						◟<span class="cu_phap">[seconds: int]</span> là thời gian tồn tại của Effect<br>
-						◟<span class="cu_phap">[amplifier: int]</span> là cấp độ của Effect<br>
-						◟<span class="cu_phap">[hideParticles: Boolean]</span> là ẩn hạt hiệu ứng xung quanh Entity. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là có<br>
-							◟<span class="cu_phap">false</span> là không
+					<div>
+						<span class="drop_icon cu_phap">/effect &lt;player: target&gt; &lt;effect: Effect&gt; [seconds: int] [amplifier: int] [hideParticles: Boolean]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Mob)<br>
+							<span class="first"></span><span class="cu_phap">&lt;effect: Effect&gt;</span> là id của hiệu ứng. Danh sách hiện thị khi ghi Command hoặc &lt;Xem tại đây&gt;<br>
+							<span class="first"></span><span class="cu_phap">[seconds: int]</span> là thời gian tồn tại của Effect<br>
+							<span class="first"></span><span class="cu_phap">[amplifier: int]</span> là cấp độ của Effect<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[hideParticles: Boolean]</span> là ẩn hạt hiệu ứng xung quanh Entity. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">true</span> là có<br>
+									<span class="first"></span><span class="cu_phap">false</span> là không
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/effect @a haste 10 0 true</span> — All Player có đào nhanh cấp 1 với thời gian 10 giây không có hạt hiệu ứng xung quanh
 						</div>
-						◟<span class="cmd">/effect @a haste 10 0 true</span> — All Player có đào nhanh cấp 1 với thời gian 10 giây không có hạt hiệu ứng xung quanh
 					</div>
-					◟<span class="cu_phap">/effect &lt;player: target&gt; clear</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Mob)<br>
-						◟<span class="cu_phap">clear</span> là loại bỏ tất cả Effect<br>
-						◟<span class="cmd">/effect @a clear</span> — All Player mất hết All Effect
+					<div>
+						<span class="drop_icon cu_phap">/effect &lt;player: target&gt; clear</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Mob)<br>
+							<span class="first"></span><span class="cu_phap">clear</span> là loại bỏ tất cả Effect<br>
+							<span class="first"></span><span class="cmd">/effect @a clear</span> — All Player mất hết All Effect
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Các cấp độ có thể được viết tắt:
-					<div class="tab p_small">
-						◟<span class="cu_phap">p</span> là peaceful<br>
-						◟<span class="cu_phap">e</span> là easy<br>
-						◟<span class="cu_phap">n</span> là normal<br>
-						◟<span class="cu_phap">h</span> là hard<br>
-						◟<span class="cmd">/difficulty e</span> — sang chế độ dễ
+					<span class="first"></span>Nếu bạn chỉ ghi <span class="cu_phap">/effect &lt;player: target&gt; &lt;effect: Effect&gt;</span> thì mặc định thời gian = 30 giây, cấp độ = 1 và hiệu ứng xung quanh Player sẽ hiện<br>
+					<span class="first"></span>Nếu bạn đang có Effect thời gian và cấp độ nhỏ hơn thì sẽ bị Effect cùng loại có thời gian và cấp độ lớn hơn ghi đè<br>
+					<span class="first"></span>Cấp độ bắt đầu từ 0 là level 1, 1 là level 2, ...
+					<div>
+						<span class="drop_icon">Thời gian = 0 thì loại bỏ Effect đó</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cmd">/effect @a haste 0</span> — All Player sẽ bị mất haste, các Effect khác sẽ vẫn tồn tại
+						</div>
 					</div>
 				</div>	
 			</div>

@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="lib/script.js"></script>
 	<header>
 		<a class="title" href="index.html" title="Đang ở trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -34,7 +35,7 @@
 				<div class="slot row1 box"> <!-- Mục lục -->
 					<div class="row1 h">Mục lục</div>
 					<div class="row2 p center">
-						<a class="link_text" style="color: yellow;" href="index.html" title="Đang ở Trang chủ">Trang chủ</a><br>
+						<a class="link_text" href="index.html" title="Đang ở Trang chủ"><span class="here">Trang chủ</span></a><br>
 						<a class="link_text" href="muc-luc/feedback.html" title="Đi đến Feedback">Feedback</a><br>
 						<a class="link_text" href="muc-luc/commands.html" title="Đi đến Commands">Commands</a><br>
 						<a class="link_text" href="muc-luc/danh-sach.html" title="Đi đến các danh sách">Các danh sách</a><br>
@@ -47,26 +48,32 @@
 			<div class="slot box"> <!-- Thông tin về trang Web -->
 				<div class="row1 h">Thông tin về trang Web</div>
 				<div class="row2 p">
-					• Là 1 Website Player For Player về chia sẻ kiến thức xoay quanh Command trong Minecraft Bedrock 1.17.41<br>
-					• Những điều bạn sắp tra cứu dưới đây là kinh nghiệm tìm hiểu của Hg và các Player khác qua việc trải nghiệm của bản thân, học hỏi và 1 phần tra cứu trong <a class="link_text" href="https://minecraft.fandom.com/wiki/Minecraft_Wiki" target="_blank" title="Mở trang Minecraft Wiki trong Tab mới">Minecraft Wiki</a><br>
-					• Hg đã tạo ra Wiki bằng ngôn ngữ lập trình html + css, Host bởi <a class="link_text" href="https://github.com/HgVN23" target="_blank" title="Mở trang Github trong Tab mới">Github</a>
+					<span class="first"></span>Là 1 Website Player For Player về chia sẻ kiến thức xoay quanh Command trong Minecraft Bedrock 1.18.0<br>
+					<span class="first"></span>Những điều bạn sắp tra cứu dưới đây là kinh nghiệm tìm hiểu của Hg và các Player khác qua việc trải nghiệm của bản thân, học hỏi và 1 phần tra cứu trong <a class="link_text" href="https://minecraft.fandom.com/wiki/Minecraft_Wiki" target="_blank" title="Mở trang Minecraft Wiki trong Tab mới">Minecraft Wiki</a><br>
+					<span class="first"></span>Hg đã tạo ra Wiki bằng ngôn ngữ lập trình html + css, Host bởi <a class="link_text" href="https://github.com/HgVN23" target="_blank" title="Mở trang Github trong Tab mới">Github</a>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h">Lưu ý</div>
 				<div class="row2 p">
-					• Bạn không thể Search Wiki này trên công cụ tìm kiếm như Google vì 1 vài lí do gì đó nên hãy lưu lại trang Web bằng "Dấu trang" hoặc "Thêm vào Màn hình chính". Hướng dẫn <a class="link_text" href="https://youtu.be/mHOROfYgkO8" target="_blank"  title="Mở Youtube xem Video hướng dẫn trong Tab mới">Xem tại đây</a>
+					<span class="first"></span>Bạn không thể Search Wiki này trên công cụ tìm kiếm như Google vì 1 vài lí do gì đó nên hãy lưu lại trang Web bằng "Dấu trang" hoặc "Thêm vào Màn hình chính". Hướng dẫn <a class="link_text" href="https://youtu.be/mHOROfYgkO8" target="_blank"  title="Mở Youtube xem Video hướng dẫn trong Tab mới">Xem tại đây</a>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Những điều cần biết trong Wiki -->
 				<div class="row1 h">Những điều cần biết trong Wiki</div>
 				<div class="row2 p">
-					• Chữ <a class="link_text" href="test/link-text.html" title="Chữ màu lam bạn có thể ấn vào để đến trang khác hoặc mở trang trong Tab mới hoặc tải File">màu lam</a> có thể ấn vào để chuyển sang trang khác hoặc mở trang mới hoặc tải File<br>
-					• Chữ <a class="link_text" style="color: yellow;" href="" title="Bạn đang ở trang này">màu vàng</a> là bạn đang ở trang đấy<br>
-					• Chữ <span class="cmd">màu cam</span> là Command<br>
-					• Chữ <span class="cu_phap">màu trời</span> là cú pháp Command hoặc các thành phần của cú pháp Command<br>
-					• Chữ <span class="note">màu đỏ</span> là ghi chú của Hg<br>
-					• Work In Progress (WIP) là đang trong quá trình hoàn thành
+					<span class="first"></span>Chữ <a class="link_text" href="test/link-text.html" title="Chữ màu lam bạn có thể ấn vào để đến trang khác hoặc mở trang trong Tab mới hoặc tải File">màu lam</a> có thể ấn vào để chuyển sang trang khác hoặc mở trang mới hoặc tải File<br>
+					<span class="first"></span>Chữ <a class="link_text" href="" title="Bạn đang ở trang này"><span class="here">màu vàng</span></a> là bạn đang ở trang đấy<br>
+					<span class="first"></span>Chữ <span class="cmd">màu cam</span> là Command<br>
+					<span class="first"></span>Chữ <span class="cu_phap">màu trời</span> là cú pháp Command hoặc các thành phần của cú pháp Command<br>
+					<span class="first"></span>Chữ <span class="note">màu đỏ</span> là ghi chú của Hg<br>
+					<span class="first"></span>Work In Progress (WIP) là đang trong quá trình hoàn thành<br>
+					<div>
+						<span class="drop_icon">Tam giác đỏ là dòng chữ thu gọn có thể ấn, đang ở trạng thái đóng</span>
+						<div class="drop_hide tab">
+							Tam giác xanh là dòng chữ thu gọn có thể ấn, đang ở trạng thái mở
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

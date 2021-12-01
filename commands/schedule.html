@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,57 +128,65 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Thực hiện Function 1 lần khi Chunk được Load qua tầm của Player hoặc qua tickingarea
+					<span class="first"></span>Thực hiện Function 1 lần khi Chunk được Load qua tầm của Player hoặc qua tickingarea
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/schedule on_area_loaded add &lt;from: x y z&gt; &lt;to: x y z&gt; &lt;function: filepath&gt;</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">on_area_loaded</span> là Chunk được Load<br>
-						◟<span class="cu_phap">add</span> là tạo<br>
-						◟<span class="cu_phap">&lt;from: x y z&gt;</span> là tọa độ bắt đầu<br>
-						◟<span class="cu_phap">&lt;to: x y z&gt;</span> là tọa độ kết thúc<br>
-						◟<span class="cu_phap">&lt;function: filepath&gt;</span> là tên tệp tin có đuôi .mcfunction<br>
-						◟<span class="cmd">/schedule on_area_loaded add 0 0 0 10 0 10 test</span> — Function tên test sẽ chạy khi tọa độ 0 0 0 đến 10 0 10 thuộc Chunk (0,0;15,15) trong tầm của Player
+					<div>
+						<span class="drop_icon cu_phap">/schedule on_area_loaded add &lt;from: x y z&gt; &lt;to: x y z&gt; &lt;function: filepath&gt;</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">on_area_loaded</span> là Chunk được Load<br>
+							<span class="first"></span><span class="cu_phap">add</span> là tạo<br>
+							<span class="first"></span><span class="cu_phap">&lt;from: x y z&gt;</span> là tọa độ bắt đầu<br>
+							<span class="first"></span><span class="cu_phap">&lt;to: x y z&gt;</span> là tọa độ kết thúc<br>
+							<span class="first"></span><span class="cu_phap">&lt;function: filepath&gt;</span> là tên tệp tin có đuôi .mcfunction<br>
+							<span class="first"></span><span class="cmd">/schedule on_area_loaded add 0 0 0 10 0 10 test</span> — Function tên test sẽ chạy khi tọa độ 0 0 0 đến 10 0 10 thuộc Chunk (0,0;15,15) trong tầm của Player
+						</div>
 					</div>
-					◟<span class="cu_phap">/schedule on_area_loaded add cirle &lt;center: x y z&gt; &lt;radius: int&gt; &lt;function: filepath&gt;</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">on_area_loaded</span> là Chunk được Load<br>
-						◟<span class="cu_phap">add</span> là tạo<br>
-						◟<span class="cu_phap">circle</span> là hình tròn <span class="note">(nhưng trong Game nó là hình vuông)</span><br>
-						◟<span class="cu_phap">&lt;center: x y z&gt;</span> là tọa độ trung tâm<br>
-						◟<span class="cu_phap">&lt;radius: int&gt;</span> là bán kính<br>
-						◟<span class="cu_phap">&lt;function: filepath&gt;</span> là tên tệp tin có đuôi .mcfunction<br>
-						◟<span class="cmd">/schedule on_area_loaded add circle 0 0 0 2 test</span> — Function tên test sẽ chạy khi có trung tâm tọa độ 0 0 0 thuộc Chunk (0,0;15,15) bán kính 2 Chunk là 5 x 5 Chunk trong tầm của Player
+					<div>
+						<span class="drop_icon cu_phap">/schedule on_area_loaded add cirle &lt;center: x y z&gt; &lt;radius: int&gt; &lt;function: filepath&gt;</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">on_area_loaded</span> là Chunk được Load<br>
+							<span class="first"></span><span class="cu_phap">add</span> là tạo<br>
+							<span class="first"></span><span class="cu_phap">circle</span> là hình tròn <span class="note">(nhưng trong Game nó là hình vuông)</span><br>
+							<span class="first"></span><span class="cu_phap">&lt;center: x y z&gt;</span> là tọa độ trung tâm<br>
+							<span class="first"></span><span class="cu_phap">&lt;radius: int&gt;</span> là bán kính<br>
+							<span class="first"></span><span class="cu_phap">&lt;function: filepath&gt;</span> là tên tệp tin có đuôi .mcfunction<br>
+							<span class="first"></span><span class="cmd">/schedule on_area_loaded add circle 0 0 0 2 test</span> — Function tên test sẽ chạy khi có trung tâm tọa độ 0 0 0 thuộc Chunk (0,0;15,15) bán kính 2 Chunk là 5 x 5 Chunk trong tầm của Player
+						</div>
 					</div>
-					◟<span class="cu_phap">/schedule on_area_loaded add tickingarea &lt;name: string&gt; &lt;function: filepath&gt;</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">on_area_loaded</span> là Chunk được Load<br>
-						◟<span class="cu_phap">add</span> là tạo<br>
-						◟<span class="cu_phap">tickingarea</span> là Load Chunk <span class="note">(chỉ tính x z)</span> khi ngoài tầm nhìn của Player<br>
-						◟<span class="cu_phap">&lt;name: string&gt;</span> là id của tickingarea<br>
-						◟<span class="cu_phap">&lt;function: filepath&gt;</span> là tên tệp tin có đuôi .mcfunction<br>
-						◟<span class="cmd">/schedule on_area_loaded add tickingarea a test</span> — Function tên test sẽ chạy khi tickingarea tên a tồn tại
+					<div>
+						<span class="drop_icon cu_phap">/schedule on_area_loaded add tickingarea &lt;name: string&gt; &lt;function: filepath&gt;</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cu_phap">on_area_loaded</span> là Chunk được Load<br>
+							<span class="first"></span><span class="cu_phap">add</span> là tạo<br>
+							<span class="first"></span><span class="cu_phap">tickingarea</span> là Load Chunk <span class="note">(chỉ tính x z)</span> khi ngoài tầm nhìn của Player<br>
+							<span class="first"></span><span class="cu_phap">&lt;name: string&gt;</span> là id của tickingarea<br>
+							<span class="first"></span><span class="cu_phap">&lt;function: filepath&gt;</span> là tên tệp tin có đuôi .mcfunction<br>
+							<span class="first"></span><span class="cmd">/schedule on_area_loaded add tickingarea a test</span> — Function tên test sẽ chạy khi tickingarea tên a tồn tại
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Command có thể được lưu cộng dồn nếu chưa thực hiện được
-					<div class="tab p_small">
-						◟Ví dụ 1: nếu dùng 3 lần schedule khi Chunk chưa được Load thì sẽ lưu lại schedule đó cho đến khi nào Chunk được Load sẽ chạy 3 lần schedule đó<br>
-						◟Ví dụ 2: nếu dùng 3 lần schedule khi tickingarea chưa tồn tại thì sẽ lưu lại schedule đó cho đến khi nào tickingarea tồn tại sẽ chạy 3 lần schedule đó
+					<div>
+						<span class="drop_icon">Command có thể được lưu cộng dồn nếu chưa thực hiện được</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Ví dụ 1: nếu dùng 3 lần schedule khi Chunk chưa được Load thì sẽ lưu lại schedule đó cho đến khi nào Chunk được Load sẽ chạy 3 lần schedule đó<br>
+							<span class="first"></span>Ví dụ 2: nếu dùng 3 lần schedule khi tickingarea chưa tồn tại thì sẽ lưu lại schedule đó cho đến khi nào tickingarea tồn tại sẽ chạy 3 lần schedule đó
+						</div>
 					</div>
-					◟schedule vẫn lưu kể cả khi thoát Map
+					<span class="first"></span>schedule vẫn lưu kể cả khi thoát Map
 				</div>
 			</div>
 		</div>

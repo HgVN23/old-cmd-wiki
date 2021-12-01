@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,49 +128,61 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Điều chỉnh thời gian
+					<span class="first"></span>Điều chỉnh thời gian
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/time add &lt;amount: int&gt;</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">add</span> là thêm<br>
-						◟<span class="cu_phap">&lt;amount: int&gt;</span> là thời gian
-					</div>
-					◟<span class="cu_phap">/time query &lt;time: TimeQuery&gt;
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">query</span> là cho biết hiện tại<br>
-						◟<span class="cu_phap">&lt;time: TimeQuery&gt;</span> là loại thời gian. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">day</span> là ngày<br>
-							◟<span class="cu_phap">daytime</span> là thời gian trong ngày (tính theo tick)<br>
-							◟<span class="cu_phap">gametime</span> là thời gian Map đã được chơi (tính theo tick)
+					<div>
+						<span class="drop_icon cu_phap">/time add &lt;amount: int&gt;</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">add</span> là thêm<br>
+							<span class="first"></span><span class="cu_phap">&lt;amount: int&gt;</span> là thời gian
 						</div>
 					</div>
-					◟<span class="cu_phap">/time set &lt;amount: int&gt;</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">set</span> là đặt<br>
-						◟<span class="cu_phap">&lt;amount: int&gt;</span> là thời gian
+					<div>
+						<span class="drop_icon cu_phap">/time query &lt;time: TimeQuery&gt;</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">query</span> là cho biết hiện tại<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">&lt;time: TimeQuery&gt;</span> là loại thời gian. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">day</span> là ngày<br>
+									<span class="first"></span><span class="cu_phap">daytime</span> là thời gian trong ngày (tính theo tick)<br>
+									<span class="first"></span><span class="cu_phap">gametime</span> là thời gian Map đã được chơi (tính theo tick)
+								</div>
+							</div>
+						</div>
 					</div>
-					◟<span class="cu_phap">/time set &lt;time: TimeSpec&gt;</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">set</span> là đặt<br>
-						◟<span class="cu_phap">&lt;time: TimeSpec&gt;</span> là loại thời gian. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">day</span> là ngày<br>
-							◟<span class="cu_phap">midnight</span> là đêm<br>
-							◟<span class="cu_phap">night</span> là tối<br>
-							◟<span class="cu_phap">noon</span> là trưa<br>
-							◟<span class="cu_phap">sunrise</span> là bình minh<br>
-							◟<span class="cu_phap">sunset</span> là hoàng hôn
+					<div>
+						<span class="drop_icon cu_phap">/time set &lt;amount: int&gt;</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">set</span> là đặt<br>
+							<span class="first"></span><span class="cu_phap">&lt;amount: int&gt;</span> là thời gian
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">/time set &lt;time: TimeSpec&gt;</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cu_phap">set</span> là đặt<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">&lt;time: TimeSpec&gt;</span> là loại thời gian. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">day</span> là ngày<br>
+									<span class="first"></span><span class="cu_phap">midnight</span> là đêm<br>
+									<span class="first"></span><span class="cu_phap">night</span> là tối<br>
+									<span class="first"></span><span class="cu_phap">noon</span> là trưa<br>
+									<span class="first"></span><span class="cu_phap">sunrise</span> là bình minh<br>
+									<span class="first"></span><span class="cu_phap">sunset</span> là hoàng hôn
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,55 +128,65 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat
+					<span class="first"></span>Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Bật chế độ EDU<br>
-					◟Player có OP
+					<span class="first"></span>Bật chế độ EDU<br>
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/ability &lt;player: target&gt; &lt;ability: Ability&gt; &lt;value: Boolean&gt;</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
-						◟<span class="cu_phap">&lt;ability: Ability&gt;</span> là khả năng. Danh sách:
-						<div class="tab p_small">
-							◟<span class="cu_phap">worldbuilder</span> là khả năng đặt/phá Block<br>
-							◟<span class="cu_phap">mayfly</span> là khả năng bay<br>
-							◟<span class="cu_phap">mute</span> là khả năng mất Chat
+					<div>
+						<span class="drop_icon cu_phap">/ability &lt;player: target&gt; &lt;ability: Ability&gt; &lt;value: Boolean&gt;</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">&lt;ability: Ability&gt;</span> là khả năng. Danh sách:</span>
+								<div class="drop_hide tab p_small">
+									<span class="first"></span><span class="cu_phap">worldbuilder</span> là khả năng đặt/phá Block<br>
+									<span class="first"></span><span class="cu_phap">mayfly</span> là khả năng bay<br>
+									<span class="first"></span><span class="cu_phap">mute</span> là khả năng mất Chat
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">&lt;value: Boolean&gt;</span> là phần trạng trái. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">true</span> là bật<br>
+									<span class="first"></span><span class="cu_phap">false</span> là tắt
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/ability @a mayfly true</span> — All Player sẽ có khả năng bay
 						</div>
-						◟<span class="cu_phap">&lt;value: Boolean&gt;</span> là phần trạng trái. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là bật<br>
-							◟<span class="cu_phap">false</span> là tắt
-						</div>
-						◟<span class="cmd">/ability @a mayfly true</span> — All Player sẽ có khả năng bay
 					</div>
-					◟<span class="cu_phap">/ability &lt;player: target&gt; [ability: Ability]</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
-						◟<span class="cu_phap">[ability: Ability]</span> là khả năng. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">worldbuilder</span> là khả năng đặt/phá Block<br>
-							◟<span class="cu_phap">mayfly</span> là khả năng bay<br>
-							◟<span class="cu_phap">mute</span> là khả năng mất Chat
+					<div>
+						<span class="drop_icon cu_phap">/ability &lt;player: target&gt; [ability: Ability]</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[ability: Ability]</span> là khả năng. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">worldbuilder</span> là khả năng đặt/phá Block<br>
+									<span class="first"></span><span class="cu_phap">mayfly</span> là khả năng bay<br>
+									<span class="first"></span><span class="cu_phap">mute</span> là khả năng mất Chat
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/ability @a mayfly</span> — All Player sẽ có khả năng bay. Cấu trúc này sẽ bớt phần true nhưng để tắt khả năng đó đi thì cần thêm false cuối Command
 						</div>
-						◟<span class="cmd">/ability @a mayfly</span> — All Player sẽ có khả năng bay. Cấu trúc này sẽ bớt phần true nhưng để tắt khả năng đó đi thì cần thêm false cuối Command
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">worldbuilder</span> đang bị lỗi nên không thực hiện được bật/tắt<br>
-					◟Thoát Map và vào lại thì phải dùng lại lệnh đế lấy bật/tắt khả năng lại<br>
-					◟Khi chuyển gamemode sẽ reset lại khả năng<br>
-					◟Thông báo Command hoạt động thành công sẽ không bị <span class="cmd">/gamerule sendcommandfeedback false</span> ẩn
+					<span class="first"></span><span class="cu_phap">worldbuilder</span> đang bị lỗi nên không thực hiện được bật/tắt<br>
+					<span class="first"></span>Thoát Map và vào lại thì phải dùng lại lệnh đế lấy bật/tắt khả năng lại<br>
+					<span class="first"></span>Khi chuyển gamemode sẽ reset lại khả năng<br>
+					<span class="first"></span>Thông báo Command hoạt động thành công sẽ không bị <span class="cmd"><span class="cmd"><a class="link_text" href="gamerule.html">/gamerule</a> sendcommandfeedback false</span> ẩn
 				</div>
 			</div>
 		</div>

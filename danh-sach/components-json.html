@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -67,27 +68,39 @@
 			</div>
 			<div class="slot box">
 				<div class="row1 p">
-					◟<span class="cu_phap">can_place_on</span> là chỉ có thể đặt lên Block
-					<div class="tab enter p_small">
-						◟<span class="cmd">/give @a dirt 1 0 {"minecraft:can_place_on":{"blocks":["grass"]}}</span>
-					</div>
-					◟<span class="cu_phap">can_destroy</span> là chỉ có thể đập Block
-					<div class="tab enter p_small">
-						◟<span class="cmd">/give @a dirt 1 0 {"minecraft:can_destroy":{"blocks":["grass"]}}</span>
-					</div>
-					◟<span class="cu_phap">keep_on_death</span> là khi chết Item vẫn còn trong Inventory
-					<div class="tab enter p_small">
-						◟<span class="cmd">/give @a dirt 1 0 {"keep_on_death": {}}</span>
-					</div>
-					◟<span class="cu_phap">item_lock</span> là khóa Item. Danh sách:
-					<div class="tab p_small">
-						◟<span class="cu_phap">lock_in_inventory</span> là chỉ có thể di chuyển trong Inventoy, không thể Drop hoặc Craft
-						<div class="tab">
-							◟<span class="cmd">/give @a dirt 1 0 {"item_lock": {"mode": "lock_in_inventory"}}</span>
+					<div>
+						<span class="drop_icon"><span class="cu_phap">can_place_on</span> là chỉ có thể đặt lên Block</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cmd">/give @a dirt 1 0 {"minecraft:can_place_on":{"blocks":["grass"]}}</span>
 						</div>
-						◟<span class="cu_phap">lock_in_slot</span> là không thể di chuyển ra khỏi Slot đó, không thể Drop hoặc Craft
-						<div class="tab">
-							◟<span class="cmd">/give @a dirt 1 0 {"item_lock": {"mode": "lock_in_slot"}}</span>
+					</div>
+					<div>
+						<span class="drop_icon"><span class="cu_phap">can_destroy</span> là chỉ có thể đập Block</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cmd">/give @a dirt 1 0 {"minecraft:can_destroy":{"blocks":["grass"]}}</span>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon"><span class="cu_phap">keep_on_death</span> là khi chết Item vẫn còn trong Inventory</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cmd">/give @a dirt 1 0 {"keep_on_death": {}}</span>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon"><span class="cu_phap">item_lock</span> là khóa Item. Danh sách:</span>
+						<div class="drop_hide tab p_small">
+							<div>
+								<span class="drop_icon"><span class="cu_phap">lock_in_inventory</span> là chỉ có thể di chuyển trong Inventoy, không thể Drop hoặc Craft</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cmd">/give @a dirt 1 0 {"item_lock": {"mode": "lock_in_inventory"}}</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">lock_in_slot</span> là không thể di chuyển ra khỏi Slot đó, không thể Drop hoặc Craft</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cmd">/give @a dirt 1 0 {"item_lock": {"mode": "lock_in_slot"}}</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

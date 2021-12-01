@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,52 +128,60 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Thay đổi cấp độ dễ/khó
+					<span class="first"></span>Thay đổi cấp độ dễ/khó
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/difficulty &lt;difficulty: Difficulty&gt;</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;difficulty: Difficulty&gt;</span> là cấp độ dễ/khó. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">peaceful</span> là bình yên<br>
-							◟<span class="cu_phap">easy</span> là dễ<br>
-							◟<span class="cu_phap">normal</span> là bình thường<br>
-							◟<span class="cu_phap">hard</span> là khó
+					<div>
+						<span class="drop_icon cu_phap">/difficulty &lt;difficulty: Difficulty&gt;</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon"><span class="cu_phap">&lt;difficulty: Difficulty&gt;</span> là cấp độ dễ/khó. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">peaceful</span> là bình yên<br>
+									<span class="first"></span><span class="cu_phap">easy</span> là dễ<br>
+									<span class="first"></span><span class="cu_phap">normal</span> là bình thường<br>
+									<span class="first"></span><span class="cu_phap">hard</span> là khó
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/difficulty easy</span> — sang chế độ dễ
 						</div>
-						◟<span class="cmd">/difficulty easy</span> — sang chế độ dễ
 					</div>
-					◟/<span class="cu_phap">difficulty &lt;difficulty: int&gt;</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;difficulty: int&gt;</span> là cấp độ biểu thị bằng số. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">0</span> là peaceful<br>
-							◟<span class="cu_phap">1</span> là easy<br>
-							◟<span class="cu_phap">2</span> là normal<br>
-							◟<span class="cu_phap">3</span> là hard
+					<div>
+						<span class="drop_icon cu_phap">/difficulty &lt;difficulty: int&gt;</span>
+						<div class="drop_hide tab p_small">
+							<div>
+								<span class="drop_icon"><span class="cu_phap">&lt;difficulty: int&gt;</span> là cấp độ biểu thị bằng số. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span> là peaceful<br>
+									<span class="first"></span><span class="cu_phap">1</span> là easy<br>
+									<span class="first"></span><span class="cu_phap">2</span> là normal<br>
+									<span class="first"></span><span class="cu_phap">3</span> là hard
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/difficulty 1</span> — sang chế độ dễ
 						</div>
-						◟<span class="cmd">/difficulty 1</span> — sang chế độ dễ
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Các cấp độ có thể được viết tắt:
-					<div class="tab p_small">
-						◟<span class="cu_phap">p</span> là peaceful<br>
-						◟<span class="cu_phap">e</span> là easy<br>
-						◟<span class="cu_phap">n</span> là normal<br>
-						◟<span class="cu_phap">h</span> là hard<br>
-						◟<span class="cmd">/difficulty e</span> — sang chế độ dễ
+					<span class="drop_icon">Các cấp độ có thể được viết tắt:</span>
+					<div class="drop_hide tab p_small">
+						<span class="first"></span><span class="cu_phap">p</span> là peaceful<br>
+						<span class="first"></span><span class="cu_phap">e</span> là easy<br>
+						<span class="first"></span><span class="cu_phap">n</span> là normal<br>
+						<span class="first"></span><span class="cu_phap">h</span> là hard<br>
+						<span class="first"></span><span class="cmd">/difficulty e</span> — sang chế độ dễ
 					</div>
 				</div>	
 			</div>

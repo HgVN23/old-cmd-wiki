@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,42 +128,46 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Hiện hoặc thay đổi bảng tương tác của NPC cho Player
+					<span class="first"></span>Hiện hoặc thay đổi bảng tương tác của NPC cho Player
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/dialogue change &lt;npc: target&gt; &lt;sceneName: string&gt; [players: target]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">change</span> là thay đổi<br>
-						◟<span class="cu_phap">&lt;npc: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (NPC)<br>
-						◟<span class="cu_phap">&lt;sceneName: string&gt;</span> là id bảng NPC tạo trong Addon<br>
-						◟<span class="cu_phap">[player: target]</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
-						◟<span class="cmd">/dialogue change @e[type=npc,tag=a] test1 @a</span> — All Player tương tác với NPC có tag=a sẽ là bảng test1, Player không bị Command đổi thì vẫn là bảng có từ trước của NPC có tag=a
+					<div>
+						<span class="drop_icon cu_phap">/dialogue change &lt;npc: target&gt; &lt;sceneName: string&gt; [players: target]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">change</span> là thay đổi<br>
+							<span class="first"></span><span class="cu_phap">&lt;npc: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (NPC)<br>
+							<span class="first"></span><span class="cu_phap">&lt;sceneName: string&gt;</span> là id bảng NPC tạo trong Addon<br>
+							<span class="first"></span><span class="cu_phap">[player: target]</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
+							<span class="first"></span><span class="cmd">/dialogue change @e[type=npc,tag=a] test1 @a</span> — All Player tương tác với NPC có tag=a sẽ là bảng test1, Player không bị Command đổi thì vẫn là bảng có từ trước của NPC có tag=a
+						</div>
 					</div>
-					◟<span class="cu_phap">/dialogue open &lt;npc: target&gt; &lt;player: target&gt; [sceneName: string]</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">open</span> là mở<br>
-						◟<span class="cu_phap">&lt;npc: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (NPC)<br>
-						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
-						◟<span class="cu_phap">[sceneName: string]</span> là id bảng NPC tạo trong Addon<br>
-						◟<span class="cmd">/dialogue open @e[type=npc,tag=a] @a test1</span> — All Player sẽ có bảng NPC test1 hiện lên trước mặt
+					<div>
+						<span class="drop_icon cu_phap">/dialogue open &lt;npc: target&gt; &lt;player: target&gt; [sceneName: string]</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cu_phap">open</span> là mở<br>
+							<span class="first"></span><span class="cu_phap">&lt;npc: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (NPC)<br>
+							<span class="first"></span><span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
+							<span class="first"></span><span class="cu_phap">[sceneName: string]</span> là id bảng NPC tạo trong Addon<br>
+							<span class="first"></span><span class="cmd">/dialogue open @e[type=npc,tag=a] @a test1</span> — All Player sẽ có bảng NPC test1 hiện lên trước mặt
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Cần 1 NPC tồn tại trong bán kính 64 Block của Player<br>
-					◟Nếu bỏ qua <span class="cu_phap">[sceneName: string]</span> thì sẽ mở bảng đã có của NPC<br>
-					◟Xem Video này để hiểu rõ hơn về Command cũng như cách tạo bảng NPC bằng Addon
+					<span class="first"></span>Cần 1 NPC tồn tại trong bán kính 64 Block của Player<br>
+					<span class="first"></span>Nếu bỏ qua <span class="cu_phap">[sceneName: string]</span> thì sẽ mở bảng đã có của NPC<br>
+					<span class="first"></span>Xem Video này để hiểu rõ hơn về Command cũng như cách tạo bảng NPC bằng Addon
 					<div align="center">
 						<iframe class="video" src="https://www.youtube.com/embed/YUxGWfr8z_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>

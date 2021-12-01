@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,29 +128,31 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟So sánh khoảng giới hạn Block với khoảng giới hạn khác
+					<span class="first"></span>So sánh khoảng giới hạn Block với khoảng giới hạn khác
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/testforblocks &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; [masked|all]</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu giới hạn<br>
-						◟<span class="cu_phap">&lt;end: x y z&gt;</span> là tọa độ kết thúc giới hạn<br>
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ khoảng giới hạn khác<br>
-						◟<span class="cu_phap">[masked|all]</span> là phương thức so sánh. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">masked</span> là không tính Air nếu khoảng giới hạn đầu có Air<br>
-							◟<span class="cu_phap">all</span> là tính Air nếu nếu khoảng giới hạn đầu có Air
+					<span class="drop_icon cu_phap">/testforblocks &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; [masked|all]</span>
+					<div class="drop_hide tab p_small">
+						<span class="first"></span><span class="cu_phap">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu giới hạn<br>
+						<span class="first"></span><span class="cu_phap">&lt;end: x y z&gt;</span> là tọa độ kết thúc giới hạn<br>
+						<span class="first"></span><span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ khoảng giới hạn khác<br>
+						<div>
+							<span class="drop_icon"><span class="cu_phap">[masked|all]</span> là phương thức so sánh. Danh sách:</span>
+							<div class="drop_hide tab">
+								<span class="first"></span><span class="cu_phap">masked</span> là không tính Air nếu khoảng giới hạn đầu có Air<br>
+								<span class="first"></span><span class="cu_phap">all</span> là tính Air nếu nếu khoảng giới hạn đầu có Air
+							</div>
 						</div>
-						◟<span class="cmd">/testforblocks 1 1 1 2 1 2 3 1 3 all</span> — so sánh khoảng giới hạn từ 1 1 1 đến 2 1 2 gồm cả Air nếu có với khoảng giới hạn từ 3 1 3 đến 4 1 4
+						<span class="first"></span><span class="cmd">/testforblocks 1 1 1 2 1 2 3 1 3 all</span> — so sánh khoảng giới hạn từ 1 1 1 đến 2 1 2 gồm cả Air nếu có với khoảng giới hạn từ 3 1 3 đến 4 1 4
 					</div>
 				</div>
 			</div>

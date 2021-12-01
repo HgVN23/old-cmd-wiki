@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,64 +128,76 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Load Chunk (chỉ tính x z) khi ngoài tầm nhìn của Player
+					<span class="first"></span>Load Chunk (chỉ tính x z) khi ngoài tầm nhìn của Player
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/tickingarea add &lt;from: x y z&gt; &lt;to: x y z&gt; [name: string]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">add</span> là tạo<br>
-						◟<span class="cu_phap">&lt;from: x y z&gt;</span> là tọa độ bắt đầu<br>
-						◟<span class="cu_phap">&lt;to: x y z&gt;</span> là tọa độ kết thúc<br>
-						◟<span class="cu_phap">[name: string]</span> là đặt id cho tickingarea<br>
-						◟<span class="cmd">/tickingarea add 0 0 0 1 1 1 test1</span> — tạo vùng Load Chunk tên test1 chứa tọa độ 0 0 0 đến 1 1 1. Vì tọa độ 0 0 0 và 1 1 1 đều trong Chunk (0,0;15,15) nên sẽ Load 1 Chunk (0,0;15,15)<br>
-						◟<span class="cmd">/tickingarea add 0 0 0 17 17 17 test2</span> — tạo vùng Load Chunk tên test2 chứa tọa độ 0 0 0 đến 17 17 17. Vì tọa độ 0 0 0 trong Chunk (0,0;15,15), tọa độ 17 17 17 trong Chunk (16,16;31,31) nên sẽ Load 4 Chunk gồm Chunk (0,0;15,15), Chunk (0,16;15,31), Chunk (16,0;31,15) và Chunk (16,16;31,31)
+					<div>
+						<span class="drop_icon cu_phap">/tickingarea add &lt;from: x y z&gt; &lt;to: x y z&gt; [name: string]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">add</span> là tạo<br>
+							<span class="first"></span><span class="cu_phap">&lt;from: x y z&gt;</span> là tọa độ bắt đầu<br>
+							<span class="first"></span><span class="cu_phap">&lt;to: x y z&gt;</span> là tọa độ kết thúc<br>
+							<span class="first"></span><span class="cu_phap">[name: string]</span> là đặt id cho tickingarea<br>
+							<span class="first"></span><span class="cmd">/tickingarea add 0 0 0 1 1 1 test1</span> — tạo vùng Load Chunk tên test1 chứa tọa độ 0 0 0 đến 1 1 1. Vì tọa độ 0 0 0 và 1 1 1 đều trong Chunk (0,0;15,15) nên sẽ Load 1 Chunk (0,0;15,15)<br>
+							<span class="first"></span><span class="cmd">/tickingarea add 0 0 0 17 17 17 test2</span> — tạo vùng Load Chunk tên test2 chứa tọa độ 0 0 0 đến 17 17 17. Vì tọa độ 0 0 0 trong Chunk (0,0;15,15), tọa độ 17 17 17 trong Chunk (16,16;31,31) nên sẽ Load 4 Chunk gồm Chunk (0,0;15,15), Chunk (0,16;15,31), Chunk (16,0;31,15) và Chunk (16,16;31,31)
+						</div>
 					</div>
-					◟<span class="cu_phap">/tickingarea add circle &lt;center: x y z&gt; &lt;radius: int&gt; [name:string]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">add</span> là tạo<br>
-						◟<span class="cu_phap">circle</span> là hình tròn <span class="note">(nhưng trong Game nó là hình vuông)</span><br>
-						◟<span class="cu_phap">&lt;center: x y z&gt;</span> là tọa độ trung tâm<br>
-						◟<span class="cu_phap">&lt;radius: int&gt;</span> là bán kính<br>
-						◟<span class="cu_phap">[name: string]</span> là đặt id cho tickingarea<br>
-						◟<span class="cmd">/tickingarea add circle 0 0 0 2 test3</span> — tạo vùng Load Chunk vuông tên test3 trung tâm là Chunk (0,0;15,15) vì có chứa 0 0 0 với bán kính là 2 Chunk. Tức là sẽ Load 25 Chunk với kích thước 5 x 5 Chunk
+					<div>
+						<span class="drop_icon cu_phap">/tickingarea add circle &lt;center: x y z&gt; &lt;radius: int&gt; [name:string]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">add</span> là tạo<br>
+							<span class="first"></span><span class="cu_phap">circle</span> là hình tròn <span class="note">(nhưng trong Game nó là hình vuông)</span><br>
+							<span class="first"></span><span class="cu_phap">&lt;center: x y z&gt;</span> là tọa độ trung tâm<br>
+							<span class="first"></span><span class="cu_phap">&lt;radius: int&gt;</span> là bán kính<br>
+							<span class="first"></span><span class="cu_phap">[name: string]</span> là đặt id cho tickingarea<br>
+							<span class="first"></span><span class="cmd">/tickingarea add circle 0 0 0 2 test3</span> — tạo vùng Load Chunk vuông tên test3 trung tâm là Chunk (0,0;15,15) vì có chứa 0 0 0 với bán kính là 2 Chunk. Tức là sẽ Load 25 Chunk với kích thước 5 x 5 Chunk
+						</div>
 					</div>
-					◟<span class="cu_phap">/tickingarea list [all-dimensions: AllDimensions]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">list</span> là danh sách tickingarea<br>
-						◟<span class="cu_phap">[all-dimensions: AllDimensions]</span> là tất cả chiều không gian
+					<div>
+						<span class="drop_icon cu_phap">/tickingarea list [all-dimensions: AllDimensions]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">list</span> là danh sách tickingarea<br>
+							<span class="first"></span><span class="cu_phap">[all-dimensions: AllDimensions]</span> là tất cả chiều không gian
+						</div>
 					</div>
-					◟<span class="cu_phap">/tickingarea remove &lt;name: string&gt;</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">remove</span> là bỏ<br>
-						◟<span class="cu_phap">&lt;name: string&gt;</span> là id của tickingarea
+					<div>
+						<span class="drop_icon cu_phap">/tickingarea remove &lt;name: string&gt;</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">remove</span> là bỏ<br>
+							<span class="first"></span><span class="cu_phap">&lt;name: string&gt;</span> là id của tickingarea
+						</div>
 					</div>
-					◟<span class="cu_phap">/tickingarea remove &lt;position: x y z&gt;</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">remove</span> là bỏ<br>
-						◟<span class="cu_phap">&lt;position: x y z&gt;</span> là tọa độ tickingarea được sử dụng<br>
-						◟<span class="cmd">/tickingarea remove 0 0 0</span> — bỏ tất cả tickingarea chứa Chunk (0,0;15,15) vì 0 0 0 thuộc Chunk đó
+					<div>
+						<span class="drop_icon cu_phap">/tickingarea remove &lt;position: x y z&gt;</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">remove</span> là bỏ<br>
+							<span class="first"></span><span class="cu_phap">&lt;position: x y z&gt;</span> là tọa độ tickingarea được sử dụng<br>
+							<span class="first"></span><span class="cmd">/tickingarea remove 0 0 0</span> — bỏ tất cả tickingarea chứa Chunk (0,0;15,15) vì 0 0 0 thuộc Chunk đó
+						</div>
 					</div>
-					◟<span class="cu_phap">/tickingarea remove_all</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">remove_all</span> là bỏ tất cả
+					<div>
+						<span class="drop_icon cu_phap">/tickingarea remove_all</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cu_phap">remove_all</span> là bỏ tất cả
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/tickingarea</span> có tối đa 10 lần sử dụng<br>
-					◟1 tickingarea có thể Load tối đa 100 Chunk. Suy ra là 25600 Block (chưa kể chiều cao y)<br>
-					◟1 tickingarea circle có thể Load tối đa 9 x 9 Chunk, tức là 81 Chunk. Suy ra là 20736 Block (chưa kể chiều cao y)
+					<span class="first"></span><span class="cu_phap">/tickingarea</span> có tối đa 10 lần sử dụng<br>
+					<span class="first"></span>1 tickingarea có thể Load tối đa 100 Chunk. Suy ra là 25600 Block (chưa kể chiều cao y)<br>
+					<span class="first"></span>1 tickingarea circle có thể Load tối đa 9 x 9 Chunk, tức là 81 Chunk. Suy ra là 20736 Block (chưa kể chiều cao y)
 				</div>
 			</div>
 		</div>

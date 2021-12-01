@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,82 +128,100 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Nhân bản 1 hay nhiều Block tới 1 vị trí
+					<span class="first"></span>Nhân bản 1 hay nhiều Block tới 1 vị trí
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; [maskMode: MaskMode] [cloneMode: CloneMode]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu nhân bản<br>
-						◟<span class="cu_phap">&lt;end: x y z&gt;</span> là tọa độ kết thúc nhân bản<br>
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ xuất nhân bản ra<br>
-						◟<span class="cu_phap">[maskMode: MaskMode]</span> là lọc Block. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">masked</span> là chọn All Block trừ Air, nhân bản đè vào tọa độ xuất nhân bản
-							<div class="tab">
-								◟Ví dụ hình vuông ABCD có ABC là Block còn D là Air, hình vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng masked thì ở 123 sẽ thay thành ABC còn 4 là Block sẽ vẫn được giữ nguyên
+					<div>
+						<span class="drop_icon cu_phap">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; [maskMode: MaskMode] [cloneMode: CloneMode]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu nhân bản<br>
+							<span class="first"></span><span class="cu_phap">&lt;end: x y z&gt;</span> là tọa độ kết thúc nhân bản<br>
+							<span class="first"></span><span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ xuất nhân bản ra<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[maskMode: MaskMode]</span> là lọc Block. Danh sách:</span>
+								<div class="drop_hide tab">
+									<div>
+										<span class="drop_icon"><span class="cu_phap">masked</span> là chọn All Block trừ Air, nhân bản đè vào tọa độ xuất nhân bản</span>
+										<div class="drop_hide tab">
+											<span class="first">Ví dụ hình vuông ABCD có ABC là Block còn D là Air, hình vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng masked thì ở 123 sẽ thay thành ABC còn 4 là Block sẽ vẫn được giữ nguyên</span>
+										</div>
+									</div>
+									<div>
+										<span class="drop_icon"><span class="cu_phap">replace</span> là chọn All Block, nhân bản đè vào tọa độ xuất nhân</span>
+										<div class="drop_hide tab">
+											<span class="first">Ví dụ hình vuông ABCD có ABC là Block còn D là Air, hình vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng replace thì ở 1234 sẽ thay thành ABCD</span>
+										</div>
+									</div>
+								</div>
 							</div>
-							◟<span class="cu_phap">replace</span> là chọn All Block, nhân bản đè vào tọa độ xuất nhân
-							<div class="tab">
-								◟Ví dụ hình vuông ABCD có ABC là Block còn D là Air, hình vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng replace thì ở 1234 sẽ thay thành ABCD
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[cloneMode: CloneMode]</span> là cách xử lí. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">force</span> là trùng nhau vẫn nhân bản (hiện tại mình vẫn chưa hiểu cơ chế của nó, bạn nào hiểu thì Feedback cho mình nha)<br>
+									<span class="first"></span><span class="cu_phap">move</span> là di chuyển All Block được nhân bản tới tọa độ xuất nhân bản<br>
+									<span class="first"></span><span class="cu_phap">normal</span> là bình thường
+								</div>
 							</div>
+							<span class="first"></span><span class="cmd">/clone 0 1 0 1 1 1 2 1 2 masked move</span> — di chuyển khối vuông ABCD
 						</div>
-						◟<span class="cu_phap">[cloneMode: CloneMode]</span> là cách xử lí. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">force</span> là trùng nhau vẫn nhân bản (hiện tại mình vẫn chưa hiểu cơ chế của nó, bạn nào hiểu thì Feedback cho mình nha)<br>
-							◟<span class="cu_phap">move</span> là di chuyển All Block được nhân bản tới tọa độ xuất nhân bản<br>
-							◟<span class="cu_phap">normal</span> là bình thường
-						</div>
-						◟<span class="cmd">/clone 0 1 0 1 1 1 2 1 2 masked move</span> — di chuyển khối vuông ABCD
 					</div>
-					◟<span class="cu_phap">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; filtered &lt;cloneMode: CloneMode&gt; &lt;tileName: Block&gt; &lt;blockStates: block states&gt;</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu nhân bản<br>
-						◟<span class="cu_phap">&lt;end: x y z&gt;</span> là tọa độ kết thúc nhân bản<br>
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ xuất nhân bản ra<br>
-						◟<span class="cu_phap">filtered</span> là chọn Block<br>
-						◟<span class="cu_phap">&lt;cloneMode: CloneMode&gt;</span> là cách xử lí. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">force</span> là trùng nhau vẫn nhân bản <span class="note">(hiện tại mình vẫn chưa hiểu cơ chế của nó, bạn nào hiểu thì Feedback cho mình nha)</span><br>
-							◟<span class="cu_phap">move</span> là di chuyển All Block được nhân bản tới tọa độ xuất nhân bản<br>
-							◟<span class="cu_phap">normal</span> là bình thường, không force hay move
+					<div>
+						<span class="drop_icon cu_phap">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; filtered &lt;cloneMode: CloneMode&gt; &lt;tileName: Block&gt; &lt;blockStates: block states&gt;</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu nhân bản<br>
+							<span class="first"></span><span class="cu_phap">&lt;end: x y z&gt;</span> là tọa độ kết thúc nhân bản<br>
+							<span class="first"></span><span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ xuất nhân bản ra<br>
+							<span class="first"></span><span class="cu_phap">filtered</span> là chọn Block<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">&lt;cloneMode: CloneMode&gt;</span> là cách xử lí. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">force</span> là trùng nhau vẫn nhân bản <span class="note">(hiện tại mình vẫn chưa hiểu cơ chế của nó, bạn nào hiểu thì Feedback cho mình nha)</span><br>
+									<span class="first"></span><span class="cu_phap">move</span> là di chuyển All Block được nhân bản tới tọa độ xuất nhân bản<br>
+									<span class="first"></span><span class="cu_phap">normal</span> là bình thường, không force hay move
+								</div>
+							</div>
+							<span class="first"></span><span class="cu_phap">&lt;tileName: Block&gt;</span> là id Block<br>
+							<span class="first"></span><span class="cu_phap">&lt;blockStates: block states&gt;</span> là trạng thái Block. <a class="link_text" href="../danh-sach/blockStates-block-states.html" target="_blank">Danh sách</a><br>
+							<span class="first"></span><span class="cmd">/clone 0 1 0 1 1 1 2 1 2 filtered normal wool ["color":14]</span> — khối vuông ABCD có AB là Block còn CD là len đỏ, khối vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng filtered thì ở 34 sẽ thay thành CD là len đỏ, 12 vẫn giữ nguyên
 						</div>
-						◟<span class="cu_phap">&lt;tileName: Block&gt;</span> là id Block<br>
-						◟<span class="cu_phap">&lt;blockStates: block states&gt;</span> là trạng thái Block. <a class="link_text" href="../danh-sach/blockStates-block-states.html" target="_blank">Danh sách</a><br>
-						◟<span class="cmd">/clone 0 1 0 1 1 1 2 1 2 filtered normal wool ["color":14]</span> — khối vuông ABCD có AB là Block còn CD là len đỏ, khối vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng filtered thì ở 34 sẽ thay thành CD là len đỏ, 12 vẫn giữ nguyên
 					</div>
-					◟<span class="cu_phap">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; filtered &lt;cloneMode: CloneMode&gt; &lt;tileName: Block&gt; &lt;tileData: int&gt;</span>
-					<div class="tab p_small"> 
-						◟<span class="cu_phap">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu nhân bản<br>
-						◟<span class="cu_phap">&lt;end: x y z&gt;</span> là tọa độ kết thúc nhân bản<br>
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ xuất nhân bản ra<br>
-						◟<span class="cu_phap">filtered</span> là chọn Block<br>
-						◟<span class="cu_phap">&lt;cloneMode: CloneMode&gt;</span> là cách xử lí. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">force</span> là trùng nhau vẫn nhân bản <span class="note">(hiện tại mình vẫn chưa hiểu cơ chế của nó, bạn nào hiểu thì Feedback cho mình nha)</span><br>
-							◟<span class="cu_phap">move</span> là di chuyển All Block được nhân bản tới tọa độ xuất nhân bản<br>
-							◟<span class="cu_phap">normal</span> là bình thường
+					<div>
+						<span class="drop_icon cu_phap">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; filtered &lt;cloneMode: CloneMode&gt; &lt;tileName: Block&gt; &lt;tileData: int&gt;</span>
+						<div class="drop_hide tab p_small"> 
+							<span class="first"></span><span class="cu_phap">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu nhân bản<br>
+							<span class="first"></span><span class="cu_phap">&lt;end: x y z&gt;</span> là tọa độ kết thúc nhân bản<br>
+							<span class="first"></span><span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ xuất nhân bản ra<br>
+							<span class="first"></span><span class="cu_phap">filtered</span> là chọn Block<br>
+							<span class="drop_icon"><span class="cu_phap">&lt;cloneMode: CloneMode&gt;</span> là cách xử lí. Danh sách:</span>
+							<div>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">force</span> là trùng nhau vẫn nhân bản <span class="note">(hiện tại mình vẫn chưa hiểu cơ chế của nó, bạn nào hiểu thì Feedback cho mình nha)</span><br>
+									<span class="first"></span><span class="cu_phap">move</span> là di chuyển All Block được nhân bản tới tọa độ xuất nhân bản<br>
+									<span class="first"></span><span class="cu_phap">normal</span> là bình thường
+								</div>
+							</div>
+							<span class="first"></span><span class="cu_phap">&lt;tileName: Block&gt;</span> là id Block<br>
+							<span class="first"></span><span class="cu_phap">&lt;tileData: int&gt;</span> là data Block<br>
+							<span class="first"></span><span class="cmd">/clone 0 1 0 1 1 1 2 1 2 filtered normal wool 14</span> — khối vuông ABCD có AB là Block còn CD là len đỏ, khối vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng filtered thì ở 34 sẽ thay thành CD là len đỏ, 12 vẫn giữ nguyên
 						</div>
-						◟<span class="cu_phap">&lt;tileName: Block&gt;</span> là id Block<br>
-						◟<span class="cu_phap">&lt;tileData: int&gt;</span> là data Block<br>
-						◟<span class="cmd">/clone 0 1 0 1 1 1 2 1 2 filtered normal wool 14</span> — khối vuông ABCD có AB là Block còn CD là len đỏ, khối vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng filtered thì ở 34 sẽ thay thành CD là len đỏ, 12 vẫn giữ nguyên
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Nếu bạn muốn nhân bản bình thường thì dùng <span class="cu_phap">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt;</span>, nó sẽ tương ứng với <span class="cu_phap">replace normal</span><br>
-					◟Không thể Clone tới hay Clone đi chỗ khác nếu tọa độ bắt đầu và tọa độ kết thúc hay tọa độ xuất nhân bản không nằm trong Chunk của Player<br>
-					◟Sử dụng lệnh này các bạn cần chú ý tới tọa độ xuất nhân bản <span class="note">(xem video dưới đây để hiểu cách xác định)</span>
+					<span class="first"></span>Nếu bạn muốn nhân bản bình thường thì dùng <span class="cu_phap">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt;</span>, nó sẽ tương ứng với <span class="cu_phap">replace normal</span><br>
+					<span class="first"></span>Không thể Clone tới hay Clone đi chỗ khác nếu tọa độ bắt đầu và tọa độ kết thúc hay tọa độ xuất nhân bản không nằm trong Chunk của Player<br>
+					<span class="first"></span>Sử dụng lệnh này các bạn cần chú ý tới tọa độ xuất nhân bản <span class="note">(xem video dưới đây để hiểu cách xác định)</span>
 					<div align="center">
 						<iframe class="video" src="https://www.youtube.com/embed/4Npz-rY1LE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>

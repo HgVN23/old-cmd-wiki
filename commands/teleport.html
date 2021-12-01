@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,152 +128,200 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Dịch chuyển Player
+					<span class="first"></span>Dịch chuyển Player
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/teleport &lt;destination: target&gt; [checkForBlocks: Boolean]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;destination: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> đến<br>
-						◟<span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
-							◟<span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+					<div>
+						<span class="drop_icon cu_phap">/teleport &lt;destination: target&gt; [checkForBlocks: Boolean]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;destination: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> đến<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
+									<span class="first"></span><span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+								</div>
+							</div>
 						</div>
 					</div>
-					◟<span class="cu_phap">/teleport &lt;destination: x y z&gt; [checkForBlocks: Boolean]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
-						◟<span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
-							◟<span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+					<div>
+						<span class="drop_icon cu_phap">/teleport &lt;destination: x y z&gt; [checkForBlocks: Boolean]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
+									<span class="first"></span><span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/teleport 1 1 1 true</span> — Dịch chuyển đối tượng sử dụng Command đến 1 1 1 nếu ở đó không có Block
 						</div>
-						◟<span class="cmd">/teleport 1 1 1 true</span> — Dịch chuyển đối tượng sử dụng Command đến 1 1 1 nếu ở đó không có Block
 					</div>
-					◟<span class="cu_phap">/teleport &lt;destination: x y z&gt; [yRot: value] [xRot: value] [checkForBlocks: Boolean]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
-						◟<span class="cu_phap">[yRot: value]</span> là xoay hướng nhìn ngang <span class="note">(Xem ảnh dưới để biết thêm)</span><br>
-						<div align="center">
-							<img src="../lib/media/ry.png" class="image_mobile">
+					<div>
+						<span class="drop_icon cu_phap">/teleport &lt;destination: x y z&gt; [yRot: value] [xRot: value] [checkForBlocks: Boolean]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[yRot: value]</span> là xoay hướng nhìn ngang</span><br>
+								<div class="drop_hide" align="center">
+									<img src="../lib/media/ry.png" class="image_mobile">
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[xRot: value]</span> là xoay hướng nhìn dọc</span><br>
+								<div class="drop_hide" align="center">
+									<img src="../lib/media/rx.png" class="image_mobile">
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
+									<span class="first"></span><span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/teleport 1 1 1 0 0 false</span> — Dịch chuyển đối tượng sử dụng Command đến 1 1 1 và xoay Player theo hướng 0 0
 						</div>
-						◟<span class="cu_phap">[xRot: value]</span> là xoay hướng nhìn dọc <span class="note">(Xem ảnh dưới để biết thêm)</span><br>
-						<div align="center">
-							<img src="../lib/media/rx.png" class="image_mobile">
-						</div>
-						◟<span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
-							◟<span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
-						</div>
-						◟<span class="cmd">/teleport 1 1 1 0 0 false</span> — Dịch chuyển đối tượng sử dụng Command đến 1 1 1 và xoay Player theo hướng 0 0
 					</div>
-					◟<span class="cu_phap">/teleport &lt;destination: x y z&gt; facing &lt;lookAtEntity: target&gt; [checkForBlocks: Boolean]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
-						◟<span class="cu_phap">facing</span> là hướng phải nhìn<br>
-						◟<span class="cu_phap">&lt;lookAtEntity: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> phải nhìn<br>
-						◟<span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
-							◟<span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+					<div>
+						<span class="drop_icon cu_phap">/teleport &lt;destination: x y z&gt; facing &lt;lookAtEntity: target&gt; [checkForBlocks: Boolean]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
+							<span class="first"></span><span class="cu_phap">facing</span> là hướng phải nhìn<br>
+							<span class="first"></span><span class="cu_phap">&lt;lookAtEntity: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> phải nhìn<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
+									<span class="first"></span><span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/teleport 1 1 1 facing @e[c=1,name=a] false</span> — Dịch chuyển đối tượng sử dụng Command đến 1 1 1 và Player phải nhìn 1 mục tiêu gần nhất tên là a
 						</div>
-						◟<span class="cmd">/teleport 1 1 1 facing @e[c=1,name=a] false</span> — Dịch chuyển đối tượng sử dụng Command đến 1 1 1 và Player phải nhìn 1 mục tiêu gần nhất tên là a
 					</div>
-					◟<span class="cu_phap">/teleport &lt;destination: x y z&gt; facing &lt;lookAtPosition: x y z&gt; [checkForBlocks: Boolean]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
-						◟<span class="cu_phap">facing</span> là hướng phải nhìn<br>
-						◟<span class="cu_phap">&lt;lookAtPosition: x y z&gt;</span> là tọa độ phải nhìn<br>
-						◟<span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
-							◟<span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+					<div>
+						<span class="drop_icon cu_phap">/teleport &lt;destination: x y z&gt; facing &lt;lookAtPosition: x y z&gt; [checkForBlocks: Boolean]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
+							<span class="first"></span><span class="cu_phap">facing</span> là hướng phải nhìn<br>
+							<span class="first"></span><span class="cu_phap">&lt;lookAtPosition: x y z&gt;</span> là tọa độ phải nhìn<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
+									<span class="first"></span><span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/teleport 1 1 1 facing 10 10 10 false</span> — Dịch chuyển đối tượng sử dụng Command đến 1 1 1 và Player phải nhìn tọa độ 10 10 10
 						</div>
-						◟<span class="cmd">/teleport 1 1 1 facing 10 10 10 false</span> — Dịch chuyển đối tượng sử dụng Command đến 1 1 1 và Player phải nhìn tọa độ 10 10 10
 					</div>
-					◟<span class="cu_phap">/teleport &lt;victim: target&gt; &lt;destination: target&gt; [checkForBlocks: Boolean]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị dịch chuyển<br>
-						◟<span class="cu_phap">&lt;destination: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> đến<br>
-						◟<span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
-							◟<span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+					<div>
+						<span class="drop_icon cu_phap">/teleport &lt;victim: target&gt; &lt;destination: target&gt; [checkForBlocks: Boolean]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị dịch chuyển<br>
+							<span class="first"></span><span class="cu_phap">&lt;destination: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> đến<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
+									<span class="first"></span><span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/teleport @a @s false</span> — Dịch chuyển All Player đến đối tượng sử dụng Command
 						</div>
-						◟<span class="cmd">/teleport @a @s false</span> — Dịch chuyển All Player đến đối tượng sử dụng Command
 					</div>
-					◟<span class="cu_phap">/teleport &lt;victim: target&gt; &lt;destination: x y z&gt; [checkForBlocks: Boolean]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị dịch chuyển<br>
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
-						◟<span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
-							◟<span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+					<div>
+						<span class="drop_icon cu_phap">/teleport &lt;victim: target&gt; &lt;destination: x y z&gt; [checkForBlocks: Boolean]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị dịch chuyển<br>
+							<span class="first"></span><span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
+									<span class="first"></span><span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/teleport @a 1 1 1 false</span> — Dịch chuyển All Player đến tọa độ 1 1 1
 						</div>
-						◟<span class="cmd">/teleport @a 1 1 1 false</span> — Dịch chuyển All Player đến tọa độ 1 1 1
 					</div>
-					◟<span class="cu_phap">/teleport &lt;victim: target&gt; &lt;destination: x y z&gt; [yRot: value] [xRot: value] [checkForBlocks: Boolean]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị dịch chuyển<br>
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
-						◟<span class="cu_phap">[yRot: value]</span> là xoay hướng nhìn ngang <span class="note">(Xem ảnh dưới để biết thêm)</span><br>
-						<div align="center">
-							<img src="../lib/media/ry.png" class="image_mobile">
+					<div>
+						<span class="drop_icon cu_phap">/teleport &lt;victim: target&gt; &lt;destination: x y z&gt; [yRot: value] [xRot: value] [checkForBlocks: Boolean]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị dịch chuyển<br>
+							<span class="first"></span><span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[yRot: value]</span> là xoay hướng nhìn ngang</span><br>
+								<div class="drop_hide" align="center">
+									<img src="../lib/media/ry.png" class="image_mobile">
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[xRot: value]</span> là xoay hướng nhìn dọc</span><br>
+								<div class="drop_hide" align="center">
+									<img src="../lib/media/rx.png" class="image_mobile">
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
+									<span class="first"></span><span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/teleport @a 1 1 1 0 0 false</span> — Dịch chuyển All Player đến 1 1 1 và xoay Player theo hướng 0 0
 						</div>
-						◟<span class="cu_phap">[xRot: value]</span> là xoay hướng nhìn dọc <span class="note">(Xem ảnh dưới để biết thêm)</span><br>
-						<div align="center">
-							<img src="../lib/media/rx.png" class="image_mobile">
-						</div>
-						◟<span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
-							◟<span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
-						</div>
-						◟<span class="cmd">/teleport @a 1 1 1 0 0 false</span> — Dịch chuyển All Player đến 1 1 1 và xoay Player theo hướng 0 0
 					</div>
-					◟<span class="cu_phap">/teleport &lt;victim: target&gt; &lt;destination: x y z&gt; facing &lt;lookAtEntity: target&gt; [checkForBlocks: Boolean]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị dịch chuyển<br>
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
-						◟<span class="cu_phap">facing</span> là hướng phải nhìn<br>
-						◟<span class="cu_phap">&lt;lookAtEntity: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> phải nhìn<br>
-						◟<span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
-							◟<span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+					<div>
+						<span class="drop_icon cu_phap">/teleport &lt;victim: target&gt; &lt;destination: x y z&gt; facing &lt;lookAtEntity: target&gt; [checkForBlocks: Boolean]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị dịch chuyển<br>
+							<span class="first"></span><span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
+							<span class="first"></span><span class="cu_phap">facing</span> là hướng phải nhìn<br>
+							<span class="first"></span><span class="cu_phap">&lt;lookAtEntity: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> phải nhìn<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
+									<span class="first"></span><span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/teleport @a 1 1 1 facing @e[c=1,name=a] false</span> — Dịch chuyển All Player đến 1 1 1 và Player phải nhìn 1 mục tiêu gần nhất tên là a
 						</div>
-						◟<span class="cmd">/teleport @a 1 1 1 facing @e[c=1,name=a] false</span> — Dịch chuyển All Player đến 1 1 1 và Player phải nhìn 1 mục tiêu gần nhất tên là a
 					</div>
-					◟<span class="cu_phap">/teleport &lt;victim: target&gt; &lt;destination: x y z&gt; facing &lt;lookAtPosition: x y z&gt; [checkForBlocks: Boolean]</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị dịch chuyển<br>
-						◟<span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
-						◟<span class="cu_phap">facing</span> là hướng phải nhìn<br>
-						◟<span class="cu_phap">&lt;lookAtEntity: x y z&gt;</span> là tọa độ phải nhìn<br>
-						◟<span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
-							◟<span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+					<div>
+						<span class="drop_icon cu_phap">/teleport &lt;victim: target&gt; &lt;destination: x y z&gt; facing &lt;lookAtPosition: x y z&gt; [checkForBlocks: Boolean]</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị dịch chuyển<br>
+							<span class="first"></span><span class="cu_phap">&lt;destination: x y z&gt;</span> là tọa độ đến<br>
+							<span class="first"></span><span class="cu_phap">facing</span> là hướng phải nhìn<br>
+							<span class="first"></span><span class="cu_phap">&lt;lookAtEntity: x y z&gt;</span> là tọa độ phải nhìn<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">true</span> là có. Nếu có Block là không dịch chuyển<br>
+									<span class="first"></span><span class="cu_phap">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển
+								</div>
+							</div>
+							<span class="first"></span><span class="cmd">/teleport @a 1 1 1 facing 10 10 10 false</span> — Dịch chuyển All Player đến 1 1 1 và Player phải nhìn tọa độ 10 10 10
 						</div>
-						◟<span class="cmd">/teleport @a 1 1 1 facing 10 10 10 false</span> — Dịch chuyển All Player đến 1 1 1 và Player phải nhìn tọa độ 10 10 10
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">[checkForBlocks: Boolean]</span> có thể bỏ qua. Mặc định khi không ghi gì sẽ là false
+					<span class="first"></span><span class="cu_phap">[checkForBlocks: Boolean]</span> có thể bỏ qua. Mặc định khi không ghi gì sẽ là false
 				</div>
 			</div>
 		</div>

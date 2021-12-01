@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,72 +128,88 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Khiến 1 Entity cưỡi được 1 Entity có khả năng cưỡi
+					<span class="first"></span>Khiến 1 Entity cưỡi được 1 Entity có khả năng cưỡi
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/ride &lt;riders: target&gt; start_riding &lt;ride: target&gt; [teleportRules: TeleportRules] [howToFill: FillType]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;riders: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> được cưỡi (Entity)<br>
-						◟<span class="cu_phap">start_riding</span> là bắt đầu cưỡi<br>
-						◟<span class="cu_phap">&lt;ride: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị cưỡi (Entity)<br>
-						◟<span class="cu_phap">[teleportRules: TeleportRules]</span> là dịch chuyển đối tượng. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">teleport_ride</span> — dịch chuyển mục tiêu bị cưỡi tới mục tiêu được cưỡi<br>
-							◟<span class="cu_phap">teleport_rider</span> — dịch chuyển mục tiêu được cưỡi tới mục tiêu bị cưỡi
+					<div>
+						<span class="drop_icon cu_phap">/ride &lt;riders: target&gt; start_riding &lt;ride: target&gt; [teleportRules: TeleportRules] [howToFill: FillType]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;riders: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> được cưỡi (Entity)<br>
+							<span class="first"></span><span class="cu_phap">start_riding</span> là bắt đầu cưỡi<br>
+							<span class="first"></span><span class="cu_phap">&lt;ride: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị cưỡi (Entity)<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[teleportRules: TeleportRules]</span> là dịch chuyển đối tượng. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">teleport_ride</span> — dịch chuyển mục tiêu bị cưỡi tới mục tiêu được cưỡi<br>
+									<span class="first"></span><span class="cu_phap">teleport_rider</span> — dịch chuyển mục tiêu được cưỡi tới mục tiêu bị cưỡi
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[howToFill: FillType]</span> là đầy chỗ cưỡi. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">if_group_fits</span> — nếu vừa<br>
+									<span class="first"></span><span class="cu_phap">until_full</span> — cho đến khi đầy
+								</div>
+							</div>
 						</div>
-						◟<span class="cu_phap">[howToFill: FillType] là đầy chỗ cưỡi. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">if_group_fits</span> — nếu vừa<br>
-							◟<span class="cu_phap">until_full</span> — cho đến khi đầy
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">/ride &lt;riders: target&gt; stop_riding</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;riders: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> được cưỡi (Entity)<br>
+							<span class="first"></span><span class="cu_phap">stop_riding</span> là dừng cưỡi
 						</div>
 					</div>
-					◟<span class="cu_phap">/ride &lt;riders: target&gt; stop_riding</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;riders: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> được cưỡi (Entity)<br>
-						◟<span class="cu_phap">stop_riding</span> là dừng cưỡi
-					</div>
-					◟<span class="cu_phap">/ride &lt;riders: target&gt; summon_ride &lt;entityType: EntityType&gt; [rideRules: RideRules] [spawnEvent: string] [nameTag: string]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;riders: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> được cưỡi (Entity)<br>
-						◟<span class="cu_phap">summon_ride</span> là triệu hồi Entity bị cưỡi<br>
-						◟<span class="cu_phap">&lt;entityType: EntityType&gt;</span> là id Entity<br>
-						◟<span class="cu_phap">[rideRules: RideRules]</span> là luật cưỡi. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">no_ride_change</span> — không thay đổi Entity bị cưỡi<br>
-							◟<span class="cu_phap">reassign_rides</span> — thay đổi Entity bị cưỡi<br>
-							◟<span class="cu_phap">skip_riders</span> — bỏ qua những Entity đang cưỡi
+					<div>
+						<span class="drop_icon cu_phap">/ride &lt;riders: target&gt; summon_ride &lt;entityType: EntityType&gt; [rideRules: RideRules] [spawnEvent: string] [nameTag: string]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;riders: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> được cưỡi (Entity)<br>
+							<span class="first"></span><span class="cu_phap">summon_ride</span> là triệu hồi Entity bị cưỡi<br>
+							<span class="first"></span><span class="cu_phap">&lt;entityType: EntityType&gt;</span> là id Entity<br>
+							<div>
+								<span class="drop_icon"><span class="cu_phap">[rideRules: RideRules]</span> là luật cưỡi. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">no_ride_change</span> — không thay đổi Entity bị cưỡi<br>
+									<span class="first"></span><span class="cu_phap">reassign_rides</span> — thay đổi Entity bị cưỡi<br>
+									<span class="first"></span><span class="cu_phap">skip_riders</span> — bỏ qua những Entity đang cưỡi
+								</div>
+							</div>
+							<span class="first"></span><span class="cu_phap">[spawnEvent: string]</span> là Event của Entity. Danh sách &lt;Xem tại đây&gt;<br>
+							<span class="first"></span><span class="cu_phap">[nameTag: string]</span> là đặt tên cho Entity
 						</div>
-						◟<span class="cu_phap">[spawnEvent: string]</span> là Event của Entity. Danh sách &lt;Xem tại đây&gt;<br>
-						◟<span class="cu_phap">[nameTag: string]</span> là đặt tên cho Entity
 					</div>
-					◟<span class="cu_phap">/ride &lt;rides: target&gt; evict_riders</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;rides: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị cưỡi (Entity)<br>
-						◟<span class="cu_phap">evict_riders</span> là không cho cưỡi nữa
+					<div>
+						<span class="drop_icon cu_phap">/ride &lt;rides: target&gt; evict_riders</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;rides: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị cưỡi (Entity)<br>
+							<span class="first"></span><span class="cu_phap">evict_riders</span> là không cho cưỡi nữa
+						</div>
 					</div>
-					◟<span class="cu_phap">/ride &lt;rides: target&gt; summon_rider &lt;entityType: EntityType&gt; [spawnEvent: string] [nameTag: string]</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;rides: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị cưỡi (Entity)<br>
-						◟<span class="cu_phap">summon_rider</span> là triệu hồi Entity được cưỡi<br>
-						◟<span class="cu_phap">&lt;entityType: EntityType&gt;</span> là id Entity<br>
-						◟<span class="cu_phap">[spawnEvent: string]</span> là Event của Entity. Danh sách &lt;Xem tại đây><br>
-						◟<span class="cu_phap">[nameTag: string]</span> là đặt tên cho Entity
+					<div>
+						<span class="drop_icon cu_phap">/ride &lt;rides: target&gt; summon_rider &lt;entityType: EntityType&gt; [spawnEvent: string] [nameTag: string]</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cu_phap">&lt;rides: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> bị cưỡi (Entity)<br>
+							<span class="first"></span><span class="cu_phap">summon_rider</span> là triệu hồi Entity được cưỡi<br>
+							<span class="first"></span><span class="cu_phap">&lt;entityType: EntityType&gt;</span> là id Entity<br>
+							<span class="first"></span><span class="cu_phap">[spawnEvent: string]</span> là Event của Entity. Danh sách &lt;Xem tại đây><br>
+							<span class="first"></span><span class="cu_phap">[nameTag: string]</span> là đặt tên cho Entity
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Không phải Entity nào cũng có thể cưỡi được và bị cưỡi
+					<span class="first"></span>Không phải Entity nào cũng có thể cưỡi được và bị cưỡi
 				</div>
 			</div>
 		</div>

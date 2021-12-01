@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,40 +128,46 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Điều chỉnh thời tiết
+					<span class="first"></span>Điều chỉnh thời tiết
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/weather &lt;clear|rain|thunder&gt; [duration: int]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;clear|rain|thunder&gt;</span> là trạng thái thời tiết. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">clear</span> là trong lành<br>
-							◟<span class="cu_phap">rain</span> là mưa<br>
-							◟<span class="cu_phap">thunder</span> là mưa kèm sấm sét
+					<div>
+						<span class="drop_icon cu_phap">/weather &lt;clear|rain|thunder&gt; [duration: int]</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon"><span class="cu_phap">&lt;clear|rain|thunder&gt;</span> là trạng thái thời tiết. Danh sách:</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">clear</span> là trong lành<br>
+									<span class="first"></span><span class="cu_phap">rain</span> là mưa<br>
+									<span class="first"></span><span class="cu_phap">thunder</span> là mưa kèm sấm sét
+								</div>
+							</div>
+							<span class="first"></span><span class="cu_phap">[duration: int]</span> là thời gian tồn tại <br>
+							<span class="first"></span><span class="cmd">/weather rain 10</span> — Mưa trong 10 giây
 						</div>
-						◟<span class="cu_phap">[duration: int]</span> là thời gian tồn tại <br>
-						◟<span class="cmd">/weather rain 10</span> — Mưa trong 10 giây
 					</div>
-					◟<span class="cu_phap">/weather query</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">query</span> là cho biết hiện tại<br>
-						◟<span class="cmd">/weather query</span> — Hiện tại mưa thì sẽ gửi thông tin là đang mưa
+					<div>
+						<span class="drop_icon cu_phap">/weather query</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cu_phap">query</span> là cho biết hiện tại<br>
+							<span class="first"></span><span class="cmd">/weather query</span> — Hiện tại mưa thì sẽ gửi thông tin là đang mưa
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟<span class="cmd">/gamerule doweathercycle false</span> sẽ làm thành phần <span class="cu_phap">[duration: int]</span> không còn hoạt động
+					<span class="first"></span><span class="cmd">/gamerule doweathercycle false</span> sẽ làm thành phần <span class="cu_phap">[duration: int]</span> không còn hoạt động
 				</div>
 			</div>
 		</div>

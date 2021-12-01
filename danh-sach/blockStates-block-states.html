@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -67,1914 +68,2538 @@
 			</div>
 			<div class="slot box">
 				<div class="row1 p">
-					◟<span class="cu_phap">anvil</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">damage</span>
-						<div class="tab">
-							◟<span class="cu_phap">broken</span><br>
-							◟<span class="cu_phap">slightly_damaged	</span><br>
-							◟<span class="cu_phap">undamaged</span><br>
-							◟<span class="cu_phap">very_damaged</span>
-						</div>
-						◟<span class="cu_phap">direction</span></span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">bamboo</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">age_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">bamboo_leaf_size</span>
-						<div class="tab">
-							◟<span class="cu_phap">large_leaves</span><br>
-							◟<span class="cu_phap">no_leaves</span><br>
-							◟<span class="cu_phap">small_leaves</span>
-						</div>
-						◟<span class="cu_phap">bamboo_stalk_thickness	</span>
-						<div class="tab">
-							◟<span class="cu_phap">thick</span><br>
-							◟<span class="cu_phap">thin</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">bamboo_sapling</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">age_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">sapling_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">acacia</span><br>
-							◟<span class="cu_phap">birch</span><br>
-							◟<span class="cu_phap">dark_oak</span><br>
-							◟<span class="cu_phap">jungle</span><br>
-							◟<span class="cu_phap">oak</span><br>
-							◟<span class="cu_phap">spruce</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">standing_banner</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">ground_sign_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">wall_banner</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">barrel</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-						◟<span class="cu_phap">open_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">bed (???)</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">head_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">occupied_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">beehive</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">honey_level</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">bee_nest</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">honey_level</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">beetroot</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">growth</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">bell</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">attachment</span>
-						<div class="tab">
-							◟<span class="cu_phap">hanging</span><br>
-							◟<span class="cu_phap">multiple</span><br>
-							◟<span class="cu_phap">side</span><br>
-							◟<span class="cu_phap">standing</span>
-						</div>
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">toggle_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">blast_furnace</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">lit_blast_furnace</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">bone_block</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">pillar_axis</span>
-						<div class="tab">
-							◟<span class="cu_phap">x</span><br>
-							◟<span class="cu_phap">y</span><br>
-							◟<span class="cu_phap">z</span>
-						</div>
-						◟<span class="cu_phap">deprecated</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">brewing_stand</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">brewing_stand_slot_a_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">brewing_stand_slot_b_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">brewing_stand_slot_c_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">bubble_column</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">drag_down</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">buttons</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">button_pressed_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">cactus</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">age
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Campfire</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">extinguished</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">cake</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">bite_counter</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Candle cakes</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">lit
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Carrots</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">growth</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Carved Pumpkin</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Cauldron</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">fill_level</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span>
-						</div>
-						◟<span class="cu_phap">cauldron_liquid</span>
-						<div class="tab">
-							◟<span class="cu_phap">lava</span><br>
-							◟<span class="cu_phap">water</span><br>
-							◟<span class="cu_phap">powder_snow</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Chain</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">pillar_axis</span>
-						<div class="tab">
-							◟<span class="cu_phap">x</span><br>
-							◟<span class="cu_phap">y</span><br>
-							◟<span class="cu_phap">z</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Chests</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Ender Chest</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Chorus Flower</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">age
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Cocoa</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">age
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span>
-						</div>
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Command Blocks</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">conditional_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Composter</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">composter_fill_level</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Daylight Detector</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">redstone_signal</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Dispenser and Dropper</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span>
-						</div>
-						◟<span class="cu_phap">triggered_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Doors</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">door_hinge_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-						◟<span class="cu_phap">open_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-						◟<span class="cu_phap">upper_block_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">End Portal Frame</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">end_portal_eye_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">End Rod</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Farmland</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">moisturized_amount</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Fences</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">wood_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">acacia</span><br>
-							◟<span class="cu_phap">birch</span><br>
-							◟<span class="cu_phap">dark_oak</span><br>
-							◟<span class="cu_phap">jungle</span><br>
-							◟<span class="cu_phap">oak</span><br>
-							◟<span class="cu_phap">spruce</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Fence Gates</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">in_wall_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-						◟<span class="cu_phap">open_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Fire</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">age
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Frosted Ice</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">age
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Furnace</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Glass Panes</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">color</span>
-						<div class="tab">
-							◟<span class="cu_phap">white</span><br>
-							◟<span class="cu_phap">orange</span><br>
-							◟<span class="cu_phap">magenta</span><br>
-							◟<span class="cu_phap">light_blue</span><br>
-							◟<span class="cu_phap">yellow</span><br>
-							◟<span class="cu_phap">lime</span><br>
-							◟<span class="cu_phap">pink</span><br>
-							◟<span class="cu_phap">gray</span><br>
-							◟<span class="cu_phap">silver</span><br>
-							◟<span class="cu_phap">cyan</span><br>
-							◟<span class="cu_phap">purple</span><br>
-							◟<span class="cu_phap">blue</span><br>
-							◟<span class="cu_phap">brown</span><br>
-							◟<span class="cu_phap">green</span><br>
-							◟<span class="cu_phap">red</span><br>
-							◟<span class="cu_phap">black</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Glazed Terracotta</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Grindstone</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">attachment</span>
-						<div class="tab">
-							◟<span class="cu_phap">hanging</span><br>
-							◟<span class="cu_phap">multiple</span><br>
-							◟<span class="cu_phap">side</span><br>
-							◟<span class="cu_phap">standing</span>
-						</div>
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Hay Bale</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">pillar_axis</span>
-						<div class="tab">
-							◟<span class="cu_phap">x</span><br>
-							◟<span class="cu_phap">y</span><br>
-							◟<span class="cu_phap">z</span>
-						</div>
-						◟<span class="cu_phap">deprecated</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Hopper</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span>
-						</div>
-						◟<span class="cu_phap">toggle_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Jigsaw Block</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Jack o'Lantern</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Kelp</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">age
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Ladder</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Lantern</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">hanging</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">All small flowers except dandelion</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">flower_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">allium</span><br>
-							◟<span class="cu_phap">cornflower</span><br>
-							◟<span class="cu_phap">houstonia</span><br>
-							◟<span class="cu_phap">lily_of_the_valley</span><br>
-							◟<span class="cu_phap">orchid</span><br>
-							◟<span class="cu_phap">oxeye</span><br>
-							◟<span class="cu_phap">poppy</span><br>
-							◟<span class="cu_phap">tulip_orange</span><br>
-							◟<span class="cu_phap">tulip_pink</span><br>
-							◟<span class="cu_phap">tulip_red</span><br>
-							◟<span class="cu_phap">tulip_white</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Sunflower, lilac, rose bush, and peony</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">double_flower_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">fern</span><br>
-							◟<span class="cu_phap">grass</span><br>
-							◟<span class="cu_phap">paeonia</span><br>
-							◟<span class="cu_phap">rose</span><br>
-							◟<span class="cu_phap">sunflower</span><br>
-							◟<span class="cu_phap">syringa</span>
-						</div>
-						◟<span class="cu_phap">upper_block_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Lava</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">liquid_depth</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">leaves</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">old_leaf_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">oak</span><br>
-							◟<span class="cu_phap">spruce</span><br>
-							◟<span class="cu_phap">birch</span><br>
-							◟<span class="cu_phap">jungle</span>
-						</div>
-						◟<span class="cu_phap">persistent_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">update_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">leaves2</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">old_leaf_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">acacia</span><br>
-							◟<span class="cu_phap">dark_oak</span>
-						</div>
-						◟<span class="cu_phap">persistent_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">update_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Lectern</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">powered_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Lever</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">open_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-						◟<span class="cu_phap">lever_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">log</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">pillar_axis</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span>
-						</div>
-						◟<span class="cu_phap">old_log_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">birch</span><br>
-							◟<span class="cu_phap">jungle</span><br>
-							◟<span class="cu_phap">oak</span><br>
-							◟<span class="cu_phap">spruce</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">log2</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">pillar_axis</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span>
-						</div>
-						◟<span class="cu_phap">old_log_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">acacia</span><br>
-							◟<span class="cu_phap">dark_oak</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Stems, and all stripped logs</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">pillar_axis</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Loom</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Melon Stem</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">growth</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Mob heads</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-						◟<span class="cu_phap">nodrop_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Mushroom Blocks</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">huge_mushroom_bits</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Nether Wart</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">age
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Nether Portal</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">axis</span>
-						<div class="tab">
-							◟<span class="cu_phap">unknown</span><br>
-							◟<span class="cu_phap">x</span><br>
-							◟<span class="cu_phap">z</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Observer</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-						◟<span class="cu_phap">powered_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Pistons</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Piston Head</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Potatoes</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">growth</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Pressure Plates</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">redstone_signal</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Pumpkin Stem</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">growth</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Purpur and Quartz Pillar</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">chisel_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">default</span><br>
-							◟<span class="cu_phap">chiseled</span><br>
-							◟<span class="cu_phap">lines</span><br>
-							◟<span class="cu_phap">smooth</span>
-						</div>
-						◟<span class="cu_phap">pillar_axis</span>
-						<div class="tab">
-							◟<span class="cu_phap">x</span><br>
-							◟<span class="cu_phap">y</span><br>
-							◟<span class="cu_phap">z</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Rails</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">rail_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Activator Rail, Detector Rail, and Powered Rail</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">rail_data_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">rail_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Redstone Comparator</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">output_lit_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-						◟<span class="cu_phap">output_subtract_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Redstone Dust</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">redstone_signal</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Redstone Repeater</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">repeater_delay</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Redstone Torch</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">torch_facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">east</span><br>
-							◟<span class="cu_phap">north</span><br>
-							◟<span class="cu_phap">south</span><br>
-							◟<span class="cu_phap">top</span><br>
-							◟<span class="cu_phap">unknown</span><br>
-							◟<span class="cu_phap">west</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Respawn Anchor</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">respawn_anchor_charge</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Saplings</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">age_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">sapling_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">acacia</span><br>
-							◟<span class="cu_phap">birch</span><br>
-							◟<span class="cu_phap">dark_oak</span><br>
-							◟<span class="cu_phap">jungle</span><br>
-							◟<span class="cu_phap">oak</span><br>
-							◟<span class="cu_phap">spruce</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Scaffolding</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">stability</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span>
-						</div>
-						◟<span class="cu_phap">stability_check</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Sea Pickle</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">cluster_count</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">dead_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Shulker Boxes Dyed</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">color</span>
-						<div class="tab">
-							◟<span class="cu_phap">white</span><br>
-							◟<span class="cu_phap">orange</span><br>
-							◟<span class="cu_phap">magenta</span><br>
-							◟<span class="cu_phap">light_blue</span><br>
-							◟<span class="cu_phap">yellow</span><br>
-							◟<span class="cu_phap">lime</span><br>
-							◟<span class="cu_phap">pink</span><br>
-							◟<span class="cu_phap">gray</span><br>
-							◟<span class="cu_phap">silver</span><br>
-							◟<span class="cu_phap">cyan</span><br>
-							◟<span class="cu_phap">purple</span><br>
-							◟<span class="cu_phap">blue</span><br>
-							◟<span class="cu_phap">brown</span><br>
-							◟<span class="cu_phap">green</span><br>
-							◟<span class="cu_phap">red</span><br>
-							◟<span class="cu_phap">black</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Sign floor</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">ground_sign_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Sign wall</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Stone slab and double stone slab</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">stone_slab_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">brick</span><br>
-							◟<span class="cu_phap">cobblestone</span><br>
-							◟<span class="cu_phap">nether_brick</span><br>
-							◟<span class="cu_phap">quartz</span><br>
-							◟<span class="cu_phap">sandstone</span><br>
-							◟<span class="cu_phap">smooth_stone</span><br>
-							◟<span class="cu_phap">stone_brick</span><br>
-							◟<span class="cu_phap">wood</span>
-						</div>
-						◟<span class="cu_phap">top_slot_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Wood slab and double wood slab</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">top_slot_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">wood_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">acacia</span><br>
-							◟<span class="cu_phap">birch</span><br>
-							◟<span class="cu_phap">dark_oak</span><br>
-							◟<span class="cu_phap">jungle</span><br>
-							◟<span class="cu_phap">oak</span><br>
-							◟<span class="cu_phap">spruce</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Stone slab 2 and double stone slab 2</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">stone_slab_type_2</span>
-						<div class="tab">
-							◟<span class="cu_phap">mossy_cobblestone</span><br>
-							◟<span class="cu_phap">prismarine_brick</span><br>
-							◟<span class="cu_phap">prismarine_dark</span><br>
-							◟<span class="cu_phap">prismarine_rough</span><br>
-							◟<span class="cu_phap">purpur</span><br>
-							◟<span class="cu_phap">red_nether_brick</span><br>
-							◟<span class="cu_phap">red_sandstone</span><br>
-							◟<span class="cu_phap">smooth_sandstone</span>
-						</div>
-						◟<span class="cu_phap">top_slot_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Stone slab 3 and double stone slab 3</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">stone_slab_type_3</span>
-						<div class="tab">
-							◟<span class="cu_phap">andesite</span><br>
-							◟<span class="cu_phap">diorite</span><br>
-							◟<span class="cu_phap">end_stone_brick</span><br>
-							◟<span class="cu_phap">granite</span><br>
-							◟<span class="cu_phap">polished_andesite</span><br>
-							◟<span class="cu_phap">polished_diorite</span><br>
-							◟<span class="cu_phap">polished_granite</span><br>
-							◟<span class="cu_phap">smooth_red_sandstone</span>
-						</div>
-						◟<span class="cu_phap">top_slot_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Stone slab 4 and double stone slab 4</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">stone_slab_type_4</span>
-						<div class="tab">
-							◟<span class="cu_phap">cut_red_sandstone</span><br>
-							◟<span class="cu_phap">cut_sandstone</span><br>
-							◟<span class="cu_phap">mossy_stone_brick</span><br>
-							◟<span class="cu_phap">smooth_quartz</span><br>
-							◟<span class="cu_phap">stone</span>
-						</div>
-						◟<span class="cu_phap">top_slot_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Crimson, warped, blackstone, polished blackstone, polished blackstone brick, and cut copper slab</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">top_slot_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Smoker</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Snow</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">height</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span>
-						</div>
-						◟<span class="cu_phap">covered_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Stairs</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">upside_down_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">weirdo_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Stonecutter</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Structure Block</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">mode</span>
-						<div class="tab">
-							◟<span class="cu_phap">corner</span><br>
-							◟<span class="cu_phap">data</span><br>
-							◟<span class="cu_phap">export</span><br>
-							◟<span class="cu_phap">invalid</span><br>
-							◟<span class="cu_phap">load</span><br>
-							◟<span class="cu_phap">save</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">structure_void_type</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">structure_void_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">air</span><br>
-							◟<span class="cu_phap">void</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Sugar Cane</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">age
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Sweet Berry Bush</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">growth</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Grass and fern</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">tall_grass_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">default</span><br>
-							◟<span class="cu_phap">tall</span><br>
-							◟<span class="cu_phap">fern</span><br>
-							◟<span class="cu_phap">snow</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Tall grass and large fern</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">double_flower_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">fern</span><br>
-							◟<span class="cu_phap">grass</span><br>
-							◟<span class="cu_phap">paeonia</span><br>
-							◟<span class="cu_phap">rose</span><br>
-							◟<span class="cu_phap">sunflower</span><br>
-							◟<span class="cu_phap">syringa</span>
-						</div>
-						◟<span class="cu_phap">upper_block_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Tall Seagrass</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">sea_grass_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">default</span><br>
-							◟<span class="cu_phap">double_bot</span><br>
-							◟<span class="cu_phap">double_top</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">TNT</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">allow_underwater_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-						◟<span class="cu_phap">explode_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">false</span><br>
-							◟<span class="cu_phap">true</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Trapdoors</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">open_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-						◟<span class="cu_phap">upside_down_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Tripwire</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">attached_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-						◟<span class="cu_phap">disarmed_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-						◟<span class="cu_phap">powered_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-						◟<span class="cu_phap">suspended_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Tripwire Hook</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">attached_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-						◟<span class="cu_phap">direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span>
-						</div>
-						◟<span class="cu_phap">powered_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Turtle Egg</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">turtle_egg_count</span>
-						<div class="tab">
-							◟<span class="cu_phap">four_egg</span><br>
-							◟<span class="cu_phap">one_egg</span><br>
-							◟<span class="cu_phap">three_egg</span><br>
-							◟<span class="cu_phap">two_egg</span>
-						</div>
-						◟<span class="cu_phap">cracked_state</span>
-						<div class="tab">
-							◟<span class="cu_phap">cracked</span><br>
-							◟<span class="cu_phap">max_cracked</span><br>
-							◟<span class="cu_phap">no_cracks</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Vines</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">vine_direction_bits</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Wall Torch</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">torch_facing_direction</span>
-						<div class="tab">
-							◟<span class="cu_phap">east</span><br>
-							◟<span class="cu_phap">north</span><br>
-							◟<span class="cu_phap">south</span><br>
-							◟<span class="cu_phap">top</span><br>
-							◟<span class="cu_phap">unknown</span><br>
-							◟<span class="cu_phap">west</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Non-blackstone and deepslate wall</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">wall_block_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">andesite</span><br>
-							◟<span class="cu_phap">brick</span><br>
-							◟<span class="cu_phap">cobblestone</span><br>
-							◟<span class="cu_phap">diorite</span><br>
-							◟<span class="cu_phap">end_brick</span><br>
-							◟<span class="cu_phap">granite</span><br>
-							◟<span class="cu_phap">mossy_cobblestone</span><br>
-							◟<span class="cu_phap">mossy_stone_brick</span><br>
-							◟<span class="cu_phap">nether_brick</span><br>
-							◟<span class="cu_phap">prismarine</span><br>
-							◟<span class="cu_phap">red_nether_brick</span><br>
-							◟<span class="cu_phap">red_sandstone</span><br>
-							◟<span class="cu_phap">sandstone</span><br>
-							◟<span class="cu_phap">stone_brick</span>
-						</div>
-						◟<span class="cu_phap">wall_connection_type_east</span>
-						<div class="tab">
-							◟<span class="cu_phap">none</span><br>
-							◟<span class="cu_phap">short</span><br>
-							◟<span class="cu_phap">tall</span>
-						</div>
-						◟<span class="cu_phap">wall_connection_type_north</span>
-						<div class="tab">
-							◟<span class="cu_phap">none</span><br>
-							◟<span class="cu_phap">short</span><br>
-							◟<span class="cu_phap">tall</span>
-						</div>
-						◟<span class="cu_phap">wall_connection_type_south</span>
-						<div class="tab">
-							◟<span class="cu_phap">none</span><br>
-							◟<span class="cu_phap">short</span><br>
-							◟<span class="cu_phap">tall</span>
-						</div>
-						◟<span class="cu_phap">wall_connection_type_west</span>
-						<div class="tab">
-							◟<span class="cu_phap">none</span><br>
-							◟<span class="cu_phap">short</span><br>
-							◟<span class="cu_phap">tall</span>
-						</div>
-						◟<span class="cu_phap">wall_post_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Blackstone and deepslate wall</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">wall_connection_type_east</span>
-						<div class="tab">
-							◟<span class="cu_phap">none</span><br>
-							◟<span class="cu_phap">short</span><br>
-							◟<span class="cu_phap">tall</span>
-						</div>
-						◟<span class="cu_phap">wall_connection_type_north</span>
-						<div class="tab">
-							◟<span class="cu_phap">none</span><br>
-							◟<span class="cu_phap">short</span><br>
-							◟<span class="cu_phap">tall</span>
-						</div>
-						◟<span class="cu_phap">wall_connection_type_south</span>
-						<div class="tab">
-							◟<span class="cu_phap">none</span><br>
-							◟<span class="cu_phap">short</span><br>
-							◟<span class="cu_phap">tall</span>
-						</div>
-						◟<span class="cu_phap">wall_connection_type_west</span>
-						<div class="tab">
-							◟<span class="cu_phap">none</span><br>
-							◟<span class="cu_phap">short</span><br>
-							◟<span class="cu_phap">tall</span>
-						</div>
-						◟<span class="cu_phap">wall_post_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Water and flowing water</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">liquid_depth</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span><br>
-							◟<span class="cu_phap">8</span><br>
-							◟<span class="cu_phap">9</span><br>
-							◟<span class="cu_phap">10</span><br>
-							◟<span class="cu_phap">11</span><br>
-							◟<span class="cu_phap">12</span><br>
-							◟<span class="cu_phap">13</span><br>
-							◟<span class="cu_phap">14</span><br>
-							◟<span class="cu_phap">15</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Wheat</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">growth</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span><br>
-							◟<span class="cu_phap">2</span><br>
-							◟<span class="cu_phap">3</span><br>
-							◟<span class="cu_phap">4</span><br>
-							◟<span class="cu_phap">5</span><br>
-							◟<span class="cu_phap">6</span><br>
-							◟<span class="cu_phap">7</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Wood</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">pillar_axis</span>
-						<div class="tab">
-							◟<span class="cu_phap">x</span><br>
-							◟<span class="cu_phap">y</span><br>
-							◟<span class="cu_phap">z</span>
-						</div>
-						◟<span class="cu_phap">stripped_bit</span>
-						<div class="tab">
-							◟<span class="cu_phap">0</span><br>
-							◟<span class="cu_phap">1</span>
-						</div>
-						◟<span class="cu_phap">wood_type</span>
-						<div class="tab">
-							◟<span class="cu_phap">acacia</span><br>
-							◟<span class="cu_phap">birch</span><br>
-							◟<span class="cu_phap">dark_oak</span><br>
-							◟<span class="cu_phap">jungle</span><br>
-							◟<span class="cu_phap">oak</span><br>
-							◟<span class="cu_phap">spruce</span>
-						</div>
-					</div>
-					◟<span class="cu_phap">Hyphae</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">pillar_axis</span>
-						<div class="tab">
-							◟<span class="cu_phap">x</span><br>
-							◟<span class="cu_phap">y</span><br>
-							◟<span class="cu_phap">z</span>
+					<div>
+						<span class="drop_icon">anvil</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">damage</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">broken</span><br>
+									<span class="first"></span><span class="cu_phap">slightly_damaged	</span><br>
+									<span class="first"></span><span class="cu_phap">undamaged</span><br>
+									<span class="first"></span><span class="cu_phap">very_damaged</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">direction</span></span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">bamboo</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">age_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">bamboo_leaf_size</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">large_leaves</span><br>
+									<span class="first"></span><span class="cu_phap">no_leaves</span><br>
+									<span class="first"></span><span class="cu_phap">small_leaves</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">bamboo_stalk_thickness	</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">thick</span><br>
+									<span class="first"></span><span class="cu_phap">thin</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">bamboo_sapling</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">age_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">sapling_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">acacia</span><br>
+									<span class="first"></span><span class="cu_phap">birch</span><br>
+									<span class="first"></span><span class="cu_phap">dark_oak</span><br>
+									<span class="first"></span><span class="cu_phap">jungle</span><br>
+									<span class="first"></span><span class="cu_phap">oak</span><br>
+									<span class="first"></span><span class="cu_phap">spruce</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">standing_banner</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">ground_sign_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">wall_banner</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">barrel</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">open_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">bed (???)</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">head_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">occupied_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">beehive</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">honey_level</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">bee_nest</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">honey_level</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">beetroot</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">growth</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">bell</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">attachment</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">hanging</span><br>
+									<span class="first"></span><span class="cu_phap">multiple</span><br>
+									<span class="first"></span><span class="cu_phap">side</span><br>
+									<span class="first"></span><span class="cu_phap">standing</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">toggle_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">blast_furnace</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">lit_blast_furnace</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">bone_block</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">pillar_axis</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">x</span><br>
+									<span class="first"></span><span class="cu_phap">y</span><br>
+									<span class="first"></span><span class="cu_phap">z</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">deprecated</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">brewing_stand</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">brewing_stand_slot_a_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">brewing_stand_slot_b_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">brewing_stand_slot_c_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">bubble_column</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">drag_down</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">buttons</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">button_pressed_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">cactus</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">age
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Campfire</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">extinguished</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">cake</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">bite_counter</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Candle cakes</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">lit
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Carrots</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">growth</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Carved Pumpkin</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Cauldron</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">fill_level</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">cauldron_liquid</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">lava</span><br>
+									<span class="first"></span><span class="cu_phap">water</span><br>
+									<span class="first"></span><span class="cu_phap">powder_snow</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Chain</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">pillar_axis</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">x</span><br>
+									<span class="first"></span><span class="cu_phap">y</span><br>
+									<span class="first"></span><span class="cu_phap">z</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Chests</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Ender Chest</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Chorus Flower</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">age
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Cocoa</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">age
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Command Blocks</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">conditional_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Composter</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">composter_fill_level</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Daylight Detector</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">redstone_signal</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Dispenser and Dropper</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">triggered_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Doors</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">door_hinge_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">open_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">upper_block_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">End Portal Frame</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">end_portal_eye_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">End Rod</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Farmland</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">moisturized_amount</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Fences</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">wood_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">acacia</span><br>
+									<span class="first"></span><span class="cu_phap">birch</span><br>
+									<span class="first"></span><span class="cu_phap">dark_oak</span><br>
+									<span class="first"></span><span class="cu_phap">jungle</span><br>
+									<span class="first"></span><span class="cu_phap">oak</span><br>
+									<span class="first"></span><span class="cu_phap">spruce</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Fence Gates</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">in_wall_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">open_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Fire</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">age
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Frosted Ice</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">age
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Furnace</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Glass Panes</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">color</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">white</span><br>
+									<span class="first"></span><span class="cu_phap">orange</span><br>
+									<span class="first"></span><span class="cu_phap">magenta</span><br>
+									<span class="first"></span><span class="cu_phap">light_blue</span><br>
+									<span class="first"></span><span class="cu_phap">yellow</span><br>
+									<span class="first"></span><span class="cu_phap">lime</span><br>
+									<span class="first"></span><span class="cu_phap">pink</span><br>
+									<span class="first"></span><span class="cu_phap">gray</span><br>
+									<span class="first"></span><span class="cu_phap">silver</span><br>
+									<span class="first"></span><span class="cu_phap">cyan</span><br>
+									<span class="first"></span><span class="cu_phap">purple</span><br>
+									<span class="first"></span><span class="cu_phap">blue</span><br>
+									<span class="first"></span><span class="cu_phap">brown</span><br>
+									<span class="first"></span><span class="cu_phap">green</span><br>
+									<span class="first"></span><span class="cu_phap">red</span><br>
+									<span class="first"></span><span class="cu_phap">black</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Glazed Terracotta</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Grindstone</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">attachment</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">hanging</span><br>
+									<span class="first"></span><span class="cu_phap">multiple</span><br>
+									<span class="first"></span><span class="cu_phap">side</span><br>
+									<span class="first"></span><span class="cu_phap">standing</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Hay Bale</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">pillar_axis</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">x</span><br>
+									<span class="first"></span><span class="cu_phap">y</span><br>
+									<span class="first"></span><span class="cu_phap">z</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">deprecated</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Hopper</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">toggle_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Jigsaw Block</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Jack o'Lantern</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Kelp</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">age
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Ladder</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Lantern</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">hanging</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">All small flowers except dandelion</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">flower_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">allium</span><br>
+									<span class="first"></span><span class="cu_phap">cornflower</span><br>
+									<span class="first"></span><span class="cu_phap">houstonia</span><br>
+									<span class="first"></span><span class="cu_phap">lily_of_the_valley</span><br>
+									<span class="first"></span><span class="cu_phap">orchid</span><br>
+									<span class="first"></span><span class="cu_phap">oxeye</span><br>
+									<span class="first"></span><span class="cu_phap">poppy</span><br>
+									<span class="first"></span><span class="cu_phap">tulip_orange</span><br>
+									<span class="first"></span><span class="cu_phap">tulip_pink</span><br>
+									<span class="first"></span><span class="cu_phap">tulip_red</span><br>
+									<span class="first"></span><span class="cu_phap">tulip_white</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Sunflower, lilac, rose bush, and peony</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">double_flower_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">fern</span><br>
+									<span class="first"></span><span class="cu_phap">grass</span><br>
+									<span class="first"></span><span class="cu_phap">paeonia</span><br>
+									<span class="first"></span><span class="cu_phap">rose</span><br>
+									<span class="first"></span><span class="cu_phap">sunflower</span><br>
+									<span class="first"></span><span class="cu_phap">syringa</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">upper_block_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Lava</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">liquid_depth</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">leaves</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">old_leaf_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">oak</span><br>
+									<span class="first"></span><span class="cu_phap">spruce</span><br>
+									<span class="first"></span><span class="cu_phap">birch</span><br>
+									<span class="first"></span><span class="cu_phap">jungle</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">persistent_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">update_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">leaves2</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">old_leaf_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">acacia</span><br>
+									<span class="first"></span><span class="cu_phap">dark_oak</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">persistent_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">update_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Lectern</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">powered_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Lever</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">open_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">lever_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">log</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">pillar_axis</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">old_log_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">birch</span><br>
+									<span class="first"></span><span class="cu_phap">jungle</span><br>
+									<span class="first"></span><span class="cu_phap">oak</span><br>
+									<span class="first"></span><span class="cu_phap">spruce</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">log2</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">pillar_axis</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">old_log_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">acacia</span><br>
+									<span class="first"></span><span class="cu_phap">dark_oak</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Stems, and all stripped logs</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">pillar_axis</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Loom</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Melon Stem</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">growth</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Mob heads</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">nodrop_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Mushroom Blocks</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">huge_mushroom_bits</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Nether Wart</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">age
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Nether Portal</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">axis</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">unknown</span><br>
+									<span class="first"></span><span class="cu_phap">x</span><br>
+									<span class="first"></span><span class="cu_phap">z</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Observer</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">powered_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Pistons</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Piston Head</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Potatoes</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">growth</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Pressure Plates</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">redstone_signal</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Pumpkin Stem</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">growth</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Purpur and Quartz Pillar</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">chisel_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">default</span><br>
+									<span class="first"></span><span class="cu_phap">chiseled</span><br>
+									<span class="first"></span><span class="cu_phap">lines</span><br>
+									<span class="first"></span><span class="cu_phap">smooth</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">pillar_axis</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">x</span><br>
+									<span class="first"></span><span class="cu_phap">y</span><br>
+									<span class="first"></span><span class="cu_phap">z</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Rails</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">rail_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Activator Rail, Detector Rail, and Powered Rail</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">rail_data_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">rail_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Redstone Comparator</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">output_lit_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">output_subtract_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Redstone Dust</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">redstone_signal</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Redstone Repeater</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">repeater_delay</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Redstone Torch</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">torch_facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">east</span><br>
+									<span class="first"></span><span class="cu_phap">north</span><br>
+									<span class="first"></span><span class="cu_phap">south</span><br>
+									<span class="first"></span><span class="cu_phap">top</span><br>
+									<span class="first"></span><span class="cu_phap">unknown</span><br>
+									<span class="first"></span><span class="cu_phap">west</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Respawn Anchor</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">respawn_anchor_charge</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Saplings</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">age_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">sapling_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">acacia</span><br>
+									<span class="first"></span><span class="cu_phap">birch</span><br>
+									<span class="first"></span><span class="cu_phap">dark_oak</span><br>
+									<span class="first"></span><span class="cu_phap">jungle</span><br>
+									<span class="first"></span><span class="cu_phap">oak</span><br>
+									<span class="first"></span><span class="cu_phap">spruce</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Scaffolding</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">stability</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">stability_check</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Sea Pickle</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">cluster_count</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">dead_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Shulker Boxes Dyed</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">color</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">white</span><br>
+									<span class="first"></span><span class="cu_phap">orange</span><br>
+									<span class="first"></span><span class="cu_phap">magenta</span><br>
+									<span class="first"></span><span class="cu_phap">light_blue</span><br>
+									<span class="first"></span><span class="cu_phap">yellow</span><br>
+									<span class="first"></span><span class="cu_phap">lime</span><br>
+									<span class="first"></span><span class="cu_phap">pink</span><br>
+									<span class="first"></span><span class="cu_phap">gray</span><br>
+									<span class="first"></span><span class="cu_phap">silver</span><br>
+									<span class="first"></span><span class="cu_phap">cyan</span><br>
+									<span class="first"></span><span class="cu_phap">purple</span><br>
+									<span class="first"></span><span class="cu_phap">blue</span><br>
+									<span class="first"></span><span class="cu_phap">brown</span><br>
+									<span class="first"></span><span class="cu_phap">green</span><br>
+									<span class="first"></span><span class="cu_phap">red</span><br>
+									<span class="first"></span><span class="cu_phap">black</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Sign floor</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">ground_sign_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Sign wall</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Stone slab and double stone slab</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">stone_slab_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">brick</span><br>
+									<span class="first"></span><span class="cu_phap">cobblestone</span><br>
+									<span class="first"></span><span class="cu_phap">nether_brick</span><br>
+									<span class="first"></span><span class="cu_phap">quartz</span><br>
+									<span class="first"></span><span class="cu_phap">sandstone</span><br>
+									<span class="first"></span><span class="cu_phap">smooth_stone</span><br>
+									<span class="first"></span><span class="cu_phap">stone_brick</span><br>
+									<span class="first"></span><span class="cu_phap">wood</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">top_slot_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Wood slab and double wood slab</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">top_slot_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">wood_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">acacia</span><br>
+									<span class="first"></span><span class="cu_phap">birch</span><br>
+									<span class="first"></span><span class="cu_phap">dark_oak</span><br>
+									<span class="first"></span><span class="cu_phap">jungle</span><br>
+									<span class="first"></span><span class="cu_phap">oak</span><br>
+									<span class="first"></span><span class="cu_phap">spruce</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Stone slab 2 and double stone slab 2</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">stone_slab_type_2</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">mossy_cobblestone</span><br>
+									<span class="first"></span><span class="cu_phap">prismarine_brick</span><br>
+									<span class="first"></span><span class="cu_phap">prismarine_dark</span><br>
+									<span class="first"></span><span class="cu_phap">prismarine_rough</span><br>
+									<span class="first"></span><span class="cu_phap">purpur</span><br>
+									<span class="first"></span><span class="cu_phap">red_nether_brick</span><br>
+									<span class="first"></span><span class="cu_phap">red_sandstone</span><br>
+									<span class="first"></span><span class="cu_phap">smooth_sandstone</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">top_slot_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Stone slab 3 and double stone slab 3</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">stone_slab_type_3</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">andesite</span><br>
+									<span class="first"></span><span class="cu_phap">diorite</span><br>
+									<span class="first"></span><span class="cu_phap">end_stone_brick</span><br>
+									<span class="first"></span><span class="cu_phap">granite</span><br>
+									<span class="first"></span><span class="cu_phap">polished_andesite</span><br>
+									<span class="first"></span><span class="cu_phap">polished_diorite</span><br>
+									<span class="first"></span><span class="cu_phap">polished_granite</span><br>
+									<span class="first"></span><span class="cu_phap">smooth_red_sandstone</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">top_slot_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Stone slab 4 and double stone slab 4</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">stone_slab_type_4</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">cut_red_sandstone</span><br>
+									<span class="first"></span><span class="cu_phap">cut_sandstone</span><br>
+									<span class="first"></span><span class="cu_phap">mossy_stone_brick</span><br>
+									<span class="first"></span><span class="cu_phap">smooth_quartz</span><br>
+									<span class="first"></span><span class="cu_phap">stone</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">top_slot_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Crimson, warped, blackstone, polished blackstone, polished blackstone brick, and cut copper slab</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">top_slot_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Smoker</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Snow</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">height</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">covered_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Stairs</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">upside_down_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">weirdo_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Stonecutter</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Structure Block</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">mode</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">corner</span><br>
+									<span class="first"></span><span class="cu_phap">data</span><br>
+									<span class="first"></span><span class="cu_phap">export</span><br>
+									<span class="first"></span><span class="cu_phap">invalid</span><br>
+									<span class="first"></span><span class="cu_phap">load</span><br>
+									<span class="first"></span><span class="cu_phap">save</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">structure_void_type</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">structure_void_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">air</span><br>
+									<span class="first"></span><span class="cu_phap">void</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Sugar Cane</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">age
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Sweet Berry Bush</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">growth</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Grass and fern</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">tall_grass_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">default</span><br>
+									<span class="first"></span><span class="cu_phap">tall</span><br>
+									<span class="first"></span><span class="cu_phap">fern</span><br>
+									<span class="first"></span><span class="cu_phap">snow</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Tall grass and large fern</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">double_flower_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">fern</span><br>
+									<span class="first"></span><span class="cu_phap">grass</span><br>
+									<span class="first"></span><span class="cu_phap">paeonia</span><br>
+									<span class="first"></span><span class="cu_phap">rose</span><br>
+									<span class="first"></span><span class="cu_phap">sunflower</span><br>
+									<span class="first"></span><span class="cu_phap">syringa</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">upper_block_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Tall Seagrass</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">sea_grass_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">default</span><br>
+									<span class="first"></span><span class="cu_phap">double_bot</span><br>
+									<span class="first"></span><span class="cu_phap">double_top</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">TNT</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">allow_underwater_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">explode_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">false</span><br>
+									<span class="first"></span><span class="cu_phap">true</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Trapdoors</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">open_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">upside_down_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Tripwire</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">attached_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">disarmed_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">powered_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">suspended_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Tripwire Hook</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">attached_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">powered_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Turtle Egg</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">turtle_egg_count</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">four_egg</span><br>
+									<span class="first"></span><span class="cu_phap">one_egg</span><br>
+									<span class="first"></span><span class="cu_phap">three_egg</span><br>
+									<span class="first"></span><span class="cu_phap">two_egg</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">cracked_state</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">cracked</span><br>
+									<span class="first"></span><span class="cu_phap">max_cracked</span><br>
+									<span class="first"></span><span class="cu_phap">no_cracks</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Vines</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">vine_direction_bits</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Wall Torch</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">torch_facing_direction</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">east</span><br>
+									<span class="first"></span><span class="cu_phap">north</span><br>
+									<span class="first"></span><span class="cu_phap">south</span><br>
+									<span class="first"></span><span class="cu_phap">top</span><br>
+									<span class="first"></span><span class="cu_phap">unknown</span><br>
+									<span class="first"></span><span class="cu_phap">west</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Non-blackstone and deepslate wall</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">wall_block_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">andesite</span><br>
+									<span class="first"></span><span class="cu_phap">brick</span><br>
+									<span class="first"></span><span class="cu_phap">cobblestone</span><br>
+									<span class="first"></span><span class="cu_phap">diorite</span><br>
+									<span class="first"></span><span class="cu_phap">end_brick</span><br>
+									<span class="first"></span><span class="cu_phap">granite</span><br>
+									<span class="first"></span><span class="cu_phap">mossy_cobblestone</span><br>
+									<span class="first"></span><span class="cu_phap">mossy_stone_brick</span><br>
+									<span class="first"></span><span class="cu_phap">nether_brick</span><br>
+									<span class="first"></span><span class="cu_phap">prismarine</span><br>
+									<span class="first"></span><span class="cu_phap">red_nether_brick</span><br>
+									<span class="first"></span><span class="cu_phap">red_sandstone</span><br>
+									<span class="first"></span><span class="cu_phap">sandstone</span><br>
+									<span class="first"></span><span class="cu_phap">stone_brick</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">wall_connection_type_east</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">none</span><br>
+									<span class="first"></span><span class="cu_phap">short</span><br>
+									<span class="first"></span><span class="cu_phap">tall</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">wall_connection_type_north</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">none</span><br>
+									<span class="first"></span><span class="cu_phap">short</span><br>
+									<span class="first"></span><span class="cu_phap">tall</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">wall_connection_type_south</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">none</span><br>
+									<span class="first"></span><span class="cu_phap">short</span><br>
+									<span class="first"></span><span class="cu_phap">tall</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">wall_connection_type_west</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">none</span><br>
+									<span class="first"></span><span class="cu_phap">short</span><br>
+									<span class="first"></span><span class="cu_phap">tall</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">wall_post_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Blackstone and deepslate wall</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">wall_connection_type_east</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">none</span><br>
+									<span class="first"></span><span class="cu_phap">short</span><br>
+									<span class="first"></span><span class="cu_phap">tall</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">wall_connection_type_north</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">none</span><br>
+									<span class="first"></span><span class="cu_phap">short</span><br>
+									<span class="first"></span><span class="cu_phap">tall</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">wall_connection_type_south</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">none</span><br>
+									<span class="first"></span><span class="cu_phap">short</span><br>
+									<span class="first"></span><span class="cu_phap">tall</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">wall_connection_type_west</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">none</span><br>
+									<span class="first"></span><span class="cu_phap">short</span><br>
+									<span class="first"></span><span class="cu_phap">tall</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">wall_post_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Water and flowing water</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">liquid_depth</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span><br>
+									<span class="first"></span><span class="cu_phap">8</span><br>
+									<span class="first"></span><span class="cu_phap">9</span><br>
+									<span class="first"></span><span class="cu_phap">10</span><br>
+									<span class="first"></span><span class="cu_phap">11</span><br>
+									<span class="first"></span><span class="cu_phap">12</span><br>
+									<span class="first"></span><span class="cu_phap">13</span><br>
+									<span class="first"></span><span class="cu_phap">14</span><br>
+									<span class="first"></span><span class="cu_phap">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Wheat</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">growth</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span><br>
+									<span class="first"></span><span class="cu_phap">2</span><br>
+									<span class="first"></span><span class="cu_phap">3</span><br>
+									<span class="first"></span><span class="cu_phap">4</span><br>
+									<span class="first"></span><span class="cu_phap">5</span><br>
+									<span class="first"></span><span class="cu_phap">6</span><br>
+									<span class="first"></span><span class="cu_phap">7</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Wood</span>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon cu_phap">pillar_axis</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">x</span><br>
+									<span class="first"></span><span class="cu_phap">y</span><br>
+									<span class="first"></span><span class="cu_phap">z</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">stripped_bit</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">0</span><br>
+									<span class="first"></span><span class="cu_phap">1</span>
+								</div>
+							</div>
+							<div>
+								<span class="drop_icon cu_phap">wood_type</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">acacia</span><br>
+									<span class="first"></span><span class="cu_phap">birch</span><br>
+									<span class="first"></span><span class="cu_phap">dark_oak</span><br>
+									<span class="first"></span><span class="cu_phap">jungle</span><br>
+									<span class="first"></span><span class="cu_phap">oak</span><br>
+									<span class="first"></span><span class="cu_phap">spruce</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon">Hyphae</span>
+						<div class="drop_hide tab p_small">
+							<div>
+								<span class="drop_icon cu_phap">pillar_axis</span>
+								<div class="drop_hide tab">
+									<span class="first"></span><span class="cu_phap">x</span><br>
+									<span class="first"></span><span class="cu_phap">y</span><br>
+									<span class="first"></span><span class="cu_phap">z</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

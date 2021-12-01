@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,43 +128,47 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Khiến Entity thực hiện Command
+					<span class="first"></span>Khiến Entity thực hiện Command
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/execute &lt;origin: target&gt; &lt;position: x y z&gt; &lt;command: command&gt;</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">&lt;origin: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
-						◟<span class="cu_phap">&lt;position: x y z&gt;</span> là tọa độ<br>
-						◟<span class="cu_phap">&lt;command: command&gt;</span> là Command<br>
-						◟<span class="cmd">/execute @a ~~~ setblock ~~-1 ~ dirt</span> — All Player sẽ Setblock Dirt dữ liệu 0 dưới chân
+					<div>
+						<span class="drop_icon cu_phap">/execute &lt;origin: target&gt; &lt;position: x y z&gt; &lt;command: command&gt;</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">&lt;origin: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+							<span class="first"></span><span class="cu_phap">&lt;position: x y z&gt;</span> là tọa độ<br>
+							<span class="first"></span><span class="cu_phap">&lt;command: command&gt;</span> là Command<br>
+							<span class="first"></span><span class="cmd">/execute @a ~~~ setblock ~~-1 ~ dirt</span> — All Player sẽ Setblock Dirt dữ liệu 0 dưới chân
+						</div>
 					</div>
-					◟<span class="cu_phap">/execute &lt;origin: target&gt; &lt;position: x y z&gt; detect &lt;detectPos: x y z&gt; &lt;block: Block&gt; &lt;data: int&gt; &lt;command: command&gt;</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;origin: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
-						◟<span class="cu_phap">&lt;position: x y z&gt;</span> là tọa độ<br>
-						◟<span class="cu_phap">detect</span> là kiểm tra<br>
-						◟<span class="cu_phap">&lt;detectPos: x y z&gt;</span> là tọa độ kiểm tra<br>
-						◟<span class="cu_phap">&lt;block: Block&gt;</span> là id Block<br>
-						◟<span class="cu_phap">&lt;data: int&gt;</span> là dữ liệu Block<br>
-						◟<span class="cu_phap">&lt;command: command&gt;</span> là Command<br>
-						◟<span class="cmd">/execute @a ~~~ detect stone 0 setblock ~~-1 ~ dirt</span> — All Player có Stone dữ liệu bằng 0 dưới chân sẽ bị Setblock Dirt dữ liệu 0 dưới chân, nếu không có thì không bị Setblock Dirt dưới chân
+					<div>
+						<span class="drop_icon cu_phap">/execute &lt;origin: target&gt; &lt;position: x y z&gt; detect &lt;detectPos: x y z&gt; &lt;block: Block&gt; &lt;data: int&gt; &lt;command: command&gt;</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cu_phap">&lt;origin: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+							<span class="first"></span><span class="cu_phap">&lt;position: x y z&gt;</span> là tọa độ<br>
+							<span class="first"></span><span class="cu_phap">detect</span> là kiểm tra<br>
+							<span class="first"></span><span class="cu_phap">&lt;detectPos: x y z&gt;</span> là tọa độ kiểm tra<br>
+							<span class="first"></span><span class="cu_phap">&lt;block: Block&gt;</span> là id Block<br>
+							<span class="first"></span><span class="cu_phap">&lt;data: int&gt;</span> là dữ liệu Block<br>
+							<span class="first"></span><span class="cu_phap">&lt;command: command&gt;</span> là Command<br>
+							<span class="first"></span><span class="cmd">/execute @a ~~~ detect stone 0 setblock ~~-1 ~ dirt</span> — All Player có Stone dữ liệu bằng 0 dưới chân sẽ bị Setblock Dirt dữ liệu 0 dưới chân, nếu không có thì không bị Setblock Dirt dưới chân
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">&lt;position: x y z&gt;</span> nên để mặc định là <span class="cu_phap">~~~</span> cho mọi <span class="cu_phap">/execute</span><br>
-					◟<span class="cu_phap">&lt;block: Block&gt;</span> = <span class="cu_phap">-1</span> là mọi loại Block chung id
+					<span class="first"></span><span class="cu_phap">&lt;position: x y z&gt;</span> nên để mặc định là <span class="cu_phap">~~~</span> cho mọi <span class="cu_phap">/execute</span><br>
+					<span class="first"></span><span class="cu_phap">&lt;block: Block&gt;</span> = <span class="cu_phap">-1</span> là mọi loại Block chung id
 				</div>	
 			</div>
 		</div>

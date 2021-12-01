@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -70,259 +71,923 @@
 					<div align="center" class="p note">
 						Nếu bạn muốn nghe nhạc từ trang thì cần ít nhất 1 phút để có thể Load trang
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.11</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.11</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/11.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.13</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.13</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/13.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.blocks</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.blocks</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/blocks.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.cat</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.cat</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/cat.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.chirp</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.chirp</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/chirp.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.far</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.far</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/far.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.mall</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.mall</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/mall.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.mellohi</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.mellohi</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/mellohi.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.pigstep</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.otherside</span><br>
+						<audio controls loop class="drop_hide tab enter">
+							<source src="../lib/sounds/trackName-string/records/otherside.ogg" type="audio/ogg">
+						</audio>
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">record.pigstep</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/pigstep_master.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.stal</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.stal</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/stal.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.strad</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.strad</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/strad.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.wait</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.wait</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/wait.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">record.ward</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">record.ward</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/records/ward.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">music.game</span><br>
-						<div class="tab p_small">
-							◟calm 1<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/calm1.ogg" type="audio/ogg">
-							</audio><br>
-							◟calm 2<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/calm2.ogg" type="audio/ogg">
-							</audio><br>
-							◟calm 3<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/calm3.ogg" type="audio/ogg">
-							</audio><br>
-							◟hal 1<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/hal1.ogg" type="audio/ogg">
-							</audio><br>
-							◟hal 2<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/hal2.ogg" type="audio/ogg">
-							</audio><br>
-							◟hal 3<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/hal3.ogg" type="audio/ogg">
-							</audio><br>
-							◟hal 4<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/hal4.ogg" type="audio/ogg">
-							</audio><br>
-							◟nuance 1<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/nuance1.ogg" type="audio/ogg">
-							</audio><br>
-							◟nuance 2<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/nuance2.ogg" type="audio/ogg">
-							</audio><br>
-							◟piano 1<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/piano1.ogg" type="audio/ogg">
-							</audio><br>
-							◟piano 2<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/piano2.ogg" type="audio/ogg">
-							</audio><br>
-							◟piano 3<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/piano3.ogg" type="audio/ogg">
-							</audio>
+					<div>
+						<span class="drop_icon cu_phap">music.game</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">calm 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/calm1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">calm 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/calm2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">calm 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/calm3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 4</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal4.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nuance 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nuance1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nuance 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nuance2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">one more day</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/one_more_day.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">floating dream</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/floating_dream.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">left to bloom</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/left_to_bloom.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">comforting memories</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/comforting_memories.ogg" type="audio/ogg">
+								</audio>
+							</div>
 						</div>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">music.game.creative</span><br>
-						<div class="tab p_small">
-							◟creative 1<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/creative/creative1.ogg" type="audio/ogg">
-							</audio><br>
-							◟creative 2<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/creative/creative2.ogg" type="audio/ogg">
-							</audio><br>
-							◟creative 3<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/creative/creative3.ogg" type="audio/ogg">
-							</audio><br>
-							◟creative 4<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/creative/creative4.ogg" type="audio/ogg">
-							</audio><br>
-							◟creative 5<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/creative/creative5.ogg" type="audio/ogg">
-							</audio><br>
-							◟creative 6<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/creative/creative6.ogg" type="audio/ogg">
-							</audio>
+					<div>
+						<span class="drop_icon cu_phap">music.game.basalt_deltas</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">so below</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/so_below.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 4</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether4.ogg" type="audio/ogg">
+								</audio>
+							</div>
 						</div>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">music.game.credits</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">music.game.creative</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">creative 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/creative/creative1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">creative 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/creative/creative2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">creative 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/creative/creative3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">creative 4</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/creative/creative4.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">creative 5</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/creative/creative5.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">creative 6</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/creative/creative6.ogg" type="audio/ogg">
+								</audio>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">music.game.credits</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/end/credits.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">music.game.crimson_forest</span><br>
-						<audio controls loop class="tab">
-							<source src="../lib/sounds/trackName-string/nether/chrysopoeia.ogg" type="audio/ogg">
-						</audio>
+					<div>
+						<span class="drop_icon cu_phap">music.game.crimson_forest</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">chrysopoeia</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/chrysopoeia.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 4</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether4.ogg" type="audio/ogg">
+								</audio>
+							</div>
+						</div>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">music.game.end</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">music.game.dripstone_caves</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">wending</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/wending.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">infinite amethyst</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/infinite_amethyst.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">an ordinary day</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/an_ordinary_day.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 4</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal4.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nuance 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nuance1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nuance 2</span><br>
+								<audio controls loop class="drop_hide enter">
+									<source src="../lib/sounds/trackName-string/nuance2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">music.game.end</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/end/end.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">music.game.endboss</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">music.game.endboss</span><br>
+						<audio controls loop class="drop_hide tab enter">
 							<source src="../lib/sounds/trackName-string/end/boss.ogg" type="audio/ogg">
 						</audio>
 					</div>
 					<div>
-						◟<span class="cu_phap">music.game.menu</span><br>
-						<div class="tab p_small">
-							◟menu 1<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/menu/menu1.ogg" type="audio/ogg">
-							</audio><br>
-							◟menu 2<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/menu/menu2.ogg" type="audio/ogg">
-							</audio><br>
-							◟menu 3<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/menu/menu3.ogg" type="audio/ogg">
-							</audio><br>
-							◟menu 4<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/menu/menu4.ogg" type="audio/ogg">
-							</audio>
+						<span class="drop_icon cu_phap">music.game.frozen_peaks</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">stand tall</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/stand_tall.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">one more day</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/one_more_day.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 4</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal4.ogg" type="audio/ogg">
+								</audio>
+							</div>
 						</div>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">music.game.nether</span><br>
-						<div class="tab p_small">
-							◟nether 1<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/nether/nether1.ogg" type="audio/ogg">
-							</audio><br>
-							◟nether 2<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/nether/nether2.ogg" type="audio/ogg">
-							</audio><br>
-							◟nether 3<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/nether/nether3.ogg" type="audio/ogg">
-							</audio><br>
-							◟nether 4<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/nether/nether4.ogg" type="audio/ogg">
-							</audio>
+					<div>
+						<span class="drop_icon cu_phap">music.game.grove</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">comforting memories</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/comforting_memories.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">infinite amethyst</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/infinite_amethyst.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">wending</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/wending.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">calm 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/calm1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">calm 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/calm2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">calm 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/calm3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nuance 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nuance1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nuance 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nuance2.ogg" type="audio/ogg">
+								</audio>
+							</div>
 						</div>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">music.game.nether_wastes</span><br>
-						<audio controls loop class="tab">
-							<source src="../lib/sounds/trackName-string/nether/rubedo.ogg" type="audio/ogg">
-						</audio>
+					<div>
+						<span class="drop_icon cu_phap">music.game.jagged_peaks</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">floating dream</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/floating_dream.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">stand tall</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/stand_tall.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">wending</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/wending.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nuance 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nuance1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nuance 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nuance2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+						</div>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">music.game.soulsand_valley</span><br>
-						<audio controls loop class="tab">
+					<div>
+						<span class="drop_icon cu_phap">music.game.lush_caves</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">left to bloom</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/left_to_bloom.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">one more day</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/one_more_day.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">floating dream</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/floating_dream.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">calm 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/calm1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">calm 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/calm2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">calm 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/calm3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">music.game.meadow</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">one more day</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/one_more_day.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">left to bloom</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/left_to_bloom.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 4</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal4.ogg" type="audio/ogg">
+								</audio>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">music.game.nether</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">nether 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 4</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether4.ogg" type="audio/ogg">
+								</audio>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">music.game.nether_wastes</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">rubedo</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/rubedo.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 4</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether4.ogg" type="audio/ogg">
+								</audio>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">music.game.snowy_slopes</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">an ordinary day</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/an_ordinary_day.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">stand tall</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/stand_tall.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">one more day</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/one_more_day.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">music.game.soul_sand_valley</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">so below</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/so_below.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">nether 4</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/nether/nether4.ogg" type="audio/ogg">
+								</audio>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">music.game.soulsand_valley</span><br>
+						<audio controls loop class="drop_hide tab">
 							<source src="../lib/sounds/trackName-string/nether/so_below.ogg" type="audio/ogg">
 						</audio>
 					</div>
-					<div class="enter">
-						◟<span class="cu_phap">music.game.water</span><br>
-						<div class="tab p_small">
-							◟axolotl<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/water/axolotl.ogg" type="audio/ogg">
-							</audio><br>
-							◟dragon fish<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/water/dragon_fish.ogg" type="audio/ogg">
-							</audio><br>
-							◟shuniji<br>
-							<audio controls>
-								<source src="../lib/sounds/trackName-string/water/shuniji.ogg" type="audio/ogg">
-							</audio>
+					<div>
+						<span class="drop_icon cu_phap">music.game.stony_peaks</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">stand tall</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/stand_tall.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">wending</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/wending.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">piano 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/piano3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">hal 4</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/hal4.ogg" type="audio/ogg">
+								</audio>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">music.game.water</span><br>
+						<div class="drop_hide tab enter p_small">
+							<div>
+								<span class="drop_icon">axolotl</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/water/axolotl.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">dragon fish</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/water/dragon_fish.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">shuniji</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/water/shuniji.ogg" type="audio/ogg">
+								</audio>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="drop_icon cu_phap">music.menu</span><br>
+						<div class="drop_hide tab p_small">
+							<div>
+								<span class="drop_icon">stand tall</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/stand_tall.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">one more day</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/one_more_day.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">left to bloom</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/left_to_bloom.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">wending</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/wending.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">infinite amethyst</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/infinite_amethyst.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">menu 1</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/menu/menu1.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">menu 2</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/menu/menu2.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">menu 3</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/menu/menu3.ogg" type="audio/ogg">
+								</audio>
+							</div>
+							<div>
+								<span class="drop_icon">menu 4</span><br>
+								<audio controls loop class="drop_hide tab">
+									<source src="../lib/sounds/trackName-string/menu/menu4.ogg" type="audio/ogg">
+								</audio>
+							</div>
 						</div>
 					</div>
 				</div>

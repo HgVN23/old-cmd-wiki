@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,29 +128,29 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Đặt điểm xuất hiện của All Player khi mới vào Map và sau khi hồi sinh
+					<span class="first"></span>Đặt điểm xuất hiện của All Player khi mới vào Map và sau khi hồi sinh
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/setworldspawn [spawnPoint: x y z]</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">[spawnPoint: x y z]</span> là tọa độ<br>
-						◟<span class="cmd">/setworldspawn 1 1 1</span> — tọa độ Player xuất hiện và hồi sinh sẽ là 1 1 1
+					<span class="drop_icon cu_phap">/setworldspawn [spawnPoint: x y z]</span>
+					<div class="drop_hide tab p_small">
+						<span class="first"></span><span class="cu_phap">[spawnPoint: x y z]</span> là tọa độ<br>
+						<span class="first"></span><span class="cmd">/setworldspawn 1 1 1</span> — tọa độ Player xuất hiện và hồi sinh sẽ là 1 1 1
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Player sẽ luôn được xuất hiện ở góc của tọa độ được đặt
+					<span class="first"></span>Player sẽ luôn được xuất hiện ở góc của tọa độ được đặt
 				</div>
 			</div>
 		</div>

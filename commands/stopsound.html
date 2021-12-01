@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,31 +128,31 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Dừng âm thanh đang phát cho Player
+					<span class="first"></span>Dừng âm thanh đang phát cho Player
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/stopsound &lt;player: target&gt; [sound: string]</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
-						◟<span class="cu_phap">[sound: string]</span> là âm thanh. Danh sách &lt;Xem tại đây&gt;<br>
-						◟<span class="cmd">/stopsound @a mob.enderdragon.death</span> — All Player có âm thanh Dragon Death sẽ dừng phát
+					<span class="drop_icon cu_phap">/stopsound &lt;player: target&gt; [sound: string]</span>
+					<div class="drop_hide tab p_small">
+						<span class="first"></span><span class="cu_phap">&lt;player: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
+						<span class="first"></span><span class="cu_phap">[sound: string]</span> là âm thanh. Danh sách &lt;Xem tại đây&gt;<br>
+						<span class="first"></span><span class="cmd">/stopsound @a mob.enderdragon.death</span> — All Player có âm thanh Dragon Death sẽ dừng phát
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Nếu ghi <span class="cu_phap">/stopsound &lt;player: target&gt;</span> thì mọi âm thanh sẽ dừng phát<br>
-					◟Việc dừng âm thanh phát chỉ được ngay lúc đó, lúc sau âm thanh khác phát thì vẫn sẽ phát
+					<span class="first"></span>Nếu ghi <span class="cu_phap">/stopsound &lt;player: target&gt;</span> thì mọi âm thanh sẽ dừng phát<br>
+					<span class="first"></span>Việc dừng âm thanh phát chỉ được ngay lúc đó, lúc sau âm thanh khác phát thì vẫn sẽ phát
 				</div>
 			</div>
 		</div>

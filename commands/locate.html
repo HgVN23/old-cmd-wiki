@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,45 +128,47 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Tìm vị trí công trình
+					<span class="first"></span>Tìm vị trí công trình
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/locate &lt;feature: Feature&gt;</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;feature: Feature&gt;</span> là id công trình. Danh sách:
-						<div class="tab">
-							◟<span class="cu_phap">bastionremnant</span> — tàn tích pháo đài của Piglin<br>
-							◟<span class="cu_phap">buriedtreasure</span> — kho báu bị chôn vùi<br>
-							◟<span class="cu_phap">endcity</span> — thành phố End<br>
-							◟<span class="cu_phap">fortress</span> — pháo đài Nether<br>
-							◟<span class="cu_phap">mansion</span> — biệt thự của Illager<br>
-							◟<span class="cu_phap">mineshaft</span> — mỏ bỏ hoang<br>
-							◟<span class="cu_phap">monument</span> — đền biển<br>
-							◟<span class="cu_phap">pillageroutpost</span> — đồn điền của Pillager<br>
-							◟<span class="cu_phap">ruinedportal</span> — tan tích Nether Portal<br>
-							◟<span class="cu_phap">ruins</span> — khe nứt<br>
-							◟<span class="cu_phap">shipwreck</span> — tàu đắm<br>
-							◟<span class="cu_phap">stronghold</span> — thành trì bỏ hoang nơi có End Portal<br>
-							◟<span class="cu_phap">temple</span> — đền rừng<br>
-							◟<span class="cu_phap">village</span> — làng
+					<span class="drop_icon cu_phap">/locate &lt;feature: Feature&gt;</span>
+					<div class="drop_hide tab p_small">
+						<div>
+							<span class="drop_icon"><span class="cu_phap">&lt;feature: Feature&gt;</span> là id công trình. Danh sách:</span>
+							<div class="drop_hide tab">
+								<span class="first"></span><span class="cu_phap">bastionremnant</span> — tàn tích pháo đài của Piglin<br>
+								<span class="first"></span><span class="cu_phap">buriedtreasure</span> — kho báu bị chôn vùi<br>
+								<span class="first"></span><span class="cu_phap">endcity</span> — thành phố End<br>
+								<span class="first"></span><span class="cu_phap">fortress</span> — pháo đài Nether<br>
+								<span class="first"></span><span class="cu_phap">mansion</span> — biệt thự của Illager<br>
+								<span class="first"></span><span class="cu_phap">mineshaft</span> — mỏ bỏ hoang<br>
+								<span class="first"></span><span class="cu_phap">monument</span> — đền biển<br>
+								<span class="first"></span><span class="cu_phap">pillageroutpost</span> — đồn điền của Pillager<br>
+								<span class="first"></span><span class="cu_phap">ruinedportal</span> — tan tích Nether Portal<br>
+								<span class="first"></span><span class="cu_phap">ruins</span> — khe nứt<br>
+								<span class="first"></span><span class="cu_phap">shipwreck</span> — tàu đắm<br>
+								<span class="first"></span><span class="cu_phap">stronghold</span> — thành trì bỏ hoang nơi có End Portal<br>
+								<span class="first"></span><span class="cu_phap">temple</span> — đền rừng<br>
+								<span class="first"></span><span class="cu_phap">village</span> — làng
+							</div>
 						</div>
-						◟<span class="cmd">/locate village</span> — sẽ thông báo tọa độ x và z của Village cho Player
+						<span class="first"></span><span class="cmd">/locate village</span> — sẽ thông báo tọa độ x và z của Village cho Player
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/locate</span> bị ảnh hưởng bởi <a class="link_text" href="gamerule.html">/gamerule</a> <span class="cmd">sendcommandfeedback false</span>
+					<span class="first"></span><span class="cu_phap">/locate</span> bị ảnh hưởng bởi <a class="link_text" href="gamerule.html">/gamerule</a> <span class="cmd">sendcommandfeedback false</span>
 				</div>
 			</div>
 		</div>

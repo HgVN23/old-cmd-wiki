@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,41 +128,45 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Xóa item được chọn hoặc toàn bộ trong kho đồ của Player
+					<span class="first"></span>Xóa item được chọn hoặc toàn bộ trong kho đồ của Player
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/clear [player: target] [itemName: Item] [data: int] [maxCount: int]</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">[player: target]</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
-						◟<span class="cu_phap">[itemName: Item]</span> là id Item<br>
-						◟<span class="cu_phap">[data: int]</span> là dữ liệu Item<br>
-						◟<span class="cu_phap">[maxCount: int]</span> là số lượng Item<br>
-						◟<span class="cmd">/clear @a diamond 0 1</span> — All Player sẽ bị xóa 1 viên kim cương<br>
-						◟<span class="cmd">/clear @a wool 14 2</span> — All Player sẽ bị xóa 2 len đỏ (14 là màu đỏ)
+					<span class="drop_icon cu_phap">/clear [player: target] [itemName: Item] [data: int] [maxCount: int]</span>
+					<div class="drop_hide tab p_small">
+						<span class="first"></span><span class="cu_phap">[player: target]</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
+						<span class="first"></span><span class="cu_phap">[itemName: Item]</span> là id Item<br>
+						<span class="first"></span><span class="cu_phap">[data: int]</span> là dữ liệu Item<br>
+						<span class="first"></span><span class="cu_phap">[maxCount: int]</span> là số lượng Item<br>
+						<span class="first"></span><span class="cmd">/clear @a diamond 0 1</span> — All Player sẽ bị xóa 1 viên kim cương<br>
+						<span class="first"></span><span class="cmd">/clear @a wool 14 2</span> — All Player sẽ bị xóa 2 len đỏ (14 là màu đỏ)
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Command vẫn sẽ hoạt động kể cả khi số lượng Item trong kho đồ ít hơn số lượng clear trong Command, kể cả trong kho đồ Player không có<br>
-					◟<span class="cu_phap">[maxCount: int]</span> bằng 0 thì Command vẫn sẽ hoạt động nhưng không có Item nào bị xóa<br>
-					◟Nếu muốn clear toàn bộ Item đã chọn thì bỏ qua <span class="cu_phap">[data: int] [maxCount: int]</span>
-					<div class="tab">
-						◟<span class="cmd">/clear @a wool</span> — All Player sẽ bị xóa hết len
+					<span class="first"></span>Command vẫn sẽ hoạt động kể cả khi số lượng Item trong kho đồ ít hơn số lượng clear trong Command, kể cả trong kho đồ Player không có<br>
+					<span class="first"></span><span class="cu_phap">[maxCount: int]</span> bằng 0 thì Command vẫn sẽ hoạt động nhưng không có Item nào bị xóa<br>
+					<div>
+						<span class="drop_icon">Nếu muốn clear toàn bộ Item đã chọn thì bỏ qua <span class="cu_phap">[data: int] [maxCount: int]</span></span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cmd">/clear @a wool</span> — All Player sẽ bị xóa hết len
+						</div>
 					</div>
-					◟<span class="cu_phap">[data: int]</span> bằng -1 là mọi loại dữ liệu của Item
-					<div class="tab">
-						◟<span class="cmd">/clear @a wool -1 2</span> — All Player sẽ bị xóa 2 len các loại
+					<div>
+						<span class="drop_icon"><span class="cu_phap">[data: int]</span> bằng -1 là mọi loại dữ liệu của Item</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cmd">/clear @a wool -1 2</span> — All Player sẽ bị xóa 2 len các loại
+						</div>
 					</div>
 				</div>
 			</div>

@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -67,21 +68,29 @@
 			</div>
 			<div class="slot box">
 				<div class="row1 p">
-					◟<span class="cu_phap">{"text":"..."}</span> là văn bản
-					<div class="tab enter p_small">
-						◟<span class="cmd">/tellraw @a {"rawtext":[{"text":"Hi"}]}</span> — All Player nhận được Chat Hi
+					<div>
+						<span class="drop_icon"><span class="cu_phap">{"text":"..."}</span> là văn bản</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cmd">/tellraw @a {"rawtext":[{"text":"Hi"}]}</span> — All Player nhận được Chat Hi
+						</div>
 					</div>
-					◟<span class="cu_phap">{"translate":"..."}</span> là dịch văn bản trong en_?.lang
-					<div class="tab enter p_small">
-						◟<span class="cmd">/tellraw @a {"rawtext":[{"translate":"menu.copyright"}]}</span> — All Player nhận được Chat @Mojang AB
+					<div>
+						<span class="drop_icon"><span class="cu_phap">{"translate":"..."}</span> là dịch văn bản trong en_?.lang</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cmd">/tellraw @a {"rawtext":[{"translate":"menu.copyright"}]}</span> — All Player nhận được Chat @Mojang AB
+						</div>
 					</div>
-					◟<span class="cu_phap">{"selector":"..."}</span> là hiện tên <a class="link_text" href="target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)
-					<div class="tab enter p_small">
-						◟<span class="cmd">/tellraw @a {"rawtext":[{"selector":"@a"}]}</span> — All Player nhận được Chat tên của All Player
+					<div>
+						<span class="drop_icon"><span class="cu_phap">{"selector":"..."}</span> là hiện tên <a class="link_text" href="target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cmd">/tellraw @a {"rawtext":[{"selector":"@a"}]}</span> — All Player nhận được Chat tên của All Player
+						</div>
 					</div>
-					◟<span class="cu_phap">{"score":{"name":"...","objective":"..."}}</span> là hiện điểm của <a class="link_text" href="target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> trong Scoreboard
-					<div class="tab p_small">
-						◟<span class="cmd">/tellraw @a {"rawtext":[{"score":{"name":"@a","objective":"a"}}]}</span> — All Player nhận được Chat điểm của All Player có trong Scoreboard a
+					<div>
+						<span class="drop_icon"><span class="cu_phap">{"score":{"name":"...","objective":"..."}}</span> là hiện điểm của <a class="link_text" href="target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> trong Scoreboard</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cmd">/tellraw @a {"rawtext":[{"score":{"name":"@a","objective":"a"}}]}</span> — All Player nhận được Chat điểm của All Player có trong Scoreboard a
+						</div>
 					</div>
 				</div>
 			</div>

@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,30 +128,30 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Gửi Chat riêng cho Player khác
+					<span class="first"></span>Gửi Chat riêng cho Player khác
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Không có
+					<span class="first"></span>Không có
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/tell &lt;target: target&gt; &lt;message: message&gt;</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;target: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
-						◟<span class="cu_phap">&lt;message: message&gt;</span> là đoạn Chat<br>
-						◟<span class="cmd">/tell Someone123 Hello</span> — Player tên Someone123 sẽ nhận được Chat của bạn
+					<span class="drop_icon cu_phap">/tell &lt;target: target&gt; &lt;message: message&gt;</span>
+					<div class="drop_hide tab p_small">
+						<span class="first"></span><span class="cu_phap">&lt;target: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Player)<br>
+						<span class="first"></span><span class="cu_phap">&lt;message: message&gt;</span> là đoạn Chat<br>
+						<span class="first"></span><span class="cmd">/tell Someone123 Hello</span> — Player tên Someone123 sẽ nhận được Chat của bạn
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Player có OP sẽ nhìn được Chat riêng
+					<span class="first"></span>Player có OP sẽ nhìn được Chat riêng
 				</div>
 			</div>
 		</div>

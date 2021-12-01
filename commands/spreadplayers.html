@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,34 +128,34 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Tp Entity ngẫu nhiên trên bề mặt có Block
+					<span class="first"></span>Tp Entity ngẫu nhiên trên bề mặt có Block
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/spreadplayers &lt;x: value&gt; &lt;z: value&gt; &lt;spreadDistance: float&gt; &lt;maxRange: float&gt; &lt;victim: target&gt;</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;x: value&gt;</span> là tọa độ x<br>
-						◟<span class="cu_phap">&lt;z: value&gt;</span> là tọa độ z<br>
-						◟<span class="cu_phap">&lt;spreadDistance: float&gt;</span> là khoảng cách giữa các Entity<br>
-						◟<span class="cu_phap">&lt;maxRange: float&gt;</span> là giới hạn vùng<br>
-						◟<span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
-						◟<span class="cmd">/spreadplayers 1 1 0 4 @a</span> — All Player sẽ bị tp ngẫu nhiên trong bán kính 4 Block tính từ tọa độ trung tâm 1 1
+					<span class="drop_icon cu_phap">/spreadplayers &lt;x: value&gt; &lt;z: value&gt; &lt;spreadDistance: float&gt; &lt;maxRange: float&gt; &lt;victim: target&gt;</span>
+					<div class="drop_hide tab p_small">
+						<span class="first"></span><span class="cu_phap">&lt;x: value&gt;</span> là tọa độ x<br>
+						<span class="first"></span><span class="cu_phap">&lt;z: value&gt;</span> là tọa độ z<br>
+						<span class="first"></span><span class="cu_phap">&lt;spreadDistance: float&gt;</span> là khoảng cách giữa các Entity<br>
+						<span class="first"></span><span class="cu_phap">&lt;maxRange: float&gt;</span> là giới hạn vùng<br>
+						<span class="first"></span><span class="cu_phap">&lt;victim: target&gt;</span> là <a class="link_text" href="../danh-sach/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)<br>
+						<span class="first"></span><span class="cmd">/spreadplayers 1 1 0 4 @a</span> — All Player sẽ bị tp ngẫu nhiên trong bán kính 4 Block tính từ tọa độ trung tâm 1 1
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Nếu y = 1 có Block mà y = 4 có Block thì khi dùng Command này Entity bị tp lên trên y = 4 chứ không ở trong khoảng 1 - 4<br>
-					◟Giới hạn vùng là hình vuông
+					<span class="first"></span>Nếu y = 1 có Block mà y = 4 có Block thì khi dùng Command này Entity bị tp lên trên y = 4 chứ không ở trong khoảng 1 - 4<br>
+					<span class="first"></span>Giới hạn vùng là hình vuông
 				</div>
 			</div>
 		</div>

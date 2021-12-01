@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,35 +128,39 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Đưa ra danh sách và cấu trúc Command mà Player có thể sử dụng
+					<span class="first"></span>Đưa ra danh sách và cấu trúc Command mà Player có thể sử dụng
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Không có
+					<span class="first"></span>Không có
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/help [command: CommandName]</span>
-					<div class="tab enter p_small">
-						◟<span class="cu_phap">[command: CommandName]</span> là tên Command<br>
-						◟<span class="cmd">/help clone</span> — sẽ hiện cú pháp Command clone
+					<div>
+						<span class="drop_icon cu_phap">/help [command: CommandName]</span>
+						<div class="drop_hide tab enter p_small">
+							<span class="first"></span><span class="cu_phap">[command: CommandName]</span> là tên Command<br>
+							<span class="first"></span><span class="cmd">/help clone</span> — sẽ hiện cú pháp Command clone
+						</div>
 					</div>
-					◟<span class="cu_phap">/help &lt;page: int&gt;</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;page: int&gt;</span> là số trang danh sách Command (tổng cộng có 22 trang)<br>
-						◟<span class="cmd">/help 2</span> — sẽ hiện các Command trong trang 2
+					<div>
+						<span class="drop_icon cu_phap">/help &lt;page: int&gt;</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span><span class="cu_phap">&lt;page: int&gt;</span> là số trang danh sách Command (tổng cộng có 22 trang)<br>
+							<span class="first"></span><span class="cmd">/help 2</span> — sẽ hiện các Command trong trang 2
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Danh sách Command có thể dùng của Player không có OP sẽ ngắn<br>
-					◟Command này chỉ giúp bạn biết cú pháp của All Command, không giải thích ý nghĩa của cú pháp
+					<span class="first"></span>Danh sách Command có thể dùng của Player không có OP sẽ ngắn<br>
+					<span class="first"></span>Command này chỉ giúp bạn biết cú pháp của All Command, không giải thích ý nghĩa của cú pháp
 				</div>
 			</div>
 		</div>

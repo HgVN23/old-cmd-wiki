@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -127,34 +128,34 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Đặt số lượng Player nhất định tham gia Map
+					<span class="first"></span>Đặt số lượng Player nhất định tham gia Map
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP
+					<span class="first"></span>Player có OP
 				</div>
 			</div>
 			<div class="slot box"> <!-- Cú pháp -->
 				<div class="row1 h_cmd">Cú pháp</div>
 				<div class="row2 p">
-					◟<span class="cu_phap">/setmaxplayers &lt;maxPlayers: int&gt;</span>
-					<div class="tab p_small">
-						◟<span class="cu_phap">&lt;maxPlayers: int&gt;</span> là số lượng Player<br>
-						◟<span class="cmd">/setmaxplayers 2</span> — Map tối đa chỉ được 2 Player trong Map
+					<span class="drop_icon cu_phap">/setmaxplayers &lt;maxPlayers: int&gt;</span>
+					<div class="drop_hide tab p_small">
+						<span class="first"></span><span class="cu_phap">&lt;maxPlayers: int&gt;</span> là số lượng Player<br>
+						<span class="first"></span><span class="cmd">/setmaxplayers 2</span> — Map tối đa chỉ được 2 Player trong Map
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟Không dùng được trong <a class="link_text" href="../muc-luc/command-block.html">Command Block</a>, <a class="link_text" href="execute.html">/execute</a> và <a class="link_text" href="function.html">/function</a><br>
-					◟Chỉ duy nhất chủ Map dùng được Command<br>
-					◟Không thể dùng Command khi số lượng Player đang trong Map lớn hơn giới hạn bạn định đặt. Nếu Map đang có 3 Player (tính cả bạn) mà bạn sử dụng giới hạn là 2 thì không được, phải lớn hoặc bằng 3 thì mới được<br>
-					◟<span class="cu_phap">&lt;maxPlayers: int&gt;</span> tối đa là 30<br>
-					◟<span class="cu_phap">&lt;maxPlayers: int&gt;</span> nhỏ hơn 1 thì sẽ tính là 1<br>
-					◟<span class="cu_phap">&lt;maxPlayers: int&gt;</span> lớn hơn 30 thì sẽ tính là 30
+					<span class="first"></span>Không dùng được trong <a class="link_text" href="../muc-luc/command-block.html">Command Block</a>, <a class="link_text" href="execute.html">/execute</a> và <a class="link_text" href="function.html">/function</a><br>
+					<span class="first"></span>Chỉ duy nhất chủ Map dùng được Command<br>
+					<span class="first"></span>Không thể dùng Command khi số lượng Player đang trong Map lớn hơn giới hạn bạn định đặt. Nếu Map đang có 3 Player (tính cả bạn) mà bạn sử dụng giới hạn là 2 thì không được, phải lớn hoặc bằng 3 thì mới được<br>
+					<span class="first"></span><span class="cu_phap">&lt;maxPlayers: int&gt;</span> tối đa là 30<br>
+					<span class="first"></span><span class="cu_phap">&lt;maxPlayers: int&gt;</span> nhỏ hơn 1 thì sẽ tính là 1<br>
+					<span class="first"></span><span class="cu_phap">&lt;maxPlayers: int&gt;</span> lớn hơn 30 thì sẽ tính là 30
 				</div>
 			</div>
 		</div>
