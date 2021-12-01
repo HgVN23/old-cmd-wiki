@@ -24,7 +24,8 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="icon" href="../lib/media/logo_wiki.png" type="image/x-icon">
 </head>
-<body class="background">
+<body class="background" onload="dropDown()">
+    <script src="../lib/script.js"></script>
 	<header>
 		<a class="title" href="../index.html" title="Đi đến trang chủ">MCBE Command Wiki</a>
 	</header>
@@ -50,14 +51,14 @@
 			<div class="slot box"> <!-- Công dụng -->
 				<div class="row1 h_cmd">Công dụng</div>
 				<div class="row2 p">
-					◟Thực thi Command được ghi trong đó
+					<span class="first"></span>Thực thi Command được ghi trong đó
 				</div>
 			</div>
 			<div class="slot box"> <!-- Điều kiện -->
 				<div class="row1 h_cmd">Điều kiện</div>
 				<div class="row2 p">
-					◟Player có OP (Đặt, phá và chỉnh sửa Block)<br>
-					◟Không có (Kích hoạt qua Redstone)
+					<span class="first"></span>Player có OP (Đặt, phá và chỉnh sửa Block)<br>
+					<span class="first"></span>Không có (Kích hoạt qua Redstone)
 				</div>
 			</div>
 			<div class="slot box"> <!-- Các thành phần -->
@@ -79,96 +80,126 @@
 						<div class="note">(9 vùng trong ảnh có thể ấn để chuyển đến)</div> -->
 						<img src="../lib/media/cmdb_ui.png" class="image_mobile">
 					</div>
-					<div id="ui1">◟Hover Note là ô ghi chú<span class="note">(1)</span></div>
-					<div id="ui2">◟Block Type là loại Block<span class="note">(2)</span>. Danh sách:</div>
-					<div class="tab p_small">
-						◟Impulse là xung, chạy 1 lần mỗi lần kích hoạt<br>
-						◟Chain là liền chuỗi, chạy 1 lần mỗi lần có Command Block hướng vào nó hoạt động<br>
-						◟Repeat là lặp, chạy lặp mỗi lần kích hoạt
-						<div align="center">
-							<img src="../lib/media/cmdb_type.png" class="image">
+					<div id="ui1"><span class="first"></span>Hover Note là ô ghi chú<span class="note">(1)</span></div>
+					<div id="ui2">
+						<span class="drop_icon">Block Type là loại Block<span class="note">(2)</span>. Danh sách:</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Impulse là xung, chạy 1 lần mỗi lần kích hoạt<br>
+							<span class="first"></span>Chain là liền chuỗi, chạy 1 lần mỗi lần có Command Block hướng vào nó hoạt động<br>
+							<span class="first"></span>Repeat là lặp, chạy lặp mỗi lần kích hoạt
+							<div align="center">
+								<img src="../lib/media/cmdb_type.png" class="image">
+							</div>
 						</div>
 					</div>
-					<div id="ui3">◟Condition là điều kiện, kiểm tra Command Block phía sau hướng vào nó có thực thi được Command không<span class="note">(3)</span>. Danh sách:</div>
-					<div class="tab p_small">
-						◟Condition là có điều kiện<br>
-						◟Uncondition là không điều kiện
-						<div align="center">
-							<img src="../lib/media/cmdb_condition.png" class="image">
+					<div id="ui3">
+						<span class="drop_icon">Condition là điều kiện, kiểm tra Command Block phía sau hướng vào nó có thực thi được Command không<span class="note">(3)</span>. Danh sách:</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Condition là có điều kiện<br>
+							<span class="first"></span>Uncondition là không điều kiện
+							<div align="center">
+								<img src="../lib/media/cmdb_condition.png" class="image">
+							</div>
 						</div>
 					</div>
-					<div id="ui4">◟Redstone là năng lượng<span class="note">(4)</span>. Danh sách:</div>
-					<div class="tab p_small">
-						◟Always Active là luôn hoạt động, không cần năng lượng Redstone để kích hoạt<br>
-						◟Needs Redstone là cần năng lượng Redstone để kích hoạt
-						<div align="center">
-							<img src="../lib/media/cmdb_redstone.png" class="image">
+					<div id="ui4">
+						<span class="drop_icon">Redstone là năng lượng<span class="note">(4)</span>. Danh sách:</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Always Active là luôn hoạt động, không cần năng lượng Redstone để kích hoạt<br>
+							<span class="first"></span>Needs Redstone là cần năng lượng Redstone để kích hoạt
+							<div align="center">
+								<img src="../lib/media/cmdb_redstone.png" class="image">
+							</div>
 						</div>
 					</div>
-					<div id="ui5">◟Execute on First Tick là hoạt động ngay từ Tick đầu tiên<span class="note">(5)</span></div>
-					<div id="ui6">◟Delay in Ticks là độ trễ của Tick<span class="note">(6)</span></div>
-					<div id="ui7">◟Cancel là hủy thay đổi<span class="note">(7)</span></div>
-					<div id="ui8">◟Command Input là nơi nhập Command (Cạnh đó có dấu + để mở rộng bảng ghi)<span class="note">(8)</span></div>
-					<div id="ui9">◟Previous Output là thông báo đầu ra Command trước đó (Nút trên đó để bật tắt hiện thông báo trong Block)<span class="note">(9)</span></div>
+					<div id="ui5"><span class="first"></span>Execute on First Tick là hoạt động ngay từ Tick đầu tiên<span class="note">(5)</span></div>
+					<div id="ui6"><span class="first"></span>Delay in Ticks là độ trễ của Tick<span class="note">(6)</span></div>
+					<div id="ui7"><span class="first"></span>Cancel là hủy thay đổi<span class="note">(7)</span></div>
+					<div id="ui8"><span class="first"></span>Command Input là nơi nhập Command (Cạnh đó có dấu + để mở rộng bảng ghi)<span class="note">(8)</span></div>
+					<div id="ui9"><span class="first"></span>Previous Output là thông báo đầu ra Command trước đó (Nút trên đó để bật tắt hiện thông báo trong Block)<span class="note">(9)</span></div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Chi tiết về tổ hợp Block Type + Condition + Redstone -->
 				<div class="row1 h_cmd">Chi tiết về tổ hợp Block Type + Condition + Redstone</div>
 				<div class="row2 p">
-					◟Impulse + Unconditional + Needs Redstone
-					<div class="tab p_small">
-						◟Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ
+					<div>
+						<span class="drop_icon">Impulse + Unconditional + Needs Redstone</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ
+						</div>
 					</div>
-					◟Impulse + Unconditional + Always Active
-					<div class="tab p_small">
-						◟Chạy 1 lần mỗi lần kích hoạt
+					<div>
+						<span class="drop_icon">Impulse + Unconditional + Always Active</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Chạy 1 lần mỗi lần kích hoạt
+						</div>
 					</div>
-					◟Impulse + Condition + Needs Redstone
-					<div class="tab p_small">
-						◟Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command
+					<div>
+						<span class="drop_icon">Impulse + Condition + Needs Redstone</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command
+						</div>
 					</div>
-					◟Impulse + Condition + Always Active
-					<div class="tab p_small">
-						◟Chạy 1 lần mỗi lần kích hoạt có Command Block phía sau hướng vào nó phải thực thi được Command
+					<div>
+						<span class="drop_icon">Impulse + Condition + Always Active</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Chạy 1 lần mỗi lần kích hoạt có Command Block phía sau hướng vào nó phải thực thi được Command
+						</div>
 					</div>
-					◟Chain + Unconditional + Needs Redstone
-					<div class="tab p_small">
-						◟Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block hướng vào nó hoạt động
+					<div>
+						<span class="drop_icon">Chain + Unconditional + Needs Redstone</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block hướng vào nó hoạt động
+						</div>
 					</div>
-					◟Chain + Unconditional + Always	Active
-					<div class="tab p_small">
-						◟Chạy 1 lần mỗi lần có Command Block hướng vào nó hoạt động
+					<div>
+						<span class="drop_icon">Chain + Unconditional + Always	Active</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Chạy 1 lần mỗi lần có Command Block hướng vào nó hoạt động
+						</div>
 					</div>
-					◟Chain + Condition + Needs Redstone
-					<div class="tab p_small">
-						◟Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command
+					<div>
+						<span class="drop_icon">Chain + Condition + Needs Redstone</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command
+						</div>
 					</div>
-					◟Chain + Condition + Always Active
-					<div class="tab p_small">
-						◟Chạy 1 lần mỗi lần có Command Block phía sau hướng vào nó phải thực thi được Command
+					<div>
+						<span class="drop_icon">Chain + Condition + Always Active</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Chạy 1 lần mỗi lần có Command Block phía sau hướng vào nó phải thực thi được Command
+						</div>
 					</div>
-					◟Reapeat + Unconditional + Needs Redstone
-					<div class="tab p_small">
-						◟Chạy lặp mỗi lần kích hoạt bằng đá đỏ
+					<div>
+						<span class="drop_icon">Reapeat + Unconditional + Needs Redstone</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Chạy lặp mỗi lần kích hoạt bằng đá đỏ
+						</div>
 					</div>
-					◟Reapeat + Unconditional + Always Active
-					<div class="tab p_small">
-						◟Chạy lặp mỗi lần kích hoạt
+					<div>
+						<span class="drop_icon">Reapeat + Unconditional + Always Active</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Chạy lặp mỗi lần kích hoạt
+						</div>
 					</div>
-					◟Reapeat + Condition + Needs Redstone
-					<div class="tab p_small">
-						◟Chạy lặp mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command
+					<div>
+						<span class="drop_icon">Reapeat + Condition + Needs Redstone</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Chạy lặp mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command
+						</div>
 					</div>
-					◟Reapeat + Condition + Always Active
-					<div class="tab p_small">
-						◟Chạy lặp mỗi lần kích hoạt có Command Block phía sau hướng vào nó phải thực thi được Command
+					<div>
+						<span class="drop_icon">Reapeat + Condition + Always Active</span>
+						<div class="drop_hide tab p_small">
+							<span class="first"></span>Chạy lặp mỗi lần kích hoạt có Command Block phía sau hướng vào nó phải thực thi được Command
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="slot box"> <!-- Lưu ý -->
 				<div class="row1 h_cmd">Lưu ý</div>
 				<div class="row2 p">
-					◟<span class="cmd">/gamerule comamndblockoutput false</span> sẽ tắt Previous Output. Bạn vẫn có thể bật nó lên bằng nút trong Block
+					<span class="first"></span><span class="cmd"><a class="link_text" href="../commands/gamerule.html" target="_blank">/gamerule</a> comamndblockoutput false</span> sẽ tắt Previous Output. Bạn vẫn có thể bật nó lên bằng nút trong Block
 				</div>
 			</div>
 		</div>
