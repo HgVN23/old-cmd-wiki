@@ -69,15 +69,15 @@
                                 <div v-for="item in menuItems">
                                     <a
                                         class="link_text"
-                                        href="index.html"
-                                        title="Đang ở Trang chủ"
+                                        :href="item.link"
+                                        :title="item.title"
                                         v-if="item.isActive"
                                         ><span class="here">{{item.name}}</span>
                                     </a>
                                     <a
                                         class="link_text"
-                                        href="index.html"
-                                        title="Đang ở Trang chủ"
+                                        :href="item.link"
+                                        :title="item.title"
                                         v-else
                                         >{{item.name}}
                                     </a>
